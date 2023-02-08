@@ -1,0 +1,6357 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ProjectTheme\n"
+"POT-Creation-Date: 2022-01-07 09:45+0200\n"
+"PO-Revision-Date: 2022-01-07 09:47+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: 404.php:25
+msgid "Page not found"
+msgstr "Страница не найдена"
+
+#: 404.php:48
+msgid ""
+"The requested page cannot be found. Maybe your project or page has not been "
+"approved yet."
+msgstr ""
+"Запрашиваемая страница не может быть найдена. Возможно, ваш проект или "
+"страница еще не одобрены."
+
+#: archive-project.php:71 taxonomy.php:127
+msgid "All Posted Projects"
+msgstr "Все запросы"
+
+#: archive-project.php:72 taxonomy.php:128
+#, php-format
+msgid "Latest Posted Projects in %s"
+msgstr "Последние запросы в %s"
+
+#: archive-project.php:137 lib/user-profile.php:462 taxonomy.php:270
+msgid "No projects posted."
+msgstr "Нет опубликованных запросов"
+
+#: archive-service.php:71
+msgid "All Posted Services"
+msgstr "Все опубликованные услуги"
+
+#: archive-service.php:72
+#, php-format
+msgid "Latest Posted Services in %s"
+msgstr "Последние размещенные услуги в %s"
+
+#: archive-service.php:137
+msgid "No services posted."
+msgstr "Услуги не предоставляются."
+
+#: archive.php:23
+#, php-format
+msgid "Daily Blog Archives: %s"
+msgstr "Ежедневный архив блога: %s"
+
+#: archive.php:25
+#, php-format
+msgid "Monthly Blog Archives: %s"
+msgstr "Ежемесячные архивы блога: %s"
+
+#: archive.php:25
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:27
+#, php-format
+msgid "Yearly Blog Archives: %s"
+msgstr "Годовые архивы блога: %s"
+
+#: archive.php:27
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:29
+msgid "Blog Archives"
+msgstr "Архив блога"
+
+#: archive.php:72
+msgid "No blog posts for this tag."
+msgstr "Нет записей в блоге с данным тегом."
+
+#: classes/listing-fees.class.php:68 lib/gateways/credits_listing.php:97
+#: lib/gateways/moneybookers_listing.php:43 lib/gateways/paypal_listing.php:72
+#: lib/my_account/relist_this_done.php:215 lib/post_new.php:2056
+msgid "Base Fee"
+msgstr "Базовая комиссия"
+
+#: classes/listing-fees.class.php:78 lib/gateways/credits_listing.php:107
+#: lib/gateways/moneybookers_listing.php:54 lib/gateways/paypal_listing.php:83
+#: lib/my_account/relist_this_done.php:222 lib/post_new.php:2066
+msgid "Extra Images Fee"
+msgstr "Комиссия за  дополнительные изображения"
+
+#: classes/listing-fees.class.php:92 lib/gateways/credits_listing.php:122
+#: lib/gateways/moneybookers_listing.php:78 lib/gateways/paypal_listing.php:107
+#: lib/my_account/relist_this_done.php:228 lib/post_new.php:2080
+msgid "Featured Fee"
+msgstr "Рекомендуемая комиссия"
+
+#: classes/listing-fees.class.php:108 lib/gateways/credits_listing.php:140
+#: lib/gateways/moneybookers_listing.php:108
+#: lib/gateways/paypal_listing.php:138 lib/my_account/relist_this_done.php:235
+#: lib/post_new.php:2098
+msgid "Sealed Bidding Fee"
+msgstr "Комиссия за закрытый запрос"
+
+#: classes/listing-fees.class.php:123 lib/gateways/credits_listing.php:157
+#: lib/gateways/moneybookers_listing.php:139
+#: lib/gateways/paypal_listing.php:169 lib/post_new.php:2113
+msgid "Hide Project From Search Engines Fee"
+msgstr "Скрыть заказ от поисковых машин"
+
+#: classes/pagenavi.php:120 classes/pagenavi.php:139 classes/pagenavi.php:151
+#, php-format
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: comments.php:4
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Эта запись защищена паролем. Введите пароль, чтобы просматривать комментарии."
+
+#: comments.php:20
+#, fuzzy, php-format
+#| msgid "One thought on &ldquo;%2$s&rdquo;"
+#| msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Один комментарий для &ldquo;%2$s&rdquo;"
+msgstr[1] ""
+msgstr[2] ""
+
+#: comments.php:27 comments.php:42
+msgid "Comment navigation"
+msgstr "Навигация по комментариям"
+
+#: comments.php:28 comments.php:43
+msgid "&larr; Older Comments"
+msgstr "&larr; Старые комментарии"
+
+#: comments.php:29 comments.php:44
+msgid "Newer Comments &rarr;"
+msgstr "Новые комментарии &rarr;"
+
+#: comments.php:52
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#: functions.php:505
+msgid "ERROR: Your username or password are incorrect."
+msgstr "ОШИБКА: Ваше имя пользователя или пароль неверны."
+
+#: functions.php:742
+msgid "You need to deposit escrow for this following orders:"
+msgstr "Вам необходимо внести залог для следующих заказов:"
+
+#: functions.php:756
+#, php-format
+msgid "Pay Now %s"
+msgstr "Оплатить сейчас %s"
+
+#: functions.php:757
+#, php-format
+msgid "Order id: %s for the project: %s"
+msgstr "Идентификатор заказа: %s для проекта: %s"
+
+#: functions.php:981 lib/my_account/aside-menu.php:85
+msgid "Dashboard"
+msgstr "Панель управления"
+
+#: functions.php:990 lib/my_account/aside-menu.php:149
+#: lib/my_account/aside-menu.php:163
+#, php-format
+msgid "Messaging %s"
+msgstr "Обмен сообщениями %s"
+
+#: functions.php:1000
+#, php-format
+msgid "Messages %s"
+msgstr "Сообщения %s"
+
+#: functions.php:1016 header-account.php:170 lib/my_account/finances.php:1394
+#: lib/my_account/my_account.php:118
+msgid "Finances"
+msgstr "Финансы"
+
+#: functions.php:1022
+msgid "My Settings"
+msgstr "Мои настройки"
+
+#: functions.php:1029
+msgid "Buyer"
+msgstr "Покупатель"
+
+#: functions.php:1108 lib/my_account/aside-menu.php:94
+msgid "Post New Project"
+msgstr "Опубликовать новый проект"
+
+#: functions.php:1110 functions.php:1227 functions.php:5141
+#: lib/my_account/aside-menu.php:128 lib/my_account/workspaces.php:55
+msgid "Workspaces"
+msgstr "Рабочие пространства"
+
+#: functions.php:1112 lib/my_account/buyer-area.php:206
+msgid "Active Projects"
+msgstr "Активный проект"
+
+#: functions.php:1113
+#, php-format
+msgid "Received Bids %s"
+msgstr "Принятые ставки %s"
+
+#: functions.php:1117
+msgid "Closed Projects"
+msgstr "Закрытые проекты"
+
+#: functions.php:1118
+#, php-format
+msgid "Unpublished Projects %s"
+msgstr "Неопубликованные запросы %s"
+
+#: functions.php:1119
+#, php-format
+msgid "Awaiting Completion %s"
+msgstr "В ожидании завершения %s"
+
+#: functions.php:1120
+#, php-format
+msgid "Outstanding Payments %s"
+msgstr "Просроченные платежы %s"
+
+#: functions.php:1121
+msgid "Completed Payments"
+msgstr "Завершенные оплаты"
+
+#: functions.php:1157 functions.php:3751 functions.php:4090
+msgid "Freelancer"
+msgstr "Исполнитель"
+
+#: functions.php:1228
+msgid "My Proposals"
+msgstr "Мои предложения"
+
+#: functions.php:1230
+msgid "Won Projects"
+msgstr "Выполненные запросы"
+
+#: functions.php:1231
+#, php-format
+msgid "Outstanding Projects %s"
+msgstr "Незавершенные заказы %s"
+
+#: functions.php:1232
+#, php-format
+msgid "Awaiting Payments %s"
+msgstr "Ожидает оплаты %s"
+
+#: functions.php:1233
+msgid "Delivered & Paid Projects"
+msgstr "Доставленные и оплаченные заказы"
+
+#: functions.php:1265 lib/my_account/aside-menu.php:230
+#, php-format
+msgid "Reviews %s"
+msgstr "Отзывы %s"
+
+#: functions.php:1421
+msgid "Disputes"
+msgstr "Споры"
+
+#: functions.php:1427
+msgid "Affiliates"
+msgstr "Партнеры"
+
+#: functions.php:2108
+msgid "View Details"
+msgstr "Подробнее"
+
+#: functions.php:2144
+msgid "na"
+msgstr "na"
+
+#: functions.php:2195 functions.php:2706 functions.php:6103
+#: lib/user-profile.php:64
+msgid "No skills defined for this user."
+msgstr "Для этого пользователя не определены навыки."
+
+#: functions.php:2203
+#, php-format
+msgid "%s <span class=\"no-weight\">/hr</span>"
+msgstr "%s <span class=\"no-weight\">/час</span>"
+
+#: functions.php:2208 functions.php:2723 lib/user-feedback.php:151
+#: lib/user-profile.php:155
+msgid "Contact User"
+msgstr "Контакты пользователя"
+
+#: functions.php:2404 lib/my_account/personal_information.php:533
+#: lib/my_account/personal_information.php:545
+msgid "Choose file"
+msgstr "Выбрать файл"
+
+#: functions.php:2519 lib/my_account/personal_information.php:745
+#: lib/post_new.php:740
+msgid "Click the grey area below to add project images."
+msgstr "Нажмите на серую область внизу, чтобы добавить изображения."
+
+#: functions.php:2647
+msgid "hr"
+msgstr "ч"
+
+#: functions.php:2669
+msgid "About:"
+msgstr "О нас:"
+
+#: functions.php:2677
+msgid "This user doesnt have a description."
+msgstr "Этот пользователь не добавил описание"
+
+#: functions.php:2687 lib/provider_search.php:71
+msgid "Skills:"
+msgstr "Навыки:"
+
+#: functions.php:2724 lib/user-feedback.php:11
+msgid "User Feedback"
+msgstr "Отзывы пользователя"
+
+#: functions.php:2733
+#, php-format
+msgid "%s Hire this freelancer"
+msgstr "%s Нанять этого фрилансера"
+
+#: functions.php:2781
+msgid "Browse By Category"
+msgstr "Смотреть по категориям"
+
+#: functions.php:2814
+msgid "Start Search"
+msgstr "Начать поиск"
+
+#: functions.php:3153
+#, php-format
+msgid "%s previous value: %s new value: %s"
+msgstr "%s предыдущее значение: %s новое значение: %s"
+
+#: functions.php:3168
+#, php-format
+msgid "%s (%s) has changed one or more fields"
+msgstr "%s (%s) изменил одно или несколько полей"
+
+#: functions.php:3472
+#, php-format
+msgid "Page %s of %s"
+msgstr "Страница %s из %s"
+
+#: functions.php:3490 functions.php:5659
+msgid "First"
+msgstr "Первый"
+
+#: functions.php:3516 functions.php:5660
+msgid "Last"
+msgstr "Последний"
+
+#: functions.php:3752
+msgid "Client"
+msgstr "Клиент"
+
+#: functions.php:3908 functions.php:7980 functions.php:8699 functions.php:9066
+#: functions.php:9423 functions.php:10460
+msgid "Posted in"
+msgstr "Опубликовано в"
+
+#: functions.php:3917 lib/advanced_search.php:279
+#: lib/my_account/personal_information.php:413 lib/post_new.php:496
+#: lib/post_new.php:1285 single-project.php:996 single-service.php:668
+msgid "Location"
+msgstr "Местоположение"
+
+#: functions.php:3920 lib/user-feedback.php:106 lib/user-profile.php:113
+#: lib/user-profile.php:277
+msgid "not defined"
+msgstr "не определено"
+
+#: functions.php:4070 lib/my_account/buyer-area.php:271
+#: lib/my_account/buyer-area.php:352 lib/my_account/buyer-area.php:428
+#: lib/my_account/buyer-area.php:515 lib/my_account/buyer-area.php:610
+#: lib/my_account/buyer-area.php:687 lib/my_account/buyer-area.php:782
+#: lib/my_account/feedbacks.php:96 lib/my_account/feedbacks.php:158
+#: lib/my_account/feedbacks.php:220 lib/my_account/finances.php:227
+#: lib/my_account/finances.php:293 lib/my_account/finances.php:1522
+#: lib/my_account/finances.php:1599 lib/my_account/finances.php:1758
+#: lib/my_account/finances.php:1845 lib/my_account/finances.php:1923
+#: lib/my_account/finances.php:2001 lib/my_account/freelancer-area.php:227
+#: lib/my_account/freelancer-area.php:306
+#: lib/my_account/freelancer-area.php:398
+#: lib/my_account/freelancer-area.php:494
+#: lib/my_account/freelancer-area.php:581 lib/my_account/my_account.php:325
+#: lib/my_account/my_account.php:431 lib/my_account/my_account.php:547
+#: lib/user-feedback.php:195 lib/user-profile.php:498
+msgid "Project Title"
+msgstr "Заголовок проекта"
+
+#: functions.php:4071
+msgid "Author"
+msgstr "Автор"
+
+#: functions.php:4072
+msgid "Posted On"
+msgstr "Опубликовано"
+
+#: functions.php:4073 lib/advanced_search.php:257 lib/advanced_search.php:609
+#: lib/my_account/buyer-area.php:430 lib/my_account/buyer-area.php:517
+#: lib/my_account/buyer-area.php:612 lib/my_account/buyer-area.php:689
+#: lib/my_account/feedbacks.php:99 lib/my_account/feedbacks.php:161
+#: lib/my_account/feedbacks.php:223 lib/my_account/finances.php:1760
+#: lib/my_account/finances.php:1847 lib/my_account/finances.php:1925
+#: lib/my_account/freelancer-area.php:307
+#: lib/my_account/freelancer-area.php:399
+#: lib/my_account/freelancer-area.php:495
+#: lib/my_account/freelancer-area.php:582 lib/my_account/my_account.php:432
+#: lib/my_account/repost_project.php:522 lib/user-feedback.php:198
+#: lib/user-profile.php:501
+msgid "Price"
+msgstr "Цена"
+
+#: functions.php:4074 functions.php:8074
+msgid "Expires in"
+msgstr "Истекает в"
+
+#: functions.php:4075
+msgid "Featured"
+msgstr "Рекомендуемые"
+
+#: functions.php:4076 lib/admin_menu.php:3204 lib/admin_menu.php:3335
+msgid "Approved"
+msgstr "Одобрено"
+
+#: functions.php:4077
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+#: functions.php:4078 functions.php:4886 lib/admin_menu.php:383
+#: lib/admin_menu.php:3205 lib/admin_menu.php:3336 lib/admin_menu.php:3668
+#: lib/admin_menu.php:3748 lib/admin_menu.php:4768 lib/admin_menu.php:4833
+#: lib/admin_menu.php:4897 lib/admin_menu.php:4978 lib/admin_menu.php:5066
+#: lib/admin_menu.php:5154 lib/my_account/buyer-area.php:275
+#: lib/my_account/buyer-area.php:357 lib/my_account/buyer-area.php:433
+#: lib/my_account/buyer-area.php:520 lib/my_account/buyer-area.php:615
+#: lib/my_account/buyer-area.php:692 lib/my_account/buyer-area.php:786
+#: lib/my_account/feedbacks.php:100 lib/my_account/finances.php:860
+#: lib/my_account/finances.php:1526 lib/my_account/finances.php:1603
+#: lib/my_account/finances.php:1763 lib/my_account/finances.php:1850
+#: lib/my_account/finances.php:1928 lib/my_account/finances.php:2005
+#: lib/my_account/freelancer-area.php:231
+#: lib/my_account/freelancer-area.php:310
+#: lib/my_account/freelancer-area.php:402
+#: lib/my_account/freelancer-area.php:498
+#: lib/my_account/freelancer-area.php:585 lib/my_account/my_account.php:330
+#: lib/my_account/my_account.php:435 lib/my_account/my_account.php:551
+#: lib/my_account/private_messages.php:285
+#: lib/my_account/private_messages.php:411 lib/post_new.php:58
+msgid "Options"
+msgstr "Опции"
+
+#: functions.php:4088
+msgid "Workspace Title"
+msgstr "Название рабочего пространства"
+
+#: functions.php:4089
+msgid "Project Owner"
+msgstr "Предложение по запросу (владелец)"
+
+#: functions.php:4091 lib/my_account/finances.php:229
+#: lib/my_account/finances.php:295 lib/my_account/finances.php:856
+#: lib/my_account/finances.php:1683 lib/my_account/private_messages.php:284
+#: lib/my_account/private_messages.php:410 single-project.php:504
+msgid "Date"
+msgstr "Дата"
+
+#: functions.php:4153 functions.php:4388 functions.php:4902
+#: lib/admin_menu.php:207 lib/admin_menu.php:519 lib/admin_menu.php:603
+#: lib/admin_menu.php:1302 lib/admin_menu.php:3231 lib/admin_menu.php:3366
+#: lib/admin_menu.php:5218 lib/admin_menu.php:5466 lib/admin_menu.php:8504
+#: lib/admin_menu.php:8513 lib/my_account/finances.php:521
+#: lib/post_new.php:1523 lib/retract_bid.php:104
+msgid "Yes"
+msgstr "Да"
+
+#: functions.php:4154 functions.php:4387 lib/admin_menu.php:207
+#: lib/admin_menu.php:519 lib/admin_menu.php:603 lib/admin_menu.php:1302
+#: lib/admin_menu.php:3231 lib/admin_menu.php:3366 lib/admin_menu.php:5218
+#: lib/admin_menu.php:5466 lib/admin_menu.php:8504 lib/choose_winner.php:244
+#: lib/my_account/finances.php:833 lib/my_account/mark_completed.php:133
+#: lib/my_account/mark_delivered.php:105
+msgid "No"
+msgstr "Нет"
+
+#: functions.php:4200 functions.php:6236 functions.php:6395 functions.php:6467
+#: lib/my_account/repost_project.php:284 lib/my_account/repost_project.php:570
+#: lib/post_new.php:1505
+msgid "Select"
+msgstr "Выбрать"
+
+#: functions.php:4316 functions.php:8047 functions.php:9084 functions.php:9437
+#: functions.php:10523 lib/my_account/buyer-area.php:272
+#: lib/my_account/buyer-area.php:783 lib/my_account/finances.php:2002
+msgid "Budget"
+msgstr "Бюджет"
+
+#: functions.php:4363 lib/post_new.php:420
+#, fuzzy
+#| msgid "There are no paid projects yet."
+msgid "Is this an hourly paid project ?"
+msgstr "Оплаченных проектов пока нет."
+
+#: functions.php:4385
+msgid "Sealed Bids"
+msgstr "Скрытые предложения"
+
+#: functions.php:4395
+msgid "Feature this project"
+msgstr "Рекомендовать запрос"
+
+#: functions.php:4401
+msgid "Hide this project"
+msgstr "Скрыть этот запрос"
+
+#: functions.php:4407 functions.php:8075 functions.php:8811
+msgid "Closed"
+msgstr "Закрыто"
+
+#: functions.php:4413 lib/post_new.php:583 lib/post_new.php:1893
+#: single-project.php:1003 single-service.php:1173
+msgid "Address"
+msgstr "Адрес"
+
+#: functions.php:4428
+msgid "Deadline"
+msgstr "Крайний срок"
+
+#: functions.php:4445
+msgid "Bidding Ending On"
+msgstr "Окончание торгов"
+
+#: functions.php:4739 lib/bidding-panel.php:437
+#: lib/my_account/repost_project.php:513
+msgid ""
+"Click the grey area below to add project files. Images are not accepted."
+msgstr ""
+"Нажмите на серое окно внизу, чтобы добавить файлы запроса. Изображения "
+"использовать нельзя"
+
+#: functions.php:4766 lib/workspaces_chat.php:229
+msgid "Work has started. Freelancer begins work on the project."
+msgstr "Работа началась. Фрилансер начинает работу над проектом."
+
+#: functions.php:4801 lib/admin_menu.php:424 lib/admin_menu.php:3240
+#: lib/admin_menu.php:3375 lib/my_account/private_messages.php:844
+#: lib/my_account/private_messages.php:903 lib/workspaces_chat.php:272
+#, php-format
+msgid "File Attached: %s"
+msgstr "Прикрепленный файл: %s"
+
+#: functions.php:4881 lib/admin_menu.php:4763 lib/admin_menu.php:4827
+#: lib/admin_menu.php:4892 lib/admin_menu.php:4973 lib/admin_menu.php:5061
+#: lib/admin_menu.php:5149 lib/admin_menu.php:6698 lib/admin_menu.php:6763
+#: lib/admin_menu.php:6828 lib/my_account/personal_information.php:381
+#: lib/post_new.php:1456 single-project.php:502
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: functions.php:4882
+msgid "Bid Amount"
+msgstr "Ставка"
+
+#: functions.php:4883 lib/my_account/buyer-area.php:273
+#: lib/my_account/buyer-area.php:355 lib/my_account/buyer-area.php:431
+#: lib/my_account/buyer-area.php:518 lib/my_account/buyer-area.php:784
+#: lib/my_account/finances.php:1525 lib/my_account/finances.php:1602
+#: lib/my_account/finances.php:1761 lib/my_account/finances.php:2003
+#: lib/my_account/freelancer-area.php:229
+#: lib/my_account/freelancer-area.php:308
+#: lib/my_account/freelancer-area.php:400
+#: lib/my_account/freelancer-area.php:496
+#: lib/my_account/freelancer-area.php:583 lib/my_account/my_account.php:328
+#: lib/my_account/my_account.php:433 lib/my_account/my_account.php:549
+#: lib/post_new.php:1458
+msgid "Date Made"
+msgstr "Дата изготовления"
+
+#: functions.php:4885 functions.php:9113 functions.php:9466
+#: lib/post_new.php:1469
+msgid "Winner"
+msgstr "Победитель"
+
+#: functions.php:4903
+msgid "Remove Winner"
+msgstr "Удалить победителя"
+
+#: functions.php:4911 functions.php:7829
+msgid "No bids placed yet."
+msgstr "Ставок еще не было"
+
+#: functions.php:5018 lib/my_account/repost_project.php:388
+msgid ""
+"Click the grey area below to add project images. Other files are not "
+"accepted. Use the form below."
+msgstr ""
+"Нажмите на серое окно внизу, чтобы добавить фотографии запроса. Другие файлы "
+"можно добавить ниже. "
+
+#: functions.php:5112 functions.php:5566 functions.php:5569
+#: lib/user-profile.php:185
+msgid "Projects"
+msgstr "Проекты"
+
+#: functions.php:5113 lib/admin_menu.php:380 lib/admin_menu.php:3664
+#: lib/admin_menu.php:3744
+msgid "Project"
+msgstr "Проект"
+
+#: functions.php:5114 functions.php:5117
+msgid "Add New Project"
+msgstr "Добавить новый проект"
+
+#: functions.php:5115
+msgid "New Project"
+msgstr "Новый проект"
+
+#: functions.php:5116 functions.php:8013 functions.php:8451 functions.php:8747
+#: functions.php:9646 functions.php:10170 post-new-page-template.php:38
+msgid "Edit Project"
+msgstr "Редактировать проект"
+
+#: functions.php:5118 lib/my_account/aside-menu.php:104
+msgid "Search Projects"
+msgstr "Поиск Проектов"
+
+#: functions.php:5142 lib/my_account/buyer-area.php:465
+#: lib/my_account/buyer-area.php:556 lib/my_account/buyer-area.php:731
+#: lib/my_account/finances.php:1950 lib/my_account/freelancer-area.php:340
+#: lib/my_account/freelancer-area.php:438
+#: lib/my_account/freelancer-area.php:530
+#: lib/my_account/freelancer-area.php:626 lib/my_account/my_account.php:464
+msgid "Workspace"
+msgstr "Рабочая область"
+
+#: functions.php:5143 functions.php:5146
+msgid "Add New Workspace"
+msgstr "Добавить новое рабочее пространство"
+
+#: functions.php:5144
+msgid "New Workspace"
+msgstr "Новое рабочее пространство"
+
+#: functions.php:5145
+msgid "Edit Workspace"
+msgstr "Редактирование рабочего пространства"
+
+#: functions.php:5147
+msgid "Search Workspaces"
+msgstr "Поиск рабочих пространств"
+
+#: functions.php:5168
+msgid "Add New Location"
+msgstr "Добавить новое местоположение"
+
+#: functions.php:5169
+msgid "Search Locations"
+msgstr "Поиск местоположения"
+
+#: functions.php:5173
+msgid "Project Categories"
+msgstr "Категории проектов"
+
+#: functions.php:5175
+msgid "Locations"
+msgstr "Местоположение"
+
+#: functions.php:5177 lib/post_new.php:281 lib/post_new.php:1301
+#: single-project.php:1023
+msgid "Skills"
+msgstr "Навыки"
+
+#: functions.php:5189 lib/choose_user_tp.php:82
+msgid "Service Provider"
+msgstr "Поставщик услуг"
+
+#: functions.php:5194
+msgid "Customer/Buyer"
+msgstr "Клиент/Покупатель"
+
+#: functions.php:5568 header.php:261 lib/admin_menu.php:1444
+msgid "Freelancers"
+msgstr "Исполнители"
+
+#: functions.php:5575
+msgid "What do you need?"
+msgstr "Что Вам нужно?"
+
+#: functions.php:5657 lib/admin_menu.php:441 lib/admin_menu.php:1558
+#: lib/admin_menu.php:1700 lib/admin_menu.php:1843 lib/admin_menu.php:3257
+#: lib/admin_menu.php:10624 lib/admin_menu.php:10761
+#: lib/provider_search.php:380
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: functions.php:5658 lib/admin_menu.php:461 lib/admin_menu.php:1574
+#: lib/admin_menu.php:1716 lib/admin_menu.php:1859 lib/admin_menu.php:3277
+#: lib/admin_menu.php:10644 lib/admin_menu.php:10781
+#: lib/provider_search.php:396
+msgid "Next"
+msgstr "Следующий"
+
+#: functions.php:5784 lib/post_new.php:1312 single-project.php:1059
+#: single-service.php:687
+msgid "Posted on"
+msgstr "Опубликовано"
+
+#: functions.php:5784 functions.php:7981 functions.php:8700 functions.php:9067
+#: functions.php:9424 functions.php:10461
+msgid "by"
+msgstr "от"
+
+#: functions.php:5792 functions.php:7995 functions.php:8303 functions.php:8433
+#: functions.php:8589 functions.php:8729 functions.php:10152
+msgid "Read More"
+msgstr "Подробнее"
+
+#: functions.php:5822
+msgid "Featured Projects of the Day"
+msgstr "Популярные запросы"
+
+#: functions.php:6079 lib/user-feedback.php:52
+msgid "There isnt any personal description defined."
+msgstr "Личное описание не определено."
+
+#: functions.php:6118 lib/user-feedback.php:59 lib/user-profile.php:227
+msgid "<i class=\"fa fa-calendar\"></i> Registered on"
+msgstr "<i class=\"fa fa-calendar\"></i> Зарегистрирован на"
+
+#: functions.php:6129
+#, php-format
+msgid "<i class=\"fa fa-envelope\"></i> My Inbox (%s):"
+msgstr "<i class=\"fa fa-envelope\"></i> My Inbox (%s):"
+
+#: functions.php:6138 functions.php:6141
+msgid "Check All"
+msgstr "Выбрать всё"
+
+#: functions.php:6150 lib/user-feedback.php:70 lib/user-profile.php:241
+msgid "<i class=\"far fa-list-alt\"></i> All open projects"
+msgstr "<i class=\"far fa-list-alt\"></i> Все открытые проекты"
+
+#: functions.php:6156 lib/user-feedback.php:76 lib/user-profile.php:247
+msgid "<i class=\"fas fa-cog\"></i> Projects in progress"
+msgstr "<i class=\"fas fa-cog\"></i> Незавершенные проекты"
+
+#: functions.php:6171
+msgid "<i class=\"fas fa-money\"></i> Balance"
+msgstr "<i class=\"fas fa-money\"></i> Баланс"
+
+#: functions.php:6191
+msgid "Edit your profile"
+msgstr "Редактировать свой профиль"
+
+#: functions.php:7674 functions.php:7699 functions.php:7748
+#, php-format
+msgid "on %s rating(s)"
+msgstr "на основе %s рейтинга"
+
+#: functions.php:7710 functions.php:7735
+msgid "(No rating)"
+msgstr "(Без рейтинга)"
+
+#: functions.php:7989 functions.php:8723
+msgid "Pay This2"
+msgstr "Оплатить это2"
+
+#: functions.php:8006 functions.php:8444 functions.php:8740 functions.php:10163
+#: lib/my_account/buyer-area.php:804 lib/my_account/finances.php:2023
+msgid "Publish"
+msgstr "Опубликовать"
+
+#: functions.php:8021 functions.php:8459 functions.php:8755 functions.php:10178
+#: lib/my_account/repost_project.php:18 lib/my_account/repost_project.php:230
+msgid "Repost Project"
+msgstr "Проект репоста"
+
+#: functions.php:8030 functions.php:8468 functions.php:8764 functions.php:10187
+#: lib/admin_menu.php:416 lib/admin_menu.php:3233 lib/admin_menu.php:3368
+#: lib/my_account/buyer-area.php:805 lib/my_account/private_messages.php:312
+#: lib/my_account/private_messages.php:433 single-project.php:1821
+#: single-service.php:1233
+msgid "Delete"
+msgstr "Удалить"
+
+#: functions.php:8061 lib/post_new.php:1270 single-project.php:977
+msgid "Average Bid"
+msgstr "Среднее предложение"
+
+#: functions.php:8068
+msgid "Bids Posted"
+msgstr "Предложение опубликовано"
+
+#: functions.php:8118 functions.php:8119 functions.php:8226 functions.php:8346
+#: functions.php:8347 functions.php:8508 functions.php:8509 functions.php:8914
+#, php-format
+msgid "%s proposals"
+msgstr "%s предложения"
+
+#: functions.php:8120 functions.php:8125 functions.php:8232 functions.php:8348
+#: functions.php:8353 functions.php:8510 functions.php:8515 functions.php:9580
+#: functions.php:9585 functions.php:9891 functions.php:9896 functions.php:10057
+#: functions.php:10072 lib/post_new.php:1327 single-project.php:1077
+#: single-service.php:695
+msgid "Expired/Closed"
+msgstr "Просроченный/закрытый"
+
+#: functions.php:8135 functions.php:8244 functions.php:8365 functions.php:8527
+#: functions.php:8939 functions.php:9210 functions.php:9601 functions.php:9818
+#: functions.php:9912 functions.php:10085 functions.php:10256
+#: functions.php:10635 functions.php:10786
+msgid "Featured Project"
+msgstr "Избранный Проект"
+
+#: functions.php:8138 functions.php:8247 functions.php:8368 functions.php:8530
+#: functions.php:8942 functions.php:9213 functions.php:9604 functions.php:9725
+#: functions.php:9821 functions.php:9915 functions.php:10088
+#: functions.php:10259 functions.php:10638 functions.php:10789
+msgid "Sealed Bidding"
+msgstr "Закрытые ставки?"
+
+#: functions.php:8147 functions.php:9254
+msgid "This project might not have been approved yet."
+msgstr "Возможно, этот проект еще не утвержден."
+
+#: functions.php:8192 functions.php:8989 functions.php:10725
+#: lib/post_new.php:1776 single-project.php:1731 single-service.php:1058
+msgid "View User Feedback"
+msgstr "Просмотр отзывов пользователей"
+
+#: functions.php:8268 functions.php:8389
+msgid "View User Profile"
+msgstr "Посмотреть профиль пользователя"
+
+#: functions.php:8282 functions.php:8403
+#, php-format
+msgid "<i class=\"fas fa-money-bill-alt\"></i> Project Budget: %s"
+msgstr "<i class=\"fas fa-money-bill-alt\"></i> Бюджет проекта %s"
+
+#: functions.php:8283 functions.php:8404
+#, php-format
+msgid "<i class=\"fas fa-layer-group\"></i> %s"
+msgstr "<i class=\"fas fa-layer-group\"></i> %s"
+
+#: functions.php:8284 functions.php:8405
+#, php-format
+msgid "<i class=\"fa fa-calendar\"></i> Posted on %s"
+msgstr "<i class=\"fa fa-calendar\"></i> Posted on %s"
+
+#: functions.php:8292 functions.php:8414
+#, php-format
+msgid "<i class=\"fas fa-money-bill-alt yellow-color\"></i> Bid amount: %s"
+msgstr ""
+"<i class=\"fas fa-money-bill-alt yellow-color\"></i> Сумма предложения: %s"
+
+#: functions.php:8293 functions.php:8415
+#, php-format
+msgid ""
+"<i class=\"fas fa-money-bill-alt yellow-color\"></i> Average bid or project: "
+"%s"
+msgstr ""
+"<i class=\"fas fa-money-bill-alt yellow-color\"></i> Среднее предложение или "
+"проект %s"
+
+#: functions.php:8427 functions.php:10146 functions.php:10700
+msgid "Pay This"
+msgstr "Оплатить"
+
+#: functions.php:8551 functions.php:9245 functions.php:9664 functions.php:10000
+#: functions.php:10281 functions.php:10821
+msgid "View User Ratings"
+msgstr "Просмотр оценок пользователей"
+
+#: functions.php:8560 functions.php:9747 functions.php:9854
+#, php-format
+msgid "<i class=\"fas fa-money-bill-alt\"></i> %s"
+msgstr "<i class=\"fas fa-money-bill-alt\"></i> %s"
+
+#: functions.php:8562 functions.php:9228 functions.php:9618 functions.php:9929
+#: functions.php:10106 functions.php:10292 functions.php:10803
+#, php-format
+msgid "<i class=\"fa fa-calendar\"></i> %s"
+msgstr "<i class=\"fa fa-calendar\"></i> %s"
+
+#: functions.php:8576
+#, php-format
+msgid "<i class=\"fas fa-money-bill-alt yellow-color\"></i> My Bid Amount: %s"
+msgstr ""
+"<i class=\"fas fa-money-bill-alt yellow-color\"></i> Сумма моей ставки: %s"
+
+#: functions.php:8577
+#, php-format
+msgid "<i class=\"fas fa-money-bill-alt yellow-color\"></i> Average Bid: %s"
+msgstr "<i class=\"fas fa-money-bill-alt yellow-color\"></i> Средняя ставка %s"
+
+#: functions.php:8708
+msgid "Your project is awaiting moderation."
+msgstr "Ваш запрос ожидает модерации."
+
+#: functions.php:8782
+msgid "Budget:"
+msgstr "Бюджет:"
+
+#: functions.php:8802 lib/my_account/repost_project.php:568
+msgid "Location:"
+msgstr "Местоположение:"
+
+#: functions.php:8810
+msgid "Expires in:"
+msgstr "Истекает в"
+
+#: functions.php:8923
+#, php-format
+msgid "Delivery was On: %s"
+msgstr "Доставка: %s"
+
+#: functions.php:8951
+#, php-format
+msgid "My Bid: %s"
+msgstr "Мое предложение: %s"
+
+#: functions.php:8973
+msgid "Waiting for the customer to submit payment."
+msgstr "Ожидание оплаты от клиента."
+
+#: functions.php:9098 functions.php:9451 functions.php:10537
+msgid "Winning Bid"
+msgstr "Лучшее предложение"
+
+#: functions.php:9127 functions.php:9481 functions.php:10552
+msgid "Delivery On"
+msgstr "Доставка: %s"
+
+#: functions.php:9194 functions.php:10618
+#, php-format
+msgid "WInner: %s"
+msgstr "Победитель: %s"
+
+#: functions.php:9197 functions.php:10621
+#, php-format
+msgid "Delivery On: %s"
+msgstr "Доставка: %s"
+
+#: functions.php:9226 functions.php:10801
+#, php-format
+msgid "<i class=\"fas fa-money-bill-alt\"></i> Winning Bid: %s"
+msgstr "<i class=\"fas fa-money-bill-alt\"></i> Выигрышная ставка %s"
+
+#: functions.php:9270 functions.php:9502
+msgid "The winner must mark this as delivered."
+msgstr "Победитель должен отметить это как доставленное."
+
+#: functions.php:9283
+msgid "Deposit PayPal Escrow"
+msgstr "Депозит PayPal Escrow"
+
+#: functions.php:9290
+msgid ""
+"You have deposited escrow by PayPal for this project. Once the freelancer "
+"delivers the project, and you accept it, you will release the funds to "
+"freelancer. "
+msgstr ""
+"Вы внесли условно-бесплатный депозит PayPal для этого проекта. Как только "
+"фрилансер выполнит проект, и вы его примете, вы перечислите средства "
+"фрилансеру"
+
+#: functions.php:9301 functions.php:9510
+msgid "Create Milestone"
+msgstr "Создать этап"
+
+#: functions.php:9313 functions.php:9522 functions.php:10690
+msgid "Make Escrow"
+msgstr "Провести эскроу"
+
+#: functions.php:9315 functions.php:9524 functions.php:10692
+msgid "Escrow was made for this project."
+msgstr "Для этого проекта был сделан эскроу."
+
+#: functions.php:9330 functions.php:9538
+msgid "Escrow was deposited on this project."
+msgstr "По этому проекту был введен залоговый депозит."
+
+#: functions.php:9335 functions.php:9542
+#, php-format
+msgid "Marked as delivered on: %s"
+msgstr "Отмечен как доставленный на: %s"
+
+#: functions.php:9336 functions.php:9543
+msgid "Accept this project and: "
+msgstr "Примите этот проект и"
+
+#: functions.php:9338 functions.php:9545 lib/my_account/buyer-area.php:558
+#: lib/my_account/finances.php:1792
+msgid "Mark Completed"
+msgstr "Отметить как выполненное"
+
+#: functions.php:9578 functions.php:9697 functions.php:9786 functions.php:9889
+#, php-format
+msgid "<i class=\"fas fa-user-tag\"></i> %s proposals"
+msgstr "<i class=\"fas fa-user-tag\"></i> %s предложения"
+
+#: functions.php:9616 functions.php:9927
+#, php-format
+msgid "<i class=\"fas fa-money-bill-alt\"></i> Budget: %s"
+msgstr "<i class=\"fas fa-money-bill-alt\"></i> Бюджет %s"
+
+#: functions.php:9722
+msgid "Featured Service"
+msgstr "Рекомендуемые услуги"
+
+#: functions.php:9737 functions.php:9837
+#, php-format
+msgid "<i class=\"fa fa-calendar\"></i> Posted on: %s"
+msgstr "<i class=\"fa fa-calendar\"></i> Posted on %s"
+
+#: functions.php:9748
+msgid "Buy Service"
+msgstr "Купить услугу"
+
+#: functions.php:9825 functions.php:10091
+#, fuzzy
+#| msgid "Hourly Rate"
+msgid "Hourly Paid"
+msgstr "Почасовая ставка"
+
+#: functions.php:9841 functions.php:10862
+msgid "Expired"
+msgstr "Истекший"
+
+#: functions.php:9843
+#, php-format
+msgid "<i class=\"fa fa-clock\"></i> %s left"
+msgstr "<i class=\"fa fa-clock\"></i> %s слева"
+
+#: functions.php:9845
+msgid "<i class=\"fas fa-certificate\"></i> Verified User"
+msgstr "<i class=\"fas fa-certificate\"></i> Проверенный пользователь"
+
+#: functions.php:9859 lib/my_account/buyer-area.php:295
+#: lib/my_account/buyer-area.php:376 lib/my_account/freelancer-area.php:249
+#: lib/my_account/my_account.php:349 lib/my_account/my_account.php:569
+msgid "View Project"
+msgstr "Посмотреть проект"
+
+#: functions.php:10050 functions.php:10227
+#, php-format
+msgid "<i class=\"fa fa-folder\"></i> %s proposals"
+msgstr "<i class=\"fa fa-folder\"></i> %s предложения"
+
+#: functions.php:10104
+#, php-format
+msgid "<i class=\"fas fa-money-bill-alt\"></i> Average Bid: %s"
+msgstr "<i class=\"fas fa-money-bill-alt\"></i> Средняя ставка %s"
+
+#: functions.php:10127
+#, php-format
+msgid ""
+"You need to <a href=\"%s\">pay the listing fees</a> before publishing this "
+"project."
+msgstr ""
+"Перед публикацией проекта необходимо <a href=\"%s\">оплатить листинг</a>."
+
+#: functions.php:10130
+msgid "This project is not live yet. Waiting on admin moderation."
+msgstr "Этот проект еще не запущен. Ожидает модерации администратором."
+
+#: functions.php:10237
+#, php-format
+msgid "<i class=\"far fa-calendar-check\"></i> Due Date: %s"
+msgstr "<i class=\"far fa-calendar-check\"></i> Срок исполнения %s"
+
+#: functions.php:10290
+#, php-format
+msgid "<i class=\"fas fa-money-bill-alt\"></i> My Bid: %s"
+msgstr "<i class=\"fas fa-money-bill-alt\"></i> Моя ставка %s"
+
+#: functions.php:10299
+msgid ""
+"After finishing the work on the project, you can mark it as "
+"<em><strong>delivered</strong></em>"
+msgstr ""
+"После доставки товара, вы можете пометить запрос как <em> <strong>завершено</"
+"strong></em>"
+
+#: functions.php:10325 functions.php:10488
+#: lib/my_account/freelancer-area.php:341 lib/my_account/my_account.php:465
+msgid "Mark Delivered"
+msgstr "Да, доставлено!"
+
+#: functions.php:10330 functions.php:10493
+msgid ""
+"The customer/buyer must deposit the money escrow before the project starts."
+msgstr "Заказчик/покупатель должен внести деньги эскроу до начала проекта."
+
+#: functions.php:10341
+msgid ""
+"The project owner has put the money into escrow for you. Once you mark the "
+"project as delivered the owner will release the money. "
+msgstr ""
+"Покупатель внес предоплату за товар. После того, как вы отметите, что товар "
+"доставлен, депозит будет возвращен."
+
+#: functions.php:10356 functions.php:10504
+#, php-format
+msgid "Awaiting buyer response.<br/>Marked as delivered on: %s"
+msgstr "В ожидании ответа покупателя.<br>Помечено как: %s"
+
+#: functions.php:10649 lib/choose_winner.php:235
+#, php-format
+msgid "Winning Bid: %s"
+msgstr "Выигрышная ставка: %s"
+
+#: functions.php:10708
+#, php-format
+msgid ""
+"Escrow was made. <a href=\"%s\" class=\"btn btn-outline-primary btn-sm\">Go "
+"and release it.</a>"
+msgstr ""
+"Эскроу был создан. <a href=\"%s\" class=\"btn btn-outline-primary btn-sm"
+"\">Иди и освободи его.</a>"
+
+#: functions.php:10804
+#, php-format
+msgid "Winner user: %s"
+msgstr "Пользователь-победитель: %s"
+
+#: functions.php:10838
+#, php-format
+msgid "Paid on: %s"
+msgstr "Оплачено: %s"
+
+#: functions.php:10864
+#, php-format
+msgid "%s hours, %s min, %s sec"
+msgstr "%s час., %s мин., %s сек"
+
+#: functions.php:10867 functions.php:10872
+msgid "days"
+msgstr "дней"
+
+#: functions.php:10867 functions.php:10872
+msgid "day"
+msgstr "день"
+
+#: functions.php:10868
+#, php-format
+msgid "%s %s, %s hours, %s min"
+msgstr "%s %s, %s час., %s мин"
+
+#: functions.php:10873
+#, php-format
+msgid "%s %s, %s hours"
+msgstr "%s %s, %s час."
+
+#: functions.php:11265 lib/advanced_search.php:489 lib/post_new.php:236
+msgid "Select Subcategory"
+msgstr "Выберите подкатегорию"
+
+#: functions.php:11297 functions.php:11352
+msgid "Select Sublocation"
+msgstr "Выбрать дополнительное местоположение"
+
+#: functions.php:12537
+msgid "Single Page Sidebar"
+msgstr "Боковая панель страницы"
+
+#: functions.php:12539
+msgid "The sidebar area of the single blog post"
+msgstr "Область сайдбара одинарного поста блога"
+
+#: functions.php:12547
+msgid "Other Page Sidebar"
+msgstr "Сайдбар другой страницы"
+
+#: functions.php:12549
+msgid "The sidebar area of any other page than the defined ones"
+msgstr "Область сайдбара любой другой страницы, кроме определенных"
+
+#: functions.php:12560
+msgid "Home Page Sidebar - Right"
+msgstr "Сайдбар главной страницы - справа"
+
+#: functions.php:12562
+msgid "The right sidebar area of the homepage"
+msgstr "Правый сайдбар главной страницы"
+
+#: functions.php:12573
+msgid "Home Page Sidebar - Left"
+msgstr "Сайдбар главной страницы - слева"
+
+#: functions.php:12575
+msgid "The left sidebar area of the homepage"
+msgstr "Область левого сайдбара главной страницы"
+
+#: functions.php:12585
+msgid "First Footer Widget Area"
+msgstr "Первая область виджетов в футере"
+
+#: functions.php:12587
+msgid "The first footer widget area"
+msgstr "Это первая область виджетов в футере"
+
+#: functions.php:12596
+msgid "Second Footer Widget Area"
+msgstr "Вторая область виджетов в футере"
+
+#: functions.php:12598
+msgid "The second footer widget area"
+msgstr "Вторая область виджетов в футере"
+
+#: functions.php:12607
+msgid "Third Footer Widget Area"
+msgstr "Третья область виджетов в футере"
+
+#: functions.php:12609
+msgid "The third footer widget area"
+msgstr "Третья область виджетов в футере"
+
+#: functions.php:12618
+msgid "Fourth Footer Widget Area"
+msgstr "Четвертая область виджетов в футере"
+
+#: functions.php:12620
+msgid "The fourth footer widget area"
+msgstr "Четвертая область виджетов в футере"
+
+#: functions.php:12630
+msgid "ProjectTheme - Project Single Sidebar"
+msgstr "Сайдбар отдельной страницы запроса"
+
+#: functions.php:12632
+msgid "The sidebar of the single project page"
+msgstr "Боковая панель страницы одного проекта"
+
+#: functions.php:12641
+msgid "ProjectTheme - HomePage Area"
+msgstr "ProjectTheme - Область домашней страницы"
+
+#: functions.php:12643
+msgid "The sidebar for the main page, just under the slider."
+msgstr "Сайдбар главной страницы под слайдером."
+
+#: functions.php:12652
+msgid "ProjectTheme - Stretch Wide Sidebar"
+msgstr "Широкий сайдбар"
+
+#: functions.php:12654
+msgid "The sidebar sidewide stretched, just under the slider."
+msgstr "Широкая боковая панель растягивается под слайдером."
+
+#: functions.php:13747
+#, php-format
+msgid "Your payment was completed for the project: %s"
+msgstr "Ваш платеж был проведен для запроса: %s"
+
+#: functions.php:13748
+#, php-format
+msgid ""
+"You have paid for the project <a href=\"%s\">%s</a> the amount of: %s %s to "
+"user:\n"
+"\t<b>%s</b>"
+msgstr ""
+"Вы заплатили за проект <a href=\"%s\">%s</a> сумма: %s %s пользователю:\n"
+"\t<b>%s</b>"
+
+#: functions.php:13754 functions.php:13768
+#, php-format
+msgid "Details for closed Project: %s"
+msgstr "Детали закрытого запроса: %s"
+
+#: functions.php:13755 functions.php:13769
+#, php-format
+msgid ""
+"The project <a href=\"%s\">%s</a> was just closed. Here is the user email "
+"for the other party: %s"
+msgstr ""
+"Запрос <a href=\"%s\">\"%s\"</a> был закрыт. Письмо для второй стороны: %s"
+
+#: functions.php:13762
+#, php-format
+msgid "Your have received payment for the project: %s"
+msgstr "Ваш получили оплату по запросу: %s"
+
+#: functions.php:13763
+#, php-format
+msgid ""
+"You have been just paid for the project <a href=\"%s\">%s</a> the amount of: "
+"%s %s from user:\n"
+"\t<b>%s</b>"
+msgstr ""
+"Вам только что заплатили за проект <a href=\"%s\">%s</a> сумма: %s %s от "
+"пользователя:\n"
+"\t<b>%s</b>"
+
+#: functions.php:13782
+#, php-format
+msgid "Payment sent to <a href=\"%s\">%s</a> for project <a href=\"%s\">%s</a>"
+msgstr ""
+"Платеж отправлен <a href=\"%s\">%s</a> по запросу <a href=\"%s\">%s</a>"
+
+#: functions.php:13802
+#, php-format
+msgid ""
+"Payment received from <a href=\"%s\">%s</a> for project <a href=\"%s\">%s</a>"
+msgstr ""
+"Платеж получен от <a href=\"%s\">\"%s\"</a> по запросу <a href=\"%s\">\"%s"
+"\"</a>"
+
+#: functions.php:13808
+#, php-format
+msgid "Payment fee for project <a href=\"%s\">%s</a>"
+msgstr "Оплата за предложение по запросу <a href=\"%s\">%s</a>"
+
+#: functions.php:14012
+#, php-format
+msgid ""
+"In order to benefit of the full experience of our theme, we recommend "
+"installing <strong><a href=\"%s\">WP PageNavi Plugin</a></strong>. You will "
+"need it for pagination."
+msgstr ""
+"In order to benefit of the full experience of our theme, we recommend "
+"installing <strong><a href=\"%s\">WP PageNavi Plugin</a></strong>. You will "
+"need it for pagination."
+
+#: functions.php:14036
+#, php-format
+msgid ""
+"In order to benefit of the full experience of our theme, we recommend "
+"installing <strong><a href=\"%s\">the Breadcrumb Plugin</a></strong>."
+msgstr ""
+"In order to benefit of the full experience of our theme, we recommend "
+"installing <strong><a href=\"%s\">the Breadcrumb Plugin</a></strong>."
+
+#: header-account.php:169 lib/my_account/aside-menu.php:174
+#: lib/my_account/personal_information.php:48
+msgid "Account Settings"
+msgstr "Настройки аккаунта"
+
+#: header-account.php:201
+#, php-format
+msgid "<span>Hello,</span> <span class=\"text-dark\">%s</span>"
+msgstr "<span>Здравствуйте,</span> <span class=\"text-dark\">%s</span>"
+
+#: header-account.php:213
+msgid "WP-Admin"
+msgstr "WP-Admin"
+
+#: header-account.php:217
+msgid "My Account"
+msgstr "Мой аккаунт"
+
+#: header-account.php:219 lib/post_new.php:1466
+msgid "Messaging"
+msgstr "Сообщения"
+
+#: header-account.php:221
+msgid "Account Setting"
+msgstr "Настройка аккаунта"
+
+#: header-account.php:223 lib/my_account/aside-menu.php:239
+msgid "Logout"
+msgstr "Выйти"
+
+#: header-account.php:225
+msgid "View Profile"
+msgstr "Посмотреть профиль"
+
+#: header.php:226
+msgid "Account Menu"
+msgstr "Меню аккаунта"
+
+#: header.php:255 header.php:268
+msgid "Post Project"
+msgstr "Опубликовать запрос не утвержден Email (admin)"
+
+#: latest-projects.php:14
+msgid "Latest Projects"
+msgstr "Последние проекты"
+
+#: latest-projects.php:44 lib/widgets/ending-soonest.php:54
+#: lib/widgets/featured-projects.php:56 lib/widgets/how-it-works.php:89
+#: lib/widgets/latest-posted-projects.php:55
+#: lib/widgets/latest-projects-big.php:103
+#: lib/widgets/latest-projects-small.php:76
+#: lib/widgets/most-visited-projects.php:54
+msgid "Sorry, there are no posted projects yet."
+msgstr "К сожалению, еще нет размещенных заказов."
+
+#: lib/activate_user.php:30
+msgid "Activate your account"
+msgstr "Активируйте ваш аккаунт"
+
+#: lib/activate_user.php:55
+msgid "The key you are trying to use is not valid."
+msgstr "Ключ, который вы пытаетесь использовать, недействителен."
+
+#: lib/activate_user.php:63
+#, php-format
+msgid "Your account was activated. You can <a href=\"%s\">login here</a>."
+msgstr ""
+"Ваша учетная запись была активирована. Вы можете <a href=\"%s\">войти в "
+"систему здесь</a>."
+
+#: lib/admin_menu.php:93
+msgid "Payment received from site admin"
+msgstr "Оплата получена от администратора сайта"
+
+#: lib/admin_menu.php:107
+msgid "Payment subtracted by site admin"
+msgstr "Оплата вычтена администратором???"
+
+#: lib/admin_menu.php:147
+msgid "Site Overview"
+msgstr "Обзор сайта"
+
+#: lib/admin_menu.php:148 lib/admin_menu.php:149
+msgid "General Options"
+msgstr "Общие настройки"
+
+#: lib/admin_menu.php:149
+msgid "License Key"
+msgstr "Лицензионный ключ"
+
+#: lib/admin_menu.php:150 lib/admin_menu.php:6314 lib/admin_menu.php:6599
+msgid "Email Settings"
+msgstr "Настройки электронной почты"
+
+#: lib/admin_menu.php:151 lib/admin_menu.php:8503
+msgid "Pricing Settings"
+msgstr "Настройки цен"
+
+#: lib/admin_menu.php:152
+msgid "Custom Pricing"
+msgstr "Доп. цены"
+
+#: lib/admin_menu.php:153
+msgid "Custom Fields"
+msgstr "Настраиваемые поля"
+
+#: lib/admin_menu.php:154
+msgid "User Fields"
+msgstr "Поля пользователей"
+
+#: lib/admin_menu.php:155
+msgid "Images Options"
+msgstr "Опции фотографий"
+
+#: lib/admin_menu.php:156 lib/admin_menu.php:598
+msgid "Category Images"
+msgstr "Изображения категорий"
+
+#: lib/admin_menu.php:157
+msgid "Advertising"
+msgstr "Реклама"
+
+#: lib/admin_menu.php:158 lib/admin_menu.php:5461
+msgid "Layout Settings"
+msgstr "Настройки макета"
+
+#: lib/admin_menu.php:161
+msgid "Payment Gateways"
+msgstr "Платежные шлюзы"
+
+#: lib/admin_menu.php:166
+msgid "Withdrawals"
+msgstr "Выводы средств"
+
+#: lib/admin_menu.php:167
+msgid "Escrows"
+msgstr "Эскроу"
+
+#: lib/admin_menu.php:168
+msgid "User Balances"
+msgstr "Балансы пользователей"
+
+#: lib/admin_menu.php:169 single-project.php:445
+msgid "User Reviews"
+msgstr "Отзывы пользователей"
+
+#: lib/admin_menu.php:170
+msgid "Add Review"
+msgstr "Добавить отзыв"
+
+#: lib/admin_menu.php:171
+msgid "User Types"
+msgstr "Типы пользователей"
+
+#: lib/admin_menu.php:172 lib/my_account/private_messages.php:63
+msgid "Private Messages"
+msgstr "Приватные сообщения"
+
+#: lib/admin_menu.php:173 lib/admin_menu.php:205 lib/admin_menu.php:275
+msgid "Workspace Chats"
+msgstr "Чаты на рабочем месте"
+
+#: lib/admin_menu.php:174
+msgid "Orders"
+msgstr "Заказы"
+
+#: lib/admin_menu.php:176
+msgid "InSite Transactions"
+msgstr "Внутренние транзакции"
+
+#: lib/admin_menu.php:177 lib/admin_menu.php:1301
+msgid "Tracking Tools"
+msgstr "Инструменты отслеживания"
+
+#: lib/admin_menu.php:178
+msgid "Users"
+msgstr "Пользователи"
+
+#: lib/admin_menu.php:180
+msgid "Theme Info"
+msgstr "Информация о теме"
+
+#: lib/admin_menu.php:223 lib/admin_menu.php:534 lib/admin_menu.php:905
+#: lib/admin_menu.php:916 lib/admin_menu.php:924 lib/admin_menu.php:1316
+#: lib/admin_menu.php:1324 lib/admin_menu.php:5245 lib/admin_menu.php:5253
+#: lib/admin_menu.php:5261 lib/admin_menu.php:5269 lib/admin_menu.php:5278
+#: lib/admin_menu.php:5484 lib/admin_menu.php:5491 lib/admin_menu.php:5499
+#: lib/admin_menu.php:5513 lib/admin_menu.php:5533 lib/admin_menu.php:5565
+#: lib/admin_menu.php:6165 lib/admin_menu.php:6173 lib/admin_menu.php:6181
+#: lib/admin_menu.php:6189 lib/admin_menu.php:6332 lib/admin_menu.php:6340
+#: lib/admin_menu.php:6348 lib/admin_menu.php:6357 lib/admin_menu.php:6366
+#: lib/admin_menu.php:6375 lib/admin_menu.php:6384 lib/admin_menu.php:6393
+#: lib/admin_menu.php:6402 lib/admin_menu.php:6411 lib/admin_menu.php:6420
+#: lib/admin_menu.php:6431 lib/admin_menu.php:6440 lib/admin_menu.php:6449
+#: lib/admin_menu.php:6458 lib/admin_menu.php:6467 lib/admin_menu.php:6476
+#: lib/admin_menu.php:6485 lib/admin_menu.php:6496 lib/admin_menu.php:6505
+#: lib/admin_menu.php:6514 lib/admin_menu.php:6523 lib/admin_menu.php:6533
+#: lib/admin_menu.php:6542 lib/admin_menu.php:6554 lib/admin_menu.php:6565
+#: lib/admin_menu.php:6576 lib/admin_menu.php:6586 lib/admin_menu.php:8540
+#: lib/admin_menu.php:8564 lib/admin_menu.php:8598
+msgid "Settings saved!"
+msgstr "Настройки сохранены!"
+
+#: lib/admin_menu.php:249 lib/admin_menu.php:3068
+msgid "The message has been deleted."
+msgstr "Сообщение было удалено."
+
+#: lib/admin_menu.php:259 lib/admin_menu.php:3078
+msgid "Are you sure you want to delete this message?"
+msgstr "Вы уверены, что хотите удалить это сообщение?"
+
+#: lib/admin_menu.php:260 lib/admin_menu.php:3079
+msgid "Yes, Delete!"
+msgstr "Да, удалить!"
+
+#: lib/admin_menu.php:305 lib/admin_menu.php:3125
+msgid "The message has been approved."
+msgstr "Сообщение было одобрено."
+
+#: lib/admin_menu.php:315 lib/admin_menu.php:3135
+msgid "Are you sure you want to approve this message?"
+msgstr "Вы уверены, что хотите одобрить это сообщение?"
+
+#: lib/admin_menu.php:316 lib/admin_menu.php:3136
+msgid "Yes, Approve!"
+msgstr "Да, одобряю!"
+
+#: lib/admin_menu.php:378 lib/admin_menu.php:3200 lib/admin_menu.php:3331
+msgid "Sender"
+msgstr "Отправитель"
+
+#: lib/admin_menu.php:379 lib/admin_menu.php:3201 lib/admin_menu.php:3332
+msgid "Receiver"
+msgstr "Получатель"
+
+#: lib/admin_menu.php:381 lib/admin_menu.php:3203 lib/admin_menu.php:3334
+msgid "Sent On"
+msgstr "Отправлено"
+
+#: lib/admin_menu.php:471
+msgid "There are no workspace messages."
+msgstr "Сообщения о рабочем пространстве отсутствуют."
+
+#: lib/admin_menu.php:517
+msgid "License Options"
+msgstr "Варианты лицензии"
+
+#: lib/admin_menu.php:542
+msgid "License Settings"
+msgstr "Настройки лицензии"
+
+#: lib/admin_menu.php:564
+msgid "License key:"
+msgstr "Лицензионный ключ:"
+
+#: lib/admin_menu.php:572 lib/admin_menu.php:1197 lib/admin_menu.php:1231
+#: lib/admin_menu.php:1272 lib/admin_menu.php:1359 lib/admin_menu.php:1389
+#: lib/admin_menu.php:5366 lib/admin_menu.php:5397 lib/admin_menu.php:5433
+#: lib/admin_menu.php:5725 lib/admin_menu.php:5859 lib/admin_menu.php:5986
+#: lib/admin_menu.php:6057 lib/admin_menu.php:6129 lib/admin_menu.php:6218
+#: lib/admin_menu.php:6243 lib/admin_menu.php:6267 lib/admin_menu.php:6291
+#: lib/admin_menu.php:6713 lib/admin_menu.php:6778 lib/admin_menu.php:6843
+#: lib/admin_menu.php:6910 lib/admin_menu.php:6973 lib/admin_menu.php:7035
+#: lib/admin_menu.php:7101 lib/admin_menu.php:7165 lib/admin_menu.php:7228
+#: lib/admin_menu.php:7293 lib/admin_menu.php:7357 lib/admin_menu.php:7422
+#: lib/admin_menu.php:7485 lib/admin_menu.php:7552 lib/admin_menu.php:7619
+#: lib/admin_menu.php:7683 lib/admin_menu.php:7748 lib/admin_menu.php:7814
+#: lib/admin_menu.php:7879 lib/admin_menu.php:7943 lib/admin_menu.php:8007
+#: lib/admin_menu.php:8072 lib/admin_menu.php:8135 lib/admin_menu.php:8198
+#: lib/admin_menu.php:8262 lib/admin_menu.php:8300 lib/admin_menu.php:8355
+#: lib/admin_menu.php:8408 lib/admin_menu.php:8688 lib/admin_menu.php:8723
+#: lib/admin_menu.php:8909
+msgid "Save Options"
+msgstr "Сохранить настройки"
+
+#: lib/admin_menu.php:660
+msgid "Set Images"
+msgstr "Добавить изображение"
+
+#: lib/admin_menu.php:681
+msgid "Category Name"
+msgstr "Название категории"
+
+#: lib/admin_menu.php:682
+msgid "Upload Picture"
+msgstr "Загрузить изображение"
+
+#: lib/admin_menu.php:683
+msgid "Current Picture"
+msgstr "Текущее изображение"
+
+#: lib/admin_menu.php:763
+msgid "Select/Add Your Image"
+msgstr "Выберите/добавьте изображение"
+
+#: lib/admin_menu.php:770
+msgid "No image attached."
+msgstr "Изображение не прилагается."
+
+#: lib/admin_menu.php:955
+msgid "Google API Key:"
+msgstr "Google API Ключ:"
+
+#: lib/admin_menu.php:963
+msgid "Enable Multiple categories when posting a project:"
+msgstr "Включить множественные категории при размещении проекта:"
+
+#: lib/admin_menu.php:970
+msgid "Enable User Separation:"
+msgstr "Включить другое отслеживание:"
+
+#: lib/admin_menu.php:977
+msgid "Enable Project Files:"
+msgstr "Файлы проекта"
+
+#: lib/admin_menu.php:984
+msgid "Show Subitems on categories and locations pages:"
+msgstr "Показывать подпункты на страницах категорий и мест:"
+
+#: lib/admin_menu.php:991
+msgid "Allow bidders to contact project owner before placing a bid:"
+msgstr ""
+"Позволить участникам торгов связаться с владельцем проекта до размещения "
+"предложения:"
+
+#: lib/admin_menu.php:998
+msgid "Enable project message board:"
+msgstr "Обсуждение заказа"
+
+#: lib/admin_menu.php:1014
+msgid "Enable Credits Direct Payment:"
+msgstr "Шлюзы рынка - прямые платежи"
+
+#: lib/admin_menu.php:1021
+msgid "Enable Featured Option:"
+msgstr "Активировать вход через Facebook:"
+
+#: lib/admin_menu.php:1027
+msgid "Enable Sealed Bidding Option:"
+msgstr "Сбор за закрытый запрос:"
+
+#: lib/admin_menu.php:1034
+msgid "Enable Hide from search engines Option:"
+msgstr "Скрыть запрос от поисковых машин"
+
+#: lib/admin_menu.php:1046
+msgid "Moderate Private Messages:"
+msgstr "Приватные сообщения"
+
+#: lib/admin_menu.php:1053
+msgid "Enable Project Location:"
+msgstr "Завершить размещение заказа"
+
+#: lib/admin_menu.php:1060
+msgid "Enable Map in Project Page:"
+msgstr "Включить карту на странице проекта:"
+
+#: lib/admin_menu.php:1066
+msgid "Show views in project page:"
+msgstr "На страницу проекта"
+
+#: lib/admin_menu.php:1073
+msgid "Admin approves each project:"
+msgstr "Администратор утверждает каждый проект:"
+
+#: lib/admin_menu.php:1081
+msgid "Enable user activation link in email:"
+msgstr "Включите ссылку активации пользователя в электронной почте:"
+
+#: lib/admin_menu.php:1089
+msgid "Enable Blog:"
+msgstr "Включить блог:"
+
+#: lib/admin_menu.php:1096
+msgid "Enable Big Main Menu:"
+msgstr "Включить этот E-mail:"
+
+#: lib/admin_menu.php:1104
+msgid "Enable Slider on Front Page:"
+msgstr "Включите слайдер на первой странице:"
+
+#: lib/admin_menu.php:1111
+msgid "Enable Stretch Area (front page):"
+msgstr "Включить область растяжения (первая страница):"
+
+#: lib/admin_menu.php:1118
+msgid "Project Listing Max Period (simple project):"
+msgstr "Листинг проекта Максимальный период (простой проект):"
+
+#: lib/admin_menu.php:1125
+msgid "Project Listing Max Period (featured project):"
+msgstr "Листинг проекта Максимальный период (проект-персонаж):"
+
+#: lib/admin_menu.php:1132
+msgid "Category slug in links:"
+msgstr "Строка категории в ссылках:"
+
+#: lib/admin_menu.php:1139
+msgid "Location slug in links:"
+msgstr "Местонахождения:"
+
+#: lib/admin_menu.php:1148
+msgid "Projects slug in links:"
+msgstr "Файлы проекта"
+
+#: lib/admin_menu.php:1155
+msgid "Custom CSS:"
+msgstr "Пользовательский CSS:"
+
+#: lib/admin_menu.php:1166
+msgid "Save these Settings!"
+msgstr "Сохранить настройки"
+
+#: lib/admin_menu.php:1182
+msgid "Filter Email Addresses (private messages):"
+msgstr "Фильтр E-mail адресов (личные сообщения):"
+
+#: lib/admin_menu.php:1188
+msgid "Filter URLs (private messages):"
+msgstr "Фильтр URL-адресов (личные сообщения):"
+
+#: lib/admin_menu.php:1212
+msgid "Enable Facebook Login:"
+msgstr "Активировать вход через Facebook:"
+
+#: lib/admin_menu.php:1218
+msgid "Facebook App ID:"
+msgstr "Facebook App ID:"
+
+#: lib/admin_menu.php:1224
+msgid "Facebook Secret Key:"
+msgstr "Секретный ключ Facebook:"
+
+#: lib/admin_menu.php:1244
+msgid "Enable Twitter Login:"
+msgstr "Включить Twitter авторизацию:"
+
+#: lib/admin_menu.php:1250
+msgid "Twitter Consumer Key:"
+msgstr "Ключ клиента Twitter:"
+
+#: lib/admin_menu.php:1256
+msgid "Twitter Consumer Secret:"
+msgstr "Секрет клиента Twitter:"
+
+#: lib/admin_menu.php:1263
+msgid "Callback URL:"
+msgstr "URL обратного вызова:"
+
+#: lib/admin_menu.php:1334
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: lib/admin_menu.php:1335
+msgid "Other Tracking Tools"
+msgstr "Другие средства отслеживания"
+
+#: lib/admin_menu.php:1345
+msgid "Enable Google Analytics:"
+msgstr "Включить Google Analytics:"
+
+#: lib/admin_menu.php:1351
+msgid "Analytics Code:"
+msgstr "Код аналитики:"
+
+#: lib/admin_menu.php:1375
+msgid "Enable Other Tracking:"
+msgstr "Включить другое отслеживание:"
+
+#: lib/admin_menu.php:1381
+msgid "Other Tracking Code:"
+msgstr "Другой код отслеживания:"
+
+#: lib/admin_menu.php:1442
+msgid "All Users"
+msgstr "Все пользователи"
+
+#: lib/admin_menu.php:1443
+msgid "Buyers/Customers"
+msgstr "Покупатели/клиенты"
+
+#: lib/admin_menu.php:1493 lib/admin_menu.php:1635 lib/admin_menu.php:1778
+msgid "Name/Username"
+msgstr "Имя/Имя пользователя"
+
+#: lib/admin_menu.php:1494 lib/admin_menu.php:1636 lib/admin_menu.php:1779
+#: lib/admin_menu.php:3665 lib/admin_menu.php:3745
+#: lib/my_account/feedbacks.php:224 lib/user-feedback.php:199
+#: lib/user-profile.php:502
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: lib/admin_menu.php:1495 lib/admin_menu.php:1637 lib/admin_menu.php:1780
+msgid "User Role"
+msgstr "Роль пользователя"
+
+#: lib/admin_menu.php:1581 lib/admin_menu.php:1723 lib/admin_menu.php:1866
+#: lib/provider_search.php:403 lib/widgets/freelancers-widget.php:100
+msgid "No service providers found for this query."
+msgstr "Исполнителя не найдено для этого заказа."
+
+#: lib/admin_menu.php:1906
+msgid "Main Information"
+msgstr "Основная информация"
+
+#: lib/admin_menu.php:1907
+msgid "From SiteMile Blog"
+msgstr "Из блога SiteMile"
+
+#: lib/admin_menu.php:1916
+msgid "ProjectTheme Version:"
+msgstr "Версия ProjectTheme:"
+
+#: lib/admin_menu.php:1921
+msgid "ProjectTheme Latest Release:"
+msgstr "ProjectTheme Последняя версия:"
+
+#: lib/admin_menu.php:1926
+msgid "WordPress Version:"
+msgstr "Версия WordPress:"
+
+#: lib/admin_menu.php:1932
+msgid "Go to SiteMile official page:"
+msgstr "Перейти к официальной странице SiteMile:"
+
+#: lib/admin_menu.php:1937
+msgid "Go to Project official page:"
+msgstr "Перейдите на официальную страницу проекта:"
+
+#: lib/admin_menu.php:1942
+msgid "Go to support forums:"
+msgstr "Перейти к форуму поддержки:"
+
+#: lib/admin_menu.php:1947
+msgid "Contact SiteMile Team:"
+msgstr "Контакты команды SiteMile:"
+
+#: lib/admin_menu.php:1952
+msgid "Like us on Facebook:"
+msgstr "Лайкни нас в Facebook:"
+
+#: lib/admin_menu.php:1958
+msgid "Follow us on Twitter:"
+msgstr "Следите за нами в Twitter:"
+
+#: lib/admin_menu.php:2239
+msgid "There are no outstanding projects yet."
+msgstr "Текущих запросов еще нет."
+
+#: lib/admin_menu.php:2384
+msgid "There are no delivered projects yet."
+msgstr "Пока нет ни одного реализованного проекта."
+
+#: lib/admin_menu.php:2532
+msgid "There are no completed projects yet."
+msgstr "Пока нет ни одного завершенного проекта."
+
+#: lib/admin_menu.php:2684
+msgid "There are no paid projects yet."
+msgstr "Оплаченных проектов пока нет."
+
+#: lib/admin_menu.php:3094
+msgid "All Private Messages"
+msgstr "Все личные сообщения"
+
+#: lib/admin_menu.php:3095 lib/admin_menu.php:3304 lib/admin_menu.php:3645
+#: lib/admin_menu.php:3719 lib/admin_menu.php:4946 lib/admin_menu.php:5033
+#: lib/admin_menu.php:5121
+msgid "Search User"
+msgstr "Найти пользователя"
+
+#: lib/admin_menu.php:3202 lib/admin_menu.php:3333
+#: lib/my_account/private_messages.php:283
+#: lib/my_account/private_messages.php:409
+msgid "Subject"
+msgstr "Тема"
+
+#: lib/admin_menu.php:3232 lib/admin_menu.php:3367
+msgid "Approve"
+msgstr "Одобрить"
+
+#: lib/admin_menu.php:3287
+msgid "There are no private messages."
+msgstr "Нет никаких личных сообщений."
+
+#: lib/admin_menu.php:3305 lib/admin_menu.php:3720 lib/admin_menu.php:4947
+#: lib/admin_menu.php:5034 lib/admin_menu.php:5122
+#: lib/widgets/new-frontpage-slider.php:166
+msgid "Search"
+msgstr "Поиск"
+
+#: lib/admin_menu.php:3390 lib/admin_menu.php:5013 lib/admin_menu.php:5101
+#: lib/admin_menu.php:5187
+msgid "There are no results for your search."
+msgstr "По вашему запросу ничего не найдено"
+
+#: lib/admin_menu.php:3644
+msgid "All User Reviews"
+msgstr "Все отзывы пользователя"
+
+#: lib/admin_menu.php:3663 lib/admin_menu.php:3743 lib/admin_menu.php:6624
+msgid "Rated User"
+msgstr "Поставить оценку"
+
+#: lib/admin_menu.php:3666 lib/admin_menu.php:3746 lib/bidding-panel.php:454
+#: lib/my_account/personal_information.php:435
+#: lib/my_account/repost_project.php:587 lib/post_new.php:138
+#: lib/user-profile.php:178 single-project.php:416
+msgid "Description"
+msgstr "Этот пользователь не добавил описание"
+
+#: lib/admin_menu.php:3667 lib/admin_menu.php:3747
+msgid "Awarded On"
+msgstr "Награжден - включено"
+
+#: lib/admin_menu.php:3705 lib/admin_menu.php:3785
+msgid "There are no user feedback."
+msgstr "Отзывы пользователей отсутствуют"
+
+#: lib/admin_menu.php:4441
+#, php-format
+msgid "Payment received from %s"
+msgstr "Оплата получена от %s"
+
+#: lib/admin_menu.php:4445 lib/my_account/finances.php:450
+#, php-format
+msgid "Payment fee for project %s"
+msgstr "Плата за проект %s"
+
+#: lib/admin_menu.php:4455 lib/admin_menu.php:4468
+#: lib/my_account/finances.php:459 lib/my_account/finances.php:471
+msgid "Money Escrow Completed"
+msgstr "Эскроу денежных средств завершен"
+
+#: lib/admin_menu.php:4456 lib/my_account/finances.php:460
+#, php-format
+msgid "You have released the escrow of: %s"
+msgstr "Разблокирован депозит: %s"
+
+#: lib/admin_menu.php:4469 lib/my_account/finances.php:472
+#, php-format
+msgid "You have received the amount of: %s"
+msgstr "Вы получили сумму: %s"
+
+#: lib/admin_menu.php:4480
+msgid "Escrow completed!"
+msgstr "Депозит внесен!"
+
+#: lib/admin_menu.php:4509
+msgid "Escrow closed!"
+msgstr "Депозит закрыт!"
+
+#: lib/admin_menu.php:4726 lib/admin_menu.php:4727
+#, php-format
+msgid "Your withdrawal has been completed: %s"
+msgstr "Ваш вывод средств завершен: %s"
+
+#: lib/admin_menu.php:4732
+#, php-format
+msgid "Withdraw to %s to email: %s"
+msgstr "Отозвать на %s по электронной почте: %s"
+
+#: lib/admin_menu.php:4742
+msgid "Unresolved Requests"
+msgstr "Неразрешенные запросы"
+
+#: lib/admin_menu.php:4743
+msgid "Resolved Requests"
+msgstr "Решенные запросы"
+
+#: lib/admin_menu.php:4744
+msgid "Rejected Requests"
+msgstr "Отклоненные запросы"
+
+#: lib/admin_menu.php:4745
+msgid "Search Unresolved"
+msgstr "Поиск нерешенных"
+
+#: lib/admin_menu.php:4746
+msgid "Search Solved"
+msgstr "Поиск решенных"
+
+#: lib/admin_menu.php:4747
+msgid "Search Rejected"
+msgstr "Поиск отклоненных"
+
+#: lib/admin_menu.php:4764 lib/admin_menu.php:4828 lib/admin_menu.php:4974
+#: lib/admin_menu.php:5062 lib/admin_menu.php:5150
+#: lib/my_account/finances.php:858
+msgid "Method"
+msgstr "Метод"
+
+#: lib/admin_menu.php:4765 lib/admin_menu.php:4829 lib/admin_menu.php:4893
+#: lib/admin_menu.php:4975 lib/admin_menu.php:5063 lib/admin_menu.php:5151
+#: lib/my_account/finances.php:859
+msgid "Details"
+msgstr "Детали"
+
+#: lib/admin_menu.php:4766 lib/admin_menu.php:4830 lib/admin_menu.php:4894
+#: lib/admin_menu.php:4976 lib/admin_menu.php:5064 lib/admin_menu.php:5152
+msgid "Date Requested"
+msgstr "Дата подачи заявки"
+
+#: lib/admin_menu.php:4767 lib/admin_menu.php:4831 lib/admin_menu.php:4895
+#: lib/admin_menu.php:4977 lib/admin_menu.php:5065 lib/admin_menu.php:5153
+#: lib/my_account/finances.php:228 lib/my_account/finances.php:294
+#: lib/my_account/finances.php:857 lib/my_account/finances.php:1523
+#: lib/my_account/finances.php:1600 lib/my_account/finances.php:1684
+msgid "Amount"
+msgstr "Сумма"
+
+#: lib/admin_menu.php:4790 lib/admin_menu.php:4856 lib/admin_menu.php:5000
+#: lib/admin_menu.php:5088
+msgid "Make Complete"
+msgstr "Завершить"
+
+#: lib/admin_menu.php:4791 lib/admin_menu.php:4857 lib/admin_menu.php:5001
+#: lib/admin_menu.php:5089
+msgid "Deny Request"
+msgstr "Отклонить запрос"
+
+#: lib/admin_menu.php:4791 lib/admin_menu.php:4857 lib/admin_menu.php:5001
+#: lib/admin_menu.php:5089 lib/my_account/buyer-area.php:220
+#: lib/my_account/freelancer-area.php:182
+msgid "Completed"
+msgstr "Завершено"
+
+#: lib/admin_menu.php:4791 lib/admin_menu.php:4857 lib/admin_menu.php:4917
+#: lib/admin_menu.php:5001 lib/admin_menu.php:5089
+msgid "Rejected"
+msgstr "Отклонено"
+
+#: lib/admin_menu.php:4803
+msgid "There are no unresolved withdrawal requests."
+msgstr "Нет неразрешенных запросов на вывод средств"
+
+#: lib/admin_menu.php:4832 lib/admin_menu.php:4896
+msgid "Date Released"
+msgstr "Дата выхода"
+
+#: lib/admin_menu.php:4869
+msgid "There are no resolved withdrawal requests."
+msgstr "Нет разрешенных запросов на вывод средств"
+
+#: lib/admin_menu.php:4930
+msgid "There are no rejected withdrawal requests."
+msgstr "Нет отклоненных запросов на вывод средств."
+
+#: lib/admin_menu.php:5292
+msgid "Bank Payment(offline)"
+msgstr "Банковский перевод (оффлайн)"
+
+#: lib/admin_menu.php:5303 lib/admin_menu.php:5382 lib/admin_menu.php:5416
+msgid "Enable:"
+msgstr "Включить:"
+
+#: lib/admin_menu.php:5309
+msgid "PayPal Enable Sandbox:"
+msgstr "Включить тестовый режим PayPal:"
+
+#: lib/admin_menu.php:5315
+msgid "PayPal Email Address:"
+msgstr "E-mail адрес PayPal:"
+
+#: lib/admin_menu.php:5321
+msgid "Enable PayPal Adaptive:"
+msgstr "Включить PayPal Adaptive:"
+
+#: lib/admin_menu.php:5327
+msgid "Signature:"
+msgstr "Подпись:"
+
+#: lib/admin_menu.php:5332
+msgid "API Password:"
+msgstr "API пароль:"
+
+#: lib/admin_menu.php:5337
+msgid "API User:"
+msgstr "API пользователя:"
+
+#: lib/admin_menu.php:5342
+msgid "Application ID:"
+msgstr "ID приложения:"
+
+#: lib/admin_menu.php:5388
+msgid "MoneyBookers Email:"
+msgstr "MoneyBookers Email:"
+
+#: lib/admin_menu.php:5422
+msgid "Your Bank Details:"
+msgstr "Ваши банковские реквизиты:"
+
+#: lib/admin_menu.php:5467
+msgid "Left"
+msgstr "Слева"
+
+#: lib/admin_menu.php:5467
+msgid "Center"
+msgstr "Центр"
+
+#: lib/admin_menu.php:5467
+msgid "Right"
+msgstr "Справа"
+
+#: lib/admin_menu.php:5579
+msgid "Header"
+msgstr "Заголовок"
+
+#: lib/admin_menu.php:5580
+msgid "HomePage Slider"
+msgstr "Слайдер главной страницы"
+
+#: lib/admin_menu.php:5581
+msgid "Page Templates"
+msgstr "Шаблоны страницы"
+
+#: lib/admin_menu.php:5582
+msgid "Footer"
+msgstr "Подвал"
+
+#: lib/admin_menu.php:5583
+msgid "Change Colors & Styles"
+msgstr "Изменение цветов и стилей"
+
+#: lib/admin_menu.php:5597
+msgid "Margin Top Content:"
+msgstr "Маржа Верхнее содержимое:"
+
+#: lib/admin_menu.php:5607
+msgid "Align slider:"
+msgstr "Выровняйте ползунок:"
+
+#: lib/admin_menu.php:5617
+msgid "Main Tag Line:"
+msgstr "Основная линия тега:"
+
+#: lib/admin_menu.php:5624
+msgid "Font size (main tag line):"
+msgstr "Размер шрифта (основная строка тега):"
+
+#: lib/admin_menu.php:5631
+msgid "Color (main tag line):"
+msgstr "Цвет (основная линия тега):"
+
+#: lib/admin_menu.php:5641
+msgid "Secondary Tag Line:"
+msgstr "Вторичная линия тега:"
+
+#: lib/admin_menu.php:5649
+msgid "Font size (second tag line):"
+msgstr "Размер шрифта (вторая строка тега):"
+
+#: lib/admin_menu.php:5655
+msgid "Color (secondary tag line):"
+msgstr "Цвет (вторичная линия тега):"
+
+#: lib/admin_menu.php:5664
+msgid "Button1 Caption:"
+msgstr "Кнопка1 Надпись:"
+
+#: lib/admin_menu.php:5670
+msgid "Button1 Link:"
+msgstr "Кнопка1 Ссылка:"
+
+#: lib/admin_menu.php:5679
+msgid "Button2 Caption:"
+msgstr "Кнопка2 Надпись:"
+
+#: lib/admin_menu.php:5686
+msgid "Button2 Link:"
+msgstr "Кнопка2 Ссылка:"
+
+#: lib/admin_menu.php:5694
+msgid "Enable Search Bar:"
+msgstr "Включить панель поиска:"
+
+#: lib/admin_menu.php:5715
+#, php-format
+msgid "Slider Image #%s:"
+msgstr "Изображение слайдера #%s:"
+
+#: lib/admin_menu.php:5744
+msgid "Choose Font:"
+msgstr "Выберите шрифт:"
+
+#: lib/admin_menu.php:5774
+msgid "Font:"
+msgstr "Шрифт:"
+
+#: lib/admin_menu.php:5782
+msgid "Color for background:"
+msgstr "Цвет фона:"
+
+#: lib/admin_menu.php:5816
+msgid "Color for footer:"
+msgstr "Цвет футера:"
+
+#: lib/admin_menu.php:5823
+msgid "Color for top links:"
+msgstr "Цвет верхних ссылок:"
+
+#: lib/admin_menu.php:5830
+msgid "Color background of post boxes:"
+msgstr "Цветной фон почтовых ящиков:"
+
+#: lib/admin_menu.php:5838
+msgid "Primary Color:"
+msgstr "Основной цвет:"
+
+#: lib/admin_menu.php:5845
+msgid "Primary Color (hover):"
+msgstr "Основной цвет (наведение):"
+
+#: lib/admin_menu.php:5882
+msgid "Eg: http://your-site-url.com/images/template-url.jpg"
+msgstr "Например: http://your-site-url.com/images/template-url.jpg"
+
+#: lib/admin_menu.php:5883
+msgid "PT Page Template #1 header background: (image)"
+msgstr "PT Page Template #1 фон заголовка: (изображение)"
+
+#: lib/admin_menu.php:5891 lib/admin_menu.php:5900
+msgid "Eg: f2f2f2 hex code"
+msgstr "Например: f2f2f2 шестнадцатеричный код"
+
+#: lib/admin_menu.php:5892
+msgid "PT Page Template #1 header background (solid):"
+msgstr "Фон заголовка шаблона PT Page Template #1 (сплошной):"
+
+#: lib/admin_menu.php:5901
+msgid "PT Page Template #1 header text color (solid):"
+msgstr "Цвет текста заголовка шаблона PT Page Template #1 (сплошной):"
+
+#: lib/admin_menu.php:5910 lib/admin_menu.php:5919 lib/admin_menu.php:5929
+msgid "Eg: 35"
+msgstr "Например: 35"
+
+#: lib/admin_menu.php:5911
+msgid "Page Header Title font size:"
+msgstr "Размер шрифта заголовка заголовка страницы:"
+
+#: lib/admin_menu.php:5920
+msgid "Page Header Title Margin Top/Bottom:"
+msgstr "Заголовок страницы Отступ сверху/снизу:"
+
+#: lib/admin_menu.php:5930
+msgid "Page Header Font Color:"
+msgstr "Цвет шрифта заголовка страницы:"
+
+#: lib/admin_menu.php:5961 lib/admin_menu.php:5971
+msgid "Show or not the search bar in this template."
+msgstr "Показывать или не показывать строку поиска в этом шаблоне."
+
+#: lib/admin_menu.php:5962
+msgid "Page Show Search Bar:"
+msgstr "Страница Показать панель поиска:"
+
+#: lib/admin_menu.php:5972
+msgid "Page Title Align:"
+msgstr "Выравнивание заголовка страницы:"
+
+#: lib/admin_menu.php:6030
+msgid "Eg: http://your-site-url.com/images/logo.jpg"
+msgstr "Например: http://your-site-url.com/images/logo.jpg"
+
+#: lib/admin_menu.php:6031
+msgid "Logo URL:"
+msgstr "URL логотипа:"
+
+#: lib/admin_menu.php:6035
+msgid "Upload/Select Logo File"
+msgstr "Загрузить/Выбрать логотип"
+
+#: lib/admin_menu.php:6044
+msgid "Logo Width:"
+msgstr "Ширина логотипа:"
+
+#: lib/admin_menu.php:6085
+msgid "Footer color, or image."
+msgstr "Цвет колонтитула или изображение."
+
+#: lib/admin_menu.php:6086
+msgid "Footer background:"
+msgstr "Фон футера:"
+
+#: lib/admin_menu.php:6095
+msgid "This will appear in the left side of the footer area."
+msgstr "Это появится в левой части футера."
+
+#: lib/admin_menu.php:6096
+msgid "Text/Code Copyright (left side):"
+msgstr "Текст/код Авторское право (левая сторона):"
+
+#: lib/admin_menu.php:6102
+msgid "This will appear in the right side of the footer area - account pages."
+msgstr ""
+"Она появится в правой части области нижнего колонтитула - страницы аккаунта."
+
+#: lib/admin_menu.php:6103
+msgid "Text (right side - account pages):"
+msgstr "Текст (правая сторона - страницы аккаунта):"
+
+#: lib/admin_menu.php:6109
+msgid "Background color of the bottom most bar."
+msgstr "Цвет фона самой нижней полосы."
+
+#: lib/admin_menu.php:6110
+msgid "Bottom footer bar bg color:"
+msgstr "Цвет bg нижнего колонтитула:"
+
+#: lib/admin_menu.php:6118
+msgid "Text color of the bottom most bar."
+msgstr "Цвет текста самой нижней полосы."
+
+#: lib/admin_menu.php:6119
+msgid "Bottom footer bar text color:"
+msgstr "Цвет текста нижнего колонтитула:"
+
+#: lib/admin_menu.php:6152
+msgid "Advertising Spaces"
+msgstr "Рекламные площадки"
+
+#: lib/admin_menu.php:6196
+msgid "HomePage"
+msgstr "Главная страница"
+
+#: lib/admin_menu.php:6197
+msgid "Project Single Page"
+msgstr "Отдельная страница запроса"
+
+#: lib/admin_menu.php:6198
+msgid "Category Page"
+msgstr "Страница категории"
+
+#: lib/admin_menu.php:6199
+msgid "Single Blog/Normal Page"
+msgstr "Одинарный блог / Обычная страница"
+
+#: lib/admin_menu.php:6205 lib/admin_menu.php:6230 lib/admin_menu.php:6254
+#: lib/admin_menu.php:6278
+msgid "Above the content area:"
+msgstr "Над областью контента:"
+
+#: lib/admin_menu.php:6211 lib/admin_menu.php:6236 lib/admin_menu.php:6260
+#: lib/admin_menu.php:6284
+msgid "Below the content area:"
+msgstr "Ниже области контента:"
+
+#: lib/admin_menu.php:6600
+msgid "New User Email"
+msgstr "Email нового пользователя"
+
+#: lib/admin_menu.php:6601
+msgid "New User Email (admin)"
+msgstr "Новый пользователь (Админу)"
+
+#: lib/admin_menu.php:6603
+msgid "Post Project Not Approved Email (admin)"
+msgstr "Опубликовать запрос не утвержден Email (admin)"
+
+#: lib/admin_menu.php:6604
+msgid "Post Project Auto Approved Email (admin)"
+msgstr "Опубликовать запрос автоматически утвержден Email (admin)"
+
+#: lib/admin_menu.php:6605
+msgid "Post Project Not Approved Email"
+msgstr "Опубликовать запрос не утвержден Email"
+
+#: lib/admin_menu.php:6606
+msgid "Post Project Auto Approved Email"
+msgstr "Опубликовать запрос автоматически утвержден Email"
+
+#: lib/admin_menu.php:6610
+msgid "Delivered Project (owner)"
+msgstr "Доставленный товар (владелец)"
+
+#: lib/admin_menu.php:6611
+msgid "Delivered Project (bidder)"
+msgstr "Доставленный товар (продавец)"
+
+#: lib/admin_menu.php:6615
+msgid "Completed Project (owner)"
+msgstr "Завершенный запрос (владелец)"
+
+#: lib/admin_menu.php:6616
+msgid "Completed Project (bidder)"
+msgstr "Завершенный запрос (продавец)"
+
+#: lib/admin_menu.php:6619
+msgid "Escrow Sent (owner)"
+msgstr "Escrow Sent (владелец)"
+
+#: lib/admin_menu.php:6620
+msgid "Escrow Sent (bidder)"
+msgstr "Эскроу Отправлено (участник торгов)"
+
+#: lib/admin_menu.php:6623
+msgid "Private Message Received"
+msgstr "Получено личное сообщение"
+
+#: lib/admin_menu.php:6627
+msgid "Won Project(owner)"
+msgstr "Выигранный проект (владелец)"
+
+#: lib/admin_menu.php:6628
+msgid "Won Project(winner)"
+msgstr "Завершенный запрос (победитель)"
+
+#: lib/admin_menu.php:6629
+msgid "Won Project(losers)"
+msgstr "Завершенный запрос (проигравший)"
+
+#: lib/admin_menu.php:6631
+msgid "Bid Project(bidder)"
+msgstr "Предложение по запросу (продавец)"
+
+#: lib/admin_menu.php:6632
+msgid "Bid Project(owner)"
+msgstr "Предложение по запросу (владелец)"
+
+#: lib/admin_menu.php:6634
+msgid "Message Board(owner)"
+msgstr "Обсуждение (владелец)"
+
+#: lib/admin_menu.php:6635
+msgid "Message Board(bidder)"
+msgstr "Обсуждение (продавец)"
+
+#: lib/admin_menu.php:6638
+msgid "Withdrawal Requested (user)"
+msgstr "Заявление об отзыве (пользователь)"
+
+#: lib/admin_menu.php:6639
+msgid "Withdrawal Requested (admin)"
+msgstr "Требуется отказ от участия (администратор)"
+
+#: lib/admin_menu.php:6640
+msgid "Withdrawal Completed (user)"
+msgstr "Вывод средств завершен (пользователь)"
+
+#: lib/admin_menu.php:6644
+msgid "Project Subscription Notification"
+msgstr "Уведомление о подписке запроса"
+
+#: lib/admin_menu.php:6645
+msgid "Payment on Completed Project (owner)"
+msgstr "Оплата по завершенному запросу (владелец)"
+
+#: lib/admin_menu.php:6646
+msgid "Deposit Ewallet(user)"
+msgstr "Пополнить электронный кошелек (пользователь)"
+
+#: lib/admin_menu.php:6660
+msgid ""
+"This email will be received by the user when their request is processed.\n"
+"\t\t\t\t\tBe aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"\t\t\t\t\tAlso at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено пользователем, когда его запрос будет обработан.\n"
+"\t\t\t\t\tОбратите внимание, что если вы добавляете html-теги в это письмо, "
+"то опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"\t\t\t\t\tТакже внизу вы можете увидеть список тегов, которые можно "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:6671 lib/admin_menu.php:6736 lib/admin_menu.php:6801
+#: lib/admin_menu.php:6868 lib/admin_menu.php:6931 lib/admin_menu.php:6994
+#: lib/admin_menu.php:7059 lib/admin_menu.php:7124 lib/admin_menu.php:7187
+#: lib/admin_menu.php:7250 lib/admin_menu.php:7315 lib/admin_menu.php:7379
+#: lib/admin_menu.php:7444 lib/admin_menu.php:7508 lib/admin_menu.php:7576
+#: lib/admin_menu.php:7641 lib/admin_menu.php:7707 lib/admin_menu.php:7773
+#: lib/admin_menu.php:7837 lib/admin_menu.php:7900 lib/admin_menu.php:7964
+#: lib/admin_menu.php:8032 lib/admin_menu.php:8095 lib/admin_menu.php:8159
+#: lib/admin_menu.php:8223
+msgid "Enable this email:"
+msgstr "Включить этот E-mail:"
+
+#: lib/admin_menu.php:6678 lib/admin_menu.php:6743 lib/admin_menu.php:6808
+#: lib/admin_menu.php:6874 lib/admin_menu.php:6937 lib/admin_menu.php:7000
+#: lib/admin_menu.php:7066 lib/admin_menu.php:7130 lib/admin_menu.php:7193
+#: lib/admin_menu.php:7256 lib/admin_menu.php:7321 lib/admin_menu.php:7385
+#: lib/admin_menu.php:7450 lib/admin_menu.php:7514 lib/admin_menu.php:7582
+#: lib/admin_menu.php:7647 lib/admin_menu.php:7713 lib/admin_menu.php:7779
+#: lib/admin_menu.php:7843 lib/admin_menu.php:7906 lib/admin_menu.php:7970
+#: lib/admin_menu.php:8038 lib/admin_menu.php:8101 lib/admin_menu.php:8165
+#: lib/admin_menu.php:8229 lib/admin_menu.php:8320 lib/admin_menu.php:8376
+msgid "Email Subject:"
+msgstr "Тема сообщения:"
+
+#: lib/admin_menu.php:6686 lib/admin_menu.php:6751 lib/admin_menu.php:6816
+#: lib/admin_menu.php:6882 lib/admin_menu.php:6945 lib/admin_menu.php:7008
+#: lib/admin_menu.php:7074 lib/admin_menu.php:7138 lib/admin_menu.php:7201
+#: lib/admin_menu.php:7264 lib/admin_menu.php:7329 lib/admin_menu.php:7394
+#: lib/admin_menu.php:7458 lib/admin_menu.php:7522 lib/admin_menu.php:7590
+#: lib/admin_menu.php:7655 lib/admin_menu.php:7721 lib/admin_menu.php:7787
+#: lib/admin_menu.php:7851 lib/admin_menu.php:7914 lib/admin_menu.php:7978
+#: lib/admin_menu.php:8046 lib/admin_menu.php:8109 lib/admin_menu.php:8173
+#: lib/admin_menu.php:8237 lib/admin_menu.php:8328 lib/admin_menu.php:8384
+msgid "Email Content:"
+msgstr "Контент E-mail:"
+
+#: lib/admin_menu.php:6696 lib/admin_menu.php:6761 lib/admin_menu.php:6826
+#: lib/admin_menu.php:6892 lib/admin_menu.php:6955 lib/admin_menu.php:7018
+#: lib/admin_menu.php:7084 lib/admin_menu.php:7148 lib/admin_menu.php:7211
+#: lib/admin_menu.php:7274 lib/admin_menu.php:7339 lib/admin_menu.php:7404
+#: lib/admin_menu.php:7468 lib/admin_menu.php:7532 lib/admin_menu.php:7600
+#: lib/admin_menu.php:7665 lib/admin_menu.php:7731 lib/admin_menu.php:7797
+#: lib/admin_menu.php:7861 lib/admin_menu.php:7924 lib/admin_menu.php:7988
+#: lib/admin_menu.php:8056 lib/admin_menu.php:8119 lib/admin_menu.php:8183
+#: lib/admin_menu.php:8247 lib/admin_menu.php:8339 lib/admin_menu.php:8394
+msgid "Here is a list of tags you can use in this email:"
+msgstr "Вот список тегов, которые Вы можете использовать в этом E-mail:"
+
+#: lib/admin_menu.php:6699 lib/admin_menu.php:6764 lib/admin_menu.php:6829
+#: lib/admin_menu.php:6895 lib/admin_menu.php:6958 lib/admin_menu.php:7021
+#: lib/admin_menu.php:7087 lib/admin_menu.php:7151 lib/admin_menu.php:7214
+#: lib/admin_menu.php:7277 lib/admin_menu.php:7342 lib/admin_menu.php:7407
+#: lib/admin_menu.php:7471 lib/admin_menu.php:7535 lib/admin_menu.php:7604
+#: lib/admin_menu.php:7669 lib/admin_menu.php:7734 lib/admin_menu.php:7800
+#: lib/admin_menu.php:7864 lib/admin_menu.php:7927 lib/admin_menu.php:7991
+#: lib/admin_menu.php:8059 lib/admin_menu.php:8122 lib/admin_menu.php:8185
+#: lib/admin_menu.php:8249 lib/admin_menu.php:8344 lib/admin_menu.php:8398
+msgid "the link to your user login page"
+msgstr "ссылка на Вашу страницу входа"
+
+#: lib/admin_menu.php:6700 lib/admin_menu.php:6765 lib/admin_menu.php:6830
+#: lib/admin_menu.php:6896 lib/admin_menu.php:6959 lib/admin_menu.php:7022
+#: lib/admin_menu.php:7088 lib/admin_menu.php:7152 lib/admin_menu.php:7215
+#: lib/admin_menu.php:7278 lib/admin_menu.php:7343 lib/admin_menu.php:7408
+#: lib/admin_menu.php:7472 lib/admin_menu.php:7536 lib/admin_menu.php:7605
+#: lib/admin_menu.php:7670 lib/admin_menu.php:7735 lib/admin_menu.php:7801
+#: lib/admin_menu.php:7865 lib/admin_menu.php:7928 lib/admin_menu.php:7992
+#: lib/admin_menu.php:8060 lib/admin_menu.php:8123 lib/admin_menu.php:8186
+#: lib/admin_menu.php:8250 lib/admin_menu.php:8345 lib/admin_menu.php:8399
+msgid "your website's name"
+msgstr "Название Вашего сайта"
+
+#: lib/admin_menu.php:6701 lib/admin_menu.php:6766 lib/admin_menu.php:6831
+#: lib/admin_menu.php:6897 lib/admin_menu.php:6960 lib/admin_menu.php:7023
+#: lib/admin_menu.php:7089 lib/admin_menu.php:7153 lib/admin_menu.php:7216
+#: lib/admin_menu.php:7279 lib/admin_menu.php:7344 lib/admin_menu.php:7409
+#: lib/admin_menu.php:7473 lib/admin_menu.php:7537 lib/admin_menu.php:7606
+#: lib/admin_menu.php:7671 lib/admin_menu.php:7736 lib/admin_menu.php:7802
+#: lib/admin_menu.php:7866 lib/admin_menu.php:7929 lib/admin_menu.php:7993
+#: lib/admin_menu.php:8061 lib/admin_menu.php:8124 lib/admin_menu.php:8187
+#: lib/admin_menu.php:8251 lib/admin_menu.php:8346 lib/admin_menu.php:8400
+msgid "your website's main address"
+msgstr "основной адрес вашего сайта"
+
+#: lib/admin_menu.php:6702 lib/admin_menu.php:6767 lib/admin_menu.php:6832
+#: lib/admin_menu.php:6898 lib/admin_menu.php:6961 lib/admin_menu.php:7024
+#: lib/admin_menu.php:7090 lib/admin_menu.php:7154 lib/admin_menu.php:7217
+#: lib/admin_menu.php:7280 lib/admin_menu.php:7345 lib/admin_menu.php:7410
+#: lib/admin_menu.php:7474 lib/admin_menu.php:7538 lib/admin_menu.php:7607
+#: lib/admin_menu.php:7672 lib/admin_menu.php:7737 lib/admin_menu.php:7803
+#: lib/admin_menu.php:7868 lib/admin_menu.php:7931 lib/admin_menu.php:7995
+#: lib/admin_menu.php:8062 lib/admin_menu.php:8125 lib/admin_menu.php:8188
+#: lib/admin_menu.php:8252
+msgid "your website's my account link"
+msgstr "ваша ссылка аккаунта сайта"
+
+#: lib/admin_menu.php:6703 lib/admin_menu.php:6768 lib/admin_menu.php:6833
+msgid "amount of money to be withdrawn"
+msgstr "сумма денег, подлежащая снятию"
+
+#: lib/admin_menu.php:6704 lib/admin_menu.php:6769 lib/admin_menu.php:6834
+msgid "method through which it withdraws"
+msgstr "метод, с помощью которого он выводит"
+
+#: lib/admin_menu.php:6725
+msgid ""
+"This email will be received by the admin when a user requests a withdrawal.\n"
+"\t\t\t\t\tBe aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"\t\t\t\t\tAlso at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено администратором, когда пользователь запрашивает "
+"вывод средств.\n"
+"\t\t\t\t\tИмейте в виду, если вы добавляете html-теги в это письмо, опция "
+"\"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"\t\t\t\t\tТакже внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:6790
+msgid ""
+"This email will be received by the user when they request a withdrawal.\n"
+"\t\t\t\t\tBe aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"\t\t\t\t\tAlso at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено пользователем, когда он запросит вывод средств.\n"
+"\t\t\t\t\tИмейте в виду, если вы добавляете html-теги в это письмо, опция "
+"\"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"\t\t\t\t\tТакже внизу вы можете увидеть список тегов, которые можно "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:6857
+msgid ""
+"This email will be received by the provider/bidder when the project owner "
+"puts the money into escrow.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено поставщиком/ участником торгов, когда владелец "
+"проекта переведет деньги в эскроу.\n"
+"          Имейте в виду, что если вы добавляете html-теги в это письмо, то "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:6894 lib/admin_menu.php:7086 lib/admin_menu.php:7213
+msgid "Bidder's Username"
+msgstr "Логин продавца"
+
+#: lib/admin_menu.php:6899 lib/admin_menu.php:6962 lib/admin_menu.php:7025
+#: lib/admin_menu.php:7091 lib/admin_menu.php:7155 lib/admin_menu.php:7218
+#: lib/admin_menu.php:7281 lib/admin_menu.php:7346 lib/admin_menu.php:7411
+#: lib/admin_menu.php:7475 lib/admin_menu.php:7539 lib/admin_menu.php:7608
+#: lib/admin_menu.php:7673 lib/admin_menu.php:7738 lib/admin_menu.php:7804
+#: lib/admin_menu.php:7932 lib/admin_menu.php:7996 lib/admin_menu.php:8063
+#: lib/admin_menu.php:8126 lib/admin_menu.php:8189 lib/admin_menu.php:8253
+msgid "new new project's title"
+msgstr "название нового запроса"
+
+#: lib/admin_menu.php:6900 lib/admin_menu.php:6963 lib/admin_menu.php:7026
+#: lib/admin_menu.php:7092 lib/admin_menu.php:7156 lib/admin_menu.php:7219
+#: lib/admin_menu.php:7282 lib/admin_menu.php:7347 lib/admin_menu.php:7412
+#: lib/admin_menu.php:7476 lib/admin_menu.php:7540 lib/admin_menu.php:7609
+#: lib/admin_menu.php:7674 lib/admin_menu.php:7739 lib/admin_menu.php:7805
+#: lib/admin_menu.php:7933 lib/admin_menu.php:7997 lib/admin_menu.php:8064
+#: lib/admin_menu.php:8127 lib/admin_menu.php:8190 lib/admin_menu.php:8254
+msgid "link for the new project"
+msgstr "Ссылка для нового запроса"
+
+#: lib/admin_menu.php:6901
+msgid "amount of escrow"
+msgstr "сумма условного депонирования"
+
+#: lib/admin_menu.php:6920
+msgid ""
+"This email will be received by the owner of the project when he places the "
+"funds into escrow.\n"
+"\t\t          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"\t\t          Also at the bottom you can see a list of tags you can use in "
+"the email body."
+msgstr ""
+"Это письмо будет получено владельцем проекта, когда он поместит средства в "
+"эскроу.\n"
+"\t\t          Имейте в виду, что если вы добавляете html-теги в это письмо, "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"\t\t          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:6957 lib/admin_menu.php:7020 lib/admin_menu.php:7150
+#: lib/admin_menu.php:7926 lib/admin_menu.php:7990
+msgid "Project Owner's Username"
+msgstr "Логин владельца запроса"
+
+#: lib/admin_menu.php:6964
+msgid "amount"
+msgstr "сумма"
+
+#: lib/admin_menu.php:6983
+msgid ""
+"This email will be received by the owner of the project after he accepts the "
+"project as delivered.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено владельцем проекта после того, как он примет "
+"проект как доставленный.\n"
+"          Обратите внимание, что если вы добавляете html-теги в это письмо, "
+"то опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7048
+msgid ""
+"This email will be received by the bidder/provider after the owner of the "
+"projects accepts the project as delivered.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено участником торгов/поставщиком после того, как "
+"владелец проектов примет проект как сданный.\n"
+"          Обратите внимание, что если вы добавляете html-теги в это письмо, "
+"то опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7113
+msgid ""
+"This email will be received by the owner of the project when the provider "
+"marks the project as completed.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено владельцем проекта, когда провайдер отметит проект "
+"как завершенный.\n"
+"          Имейте в виду, если вы добавляете html-теги в это письмо, опция "
+"разрешить HTML-теги должна быть установлена на \"да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые можно "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7176
+msgid ""
+"This email will be received by the provider/bidder when he marks the project "
+"as completed.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено поставщиком/ участником торгов, когда он отметит "
+"проект как завершенный.\n"
+"          Имейте в виду, что если вы добавляете html-теги в это письмо, то "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7239
+msgid ""
+"This email will be received by any user when another user sends a private "
+"message.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено любым пользователем, когда другой пользователь "
+"отправляет личное сообщение.\n"
+"          Имейте в виду, что если вы добавляете html-теги в это письмо, "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7283
+msgid "sender username"
+msgstr "имя отправителя"
+
+#: lib/admin_menu.php:7284
+msgid "receiver username"
+msgstr "имя получателя"
+
+#: lib/admin_menu.php:7304
+msgid ""
+"This email will be received by the freshly rated user.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо получит пользователь с новым рейтингом.\n"
+"          Имейте в виду, что если вы добавляете html-теги в это письмо, "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7341 lib/admin_menu.php:7406 lib/admin_menu.php:7470
+msgid "Winner Bidder's Username"
+msgstr "Имя пользователя победителя торгов"
+
+#: lib/admin_menu.php:7348
+msgid "rating value"
+msgstr "рейтинговое значение"
+
+#: lib/admin_menu.php:7349
+msgid "rating comment"
+msgstr "рейтинговый комментарий"
+
+#: lib/admin_menu.php:7368
+msgid ""
+"This email will be received by the project owner after he awards the project "
+"to a certain bidder.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено владельцем проекта после того, как он присудит "
+"проект определенному участнику торгов.\n"
+"          Имейте в виду, что если вы добавляете html-теги в это письмо, то "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые можно "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7413 lib/admin_menu.php:7477 lib/admin_menu.php:7544
+msgid "winner bid value"
+msgstr "Победившее предложение"
+
+#: lib/admin_menu.php:7414
+msgid "winner bidder username"
+msgstr "имя пользователя победителя торгов"
+
+#: lib/admin_menu.php:7433
+msgid ""
+"This email will be received by the winner bidder when the project is won.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено победителем торгов, когда проект будет выигран.\n"
+"          Имейте в виду, что если вы добавляете html-теги в это письмо, "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7497
+msgid ""
+"This email will be received by the loser bidders when the project is won.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено проигравшими участниками торгов, когда проект "
+"будет выигран.\n"
+"          Имейте в виду, что если вы добавляете html-теги в это письмо, то "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7534
+msgid "Loser Bidder's Username"
+msgstr "Имя пользователя проигравшего участника торгов"
+
+#: lib/admin_menu.php:7541 lib/admin_menu.php:7740 lib/admin_menu.php:7935
+#: lib/admin_menu.php:7999
+msgid "the bid value"
+msgstr "стоимость предложения"
+
+#: lib/admin_menu.php:7543
+msgid "winner bid username"
+msgstr "Логин победившего предложения"
+
+#: lib/admin_menu.php:7565
+msgid ""
+"This email will be received by the message owner when the project owner "
+"posts a new message on the private messaging board.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено владельцем сообщения, когда владелец проекта "
+"опубликует новое сообщение на доске личных сообщений.\n"
+"          Обратите внимание, что если вы добавляете html-теги в это письмо, "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7602 lib/admin_menu.php:7799
+msgid "Receiver Username"
+msgstr "Логин получателя"
+
+#: lib/admin_menu.php:7603 lib/admin_menu.php:7667
+msgid "Project Owner Username"
+msgstr "Логин владельца запроса"
+
+#: lib/admin_menu.php:7630
+msgid ""
+"This email will be received by the owner of a project when someone is "
+"posting a new message on the private messaging board.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено владельцем проекта, когда кто-то публикует новое "
+"сообщение на доске личных сообщений.\n"
+"          Имейте в виду, если вы добавляете html-теги в это письмо, опция "
+"разрешить HTML-теги должна быть установлена на \"да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7668
+msgid "Message Owner Username"
+msgstr "Имя пользователя владельца сообщения"
+
+#: lib/admin_menu.php:7696
+msgid ""
+"This email will be received by the bidder when he posts a bid for a "
+"project.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено участником торгов, когда он опубликует предложение "
+"на проект.\n"
+"          Имейте в виду, что если вы добавляете html-теги в это письмо, то "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7733
+msgid "Project Bidder's Username"
+msgstr "Имя пользователя продавца"
+
+#: lib/admin_menu.php:7762
+msgid ""
+"This email will be received by all users subscribed for a certain category "
+"when a project gets posted.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо получат все пользователи, подписанные на определенную категорию, "
+"когда проект будет опубликован.\n"
+"          Обратите внимание, что если вы добавляете html-теги в это письмо, "
+"то опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7826
+msgid ""
+"This email will be received by the user when they have deposited money to "
+"their e-wallet.\n"
+"Be aware, if you add html tags to this email you must have the allow HTML "
+"tags option set to yes.\n"
+"Also at the bottom you can see a list of tags you can use in the email body."
+msgstr ""
+"Это письмо будет получено пользователем, когда он внес деньги на свой "
+"электронный кошелек.\n"
+"Имейте в виду, что если вы добавляете html-теги в это письмо, то опция "
+"\"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"Также внизу вы можете увидеть список тегов, которые вы можете использовать в "
+"теле письма."
+
+#: lib/admin_menu.php:7863 lib/login_register/register.php:158
+msgid "Your username"
+msgstr "Ваше имя пользователя"
+
+#: lib/admin_menu.php:7869
+msgid "method of deposit"
+msgstr "способ внесения депозита"
+
+#: lib/admin_menu.php:7870
+msgid "deposited amount"
+msgstr "депонированная сумма"
+
+#: lib/admin_menu.php:7889
+msgid ""
+"This email will be received by the project owner when he pays the service "
+"provider.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено владельцем проекта, когда он заплатит поставщику "
+"услуг.\n"
+"          Имейте в виду, что если вы добавляете html-теги в это письмо, "
+"опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:7934 lib/admin_menu.php:7998
+msgid "the bidder username"
+msgstr "имя пользователя продавца"
+
+#: lib/admin_menu.php:7953
+msgid ""
+"This email will be received by the project owner whenever a user bids for "
+"his project.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получать владелец проекта всякий раз, когда пользователь "
+"делает ставку на его проект.\n"
+"          Обратите внимание, что если вы добавляете html-теги в это письмо, "
+"то опция \"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:8021
+msgid ""
+"This email will be received by your users after posting a new project on "
+"your website if the project is automatically approved.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено вашими пользователями после размещения нового "
+"проекта на вашем сайте, если проект будет автоматически одобрен.\n"
+"          Имейте в виду, если вы добавляете html-теги в это письмо, опция "
+"\"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:8058
+msgid "username"
+msgstr "имя пользователя"
+
+#: lib/admin_menu.php:8084
+msgid ""
+"This email will be received by your users after posting a new project on "
+"your website if the project is not automatically approved.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено вашими пользователями после размещения нового "
+"проекта на вашем сайте, если проект не был автоматически одобрен.\n"
+"          Имейте в виду, если вы добавляете html-теги в это письмо, опция "
+"\"Разрешить HTML-теги\" должна быть установлена на \"Да\".\n"
+"          Также внизу вы можете увидеть список тегов, которые вы можете "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:8121
+msgid "project owner username"
+msgstr "имя пользователя владельца запроса"
+
+#: lib/admin_menu.php:8148
+msgid ""
+"This email will be received by the admin when someone posts a project on the "
+"website to be approved.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено администратором, когда кто-то размещает запрос на "
+"сайте, который нужно одобрить. \n"
+"  Имейте в виду, если вы добавляете теги html в данное письмо, вы должны "
+"разрешить HTML теги.\n"
+" Также внизу Вы можете увидеть список тегов, которые можно использовать в "
+"теле письма."
+
+#: lib/admin_menu.php:8212
+msgid ""
+"This email will be received by the admin when someone posts a project on the "
+"website website. This email will be received if the the project is not "
+"automatically approved.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это сообщение будет получено администратором, когда кто-то отправляет запрос "
+"на сайте. Это сообщение будет получено, если запрос не будет одобрен "
+"автоматически. \n"
+"Имейте в виду, если вы добавляете теги html в данное письмо, вы должны "
+"разрешить HTML теги.\n"
+" Также внизу Вы можете увидеть список тегов, которые можно использовать в "
+"теле письма."
+
+#: lib/admin_menu.php:8310
+msgid ""
+"This email will be received by all new users who register on your website.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"This email will be received by all new users who register on your website.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+
+#: lib/admin_menu.php:8341 lib/admin_menu.php:8396
+msgid "your new username"
+msgstr "ваше новое имя пользователя"
+
+#: lib/admin_menu.php:8342 lib/admin_menu.php:8397
+msgid "your new user's email"
+msgstr "ваш новый E-mail пользователя"
+
+#: lib/admin_menu.php:8343
+msgid "your new user's password"
+msgstr "ваш новый пароль пользователя"
+
+#: lib/admin_menu.php:8347
+msgid "activation link for users"
+msgstr "ссылка активации для пользователей"
+
+#: lib/admin_menu.php:8366
+msgid ""
+"This email will be received by the admin when a new user registers on the "
+"website.\n"
+"          Be aware, if you add html tags to this email you must have the "
+"allow HTML tags option set to yes.\n"
+"          Also at the bottom you can see a list of tags you can use in the "
+"email body."
+msgstr ""
+"Это письмо будет получено администратором, когда новый пользователь "
+"зарегистрируется на сайте. \n"
+"          Имейте в виду, при добавлении html-тегов в данное письмо, вы "
+"должны разрешить HTML теги.\n"
+"          Также ниже вы можете увидеть список тегов, которые можно "
+"использовать в теле письма."
+
+#: lib/admin_menu.php:8505
+msgid "Comma (,)"
+msgstr "Запятая (,)"
+
+#: lib/admin_menu.php:8505
+msgid "Point (.)"
+msgstr "Точка (.)"
+
+#: lib/admin_menu.php:8506
+msgid "In front of sum (eg: $50)"
+msgstr "Перед суммой (например: $ 50)"
+
+#: lib/admin_menu.php:8506
+msgid "After the sum (eg: 50$)"
+msgstr "После суммы (например: 50 $)"
+
+#: lib/admin_menu.php:8508
+msgid "E-wallet - Escrow - Withdrawals"
+msgstr "Электронный кошелек - Эскроу - Снятие средств"
+
+#: lib/admin_menu.php:8508
+msgid "Marketplace Gateways - Direct Payment"
+msgstr "Шлюзы рынка - прямые платежи"
+
+#: lib/admin_menu.php:8509
+msgid "Invoice Model - Pay outside"
+msgstr "Модель счета-фактуры - оплата снаружи"
+
+#: lib/admin_menu.php:8509 lib/pay-for-contact-details.php:5
+#: single-project.php:1513 single-project.php:1538
+msgid "Pay for contact details"
+msgstr "Оплата за контактные данные"
+
+#: lib/admin_menu.php:8512
+msgid "Dropdown Selection"
+msgstr "Выпадающий выбор"
+
+#: lib/admin_menu.php:8512
+msgid "Free Input Box"
+msgstr "Свободное поле ввода"
+
+#: lib/admin_menu.php:8513
+#, fuzzy
+msgid "no"
+msgstr "нет"
+
+#: lib/admin_menu.php:8606 single-project.php:413
+msgid "Main Details"
+msgstr "Главные детали"
+
+#: lib/admin_menu.php:8607
+msgid "Project Fees"
+msgstr "Проектные сборы"
+
+#: lib/admin_menu.php:8608
+msgid "Project Budgets"
+msgstr "Бюджеты проектов"
+
+#: lib/admin_menu.php:8625
+msgid "Payment Model:"
+msgstr "Метод оплаты:"
+
+#: lib/admin_menu.php:8652
+msgid "Site currency:"
+msgstr "Валюта сайта:"
+
+#: lib/admin_menu.php:8659
+msgid "Currency symbol:"
+msgstr "Символ валюты:"
+
+#: lib/admin_menu.php:8665
+msgid "Currency symbol position:"
+msgstr "Положение символа:"
+
+#: lib/admin_menu.php:8672
+msgid "Decimals sum separator:"
+msgstr "Десятичный разделитель суммы:"
+
+#: lib/admin_menu.php:8678
+msgid "Thousands sum separator:"
+msgstr "Отделитель тысяч:"
+
+#: lib/admin_menu.php:8707 taxonomy.php:216
+msgid "Project Budget:"
+msgstr "Бюджет заказа:"
+
+#: lib/admin_menu.php:8714
+#, fuzzy
+#| msgid "Hourly rate:"
+msgid "Enable hourly rate:"
+msgstr "Почасовая ставка"
+
+#: lib/admin_menu.php:8813
+msgid "Base Listing Fee:"
+msgstr "Базовый листинговый сбор:"
+
+#: lib/admin_menu.php:8820
+msgid "Featured Listing Fee:"
+msgstr "Представленный Листинг Плату:"
+
+#: lib/admin_menu.php:8827
+msgid "Sealed Bidding Fee:"
+msgstr "Сбор за закрытый запрос:"
+
+#: lib/admin_menu.php:8834
+msgid "Hide Project from Search Engines Fee:"
+msgstr "Плата за скрытие запроса от поисковых машин:"
+
+#: lib/admin_menu.php:8841
+msgid "Commission Fee (out of the winning bid): "
+msgstr "Комиссионный сбор (из суммы выигрышной ставки)"
+
+#: lib/admin_menu.php:8849
+msgid "Commission Fee (out of the winning bid - for freelancer): "
+msgstr "Комиссионное вознаграждение (из выигрышной ставки - для фрилансера)"
+
+#: lib/admin_menu.php:8861
+msgid "Service Fee (on top of project price): "
+msgstr "Плата за обслуживание (сверх стоимости проекта)"
+
+#: lib/admin_menu.php:8868
+msgid "Tax/Fee On withdrawal: "
+msgstr "Налог/налог на снятие"
+
+#: lib/admin_menu.php:8875
+msgid "Tax/Fee On Deposit/Escrow (PayPal): "
+msgstr "Налог/Сбор на депозит/Эскроу (PayPal)"
+
+#: lib/admin_menu.php:8883
+msgid "Paying Fee (like VAT): "
+msgstr "Уплата сбора (например, НДС)"
+
+#: lib/admin_menu.php:8892
+msgid "Minimum Withdraw:"
+msgstr "Минимальный лимит вывода:"
+
+#: lib/admin_menu.php:8901
+msgid "Fee for contact details:"
+msgstr "Плата за контактную информацию:"
+
+#: lib/advanced_search.php:241
+msgid "Toggle Search Filters"
+msgstr "Переключение фильтров поиска"
+
+#: lib/advanced_search.php:247 lib/provider_search.php:39
+msgid "Filter Options"
+msgstr "Опции Фильтра"
+
+#: lib/advanced_search.php:252
+msgid "Keyword"
+msgstr "Ключевое слово"
+
+#: lib/advanced_search.php:333 lib/post_new.php:505
+msgid "Select Location"
+msgstr "Выберите местоположение"
+
+#: lib/advanced_search.php:348 lib/advanced_search.php:379 lib/post_new.php:517
+#: lib/post_new.php:544
+msgid "Select SubLocation"
+msgstr "Выберете населенный пункт"
+
+#: lib/advanced_search.php:430
+msgid "Skill"
+msgstr "Навык"
+
+#: lib/advanced_search.php:433
+msgid "Select Skill"
+msgstr "Выберите навык"
+
+#: lib/advanced_search.php:451 lib/my_account/repost_project.php:281
+#: lib/post_new.php:1294 single-project.php:1016 single-service.php:677
+msgid "Category"
+msgstr "Категория"
+
+#: lib/advanced_search.php:462 lib/advanced_search.php:475 lib/post_new.php:224
+#: lib/widgets/new-frontpage-slider.php:150
+msgid "Select Category"
+msgstr "Выбрать категорию"
+
+#: lib/advanced_search.php:545
+msgid "Featured?"
+msgstr "Рекомендуемые?"
+
+#: lib/advanced_search.php:553
+msgid "Refine Search"
+msgstr "Уточнить поиск"
+
+#: lib/advanced_search.php:596
+msgid "Order by:"
+msgstr "Сортировать по:"
+
+#: lib/advanced_search.php:610
+msgid "Name"
+msgstr "Имя"
+
+#: lib/advanced_search.php:611
+msgid "Visits"
+msgstr "Посещения"
+
+#: lib/advanced_search.php:627
+msgid "Search Results"
+msgstr "Результаты поиска"
+
+#: lib/advanced_search.php:694
+msgid "<< Previous"
+msgstr "<< Назад"
+
+#: lib/advanced_search.php:721
+msgid "Next >>"
+msgstr "След >>"
+
+#: lib/advanced_search.php:733
+msgid "There are no projects posted on your search query."
+msgstr "По вашему поисковому запросу нет ни одного проекта."
+
+#: lib/all-posted-projects.php:52
+msgid "There are no projects posted."
+msgstr "Нет опубликованных запросов"
+
+#: lib/bidding-panel.php:7
+msgid "Post your proposal"
+msgstr "Опубликуйте свое предложение"
+
+#: lib/bidding-panel.php:25 lib/project-message-board.php:47
+#, php-format
+msgid ""
+"You are not logged in. In order to bid please <a href=\"%s\">login</a> or <a "
+"href=\"%s\">register</a> an account"
+msgstr ""
+"Вы не залогинены. Для того, чтобы сделать предложение пожалуйста <a href=\"%s"
+"\">войти</a> или <a href=\"%s\">зарегистрируйте</a> учетную запись"
+
+#: lib/bidding-panel.php:35 lib/bidding-panel.php:490 lib/bidding-panel.php:500
+msgid "Close"
+msgstr "Закрыть"
+
+#: lib/bidding-panel.php:74
+msgid "You cannot submit proposals to your own projects."
+msgstr "Вы не можете подавать предложения по своим собственным проектам."
+
+#: lib/bidding-panel.php:127
+#, php-format
+msgid "In order to bid, you have to pay the bidding fee. Amount is: %s"
+msgstr ""
+"Для того чтобы принять участие в торгах, вам необходимо оплатить взнос за "
+"участие в торгах. Сумма составляет: %s"
+
+#: lib/bidding-panel.php:139 lib/my_account/finances.php:170
+#: lib/my_account/relist_this_done.php:320 lib/pay-for-contact-details.php:36
+#: lib/post_new.php:2301
+msgid "Pay by PayPal"
+msgstr "Оплатить PayPal"
+
+#: lib/bidding-panel.php:164
+msgid "Please accept you can do the work."
+msgstr "Пожалуйста, согласитесь, что вы можете выполнить эту работу."
+
+#: lib/bidding-panel.php:170
+msgid "Please type in the number of days."
+msgstr "Пожалуйста, укажите количество дней на выполнение запроса."
+
+#: lib/bidding-panel.php:176
+msgid "Please type in a bid value."
+msgstr "Введите Вашу ставку."
+
+#: lib/bidding-panel.php:215
+#, php-format
+msgid ""
+"You need to have at least %s in your account to bid. <a href=\"%s\">Click "
+"here</a> to deposit money."
+msgstr ""
+"Вы должны иметь как минимум %s на вашем счету, чтобы делать предложения. <a "
+"href=\"%s\">Нажмите здесь</a> , чтобы внести депозит."
+
+#: lib/bidding-panel.php:262
+#, fuzzy
+#| msgid "Your hourly rate"
+msgid "Your Hourly Rate"
+msgstr "Ваша почасовая ставка"
+
+#: lib/bidding-panel.php:268
+msgid "Your Bid"
+msgstr "Ваше предложение"
+
+#: lib/bidding-panel.php:298 lib/post_new.php:1459
+msgid "Days to Complete"
+msgstr "Дни на выполнение"
+
+#: lib/bidding-panel.php:313 lib/my_account/repost_project.php:396
+#: lib/post_new.php:751
+msgid "Attach Files"
+msgstr "Прикрепить файлы"
+
+#: lib/bidding-panel.php:469
+msgid "I can perform work where/when described in post."
+msgstr "Я могу выполнить Ваш заказ, в точности так, как это описано."
+
+#: lib/bidding-panel.php:501
+msgid "Place Bid"
+msgstr "Место ставки"
+
+#: lib/blog_page.php:50
+msgid "There are no posts."
+msgstr "Нет публикаций."
+
+#: lib/bootstrap-nav-walker.php:318 lib/bootstrap-nav-walker2.php:318
+msgid "Add a menu"
+msgstr "Добавить меню"
+
+#: lib/choose_user_tp.php:51
+msgid "Choose your user type"
+msgstr "Выберите тип пользователя"
+
+#: lib/choose_user_tp.php:74
+msgid "Choose User Type"
+msgstr "Выберите тип пользователя"
+
+#: lib/choose_user_tp.php:83
+msgid "Service Contractor"
+msgstr "Покупатель"
+
+#: lib/choose_winner.php:131
+#, php-format
+msgid "Workspace for project #%s"
+msgstr "Рабочее пространство для проекта #%s"
+
+#: lib/choose_winner.php:217
+#, php-format
+msgid "Choose Winner for your project: %s"
+msgstr "Выбрать победителя для Вашего заказа: %s"
+
+#: lib/choose_winner.php:234
+#, php-format
+msgid "You are about to choose a winner for your project: %s"
+msgstr "Вы собираетесь выбрать победителя для вашего заказа: %s"
+
+#: lib/choose_winner.php:236
+#, php-format
+msgid "Winner User: %s"
+msgstr "Пользователь-победитель: %s"
+
+#: lib/choose_winner.php:237
+#, php-format
+msgid "Timeframe: <b>%s day(s)</b>"
+msgstr "Таймфрейм: <b>%s день(ы)</b>"
+
+#: lib/choose_winner.php:243
+msgid "Yes, Choose winner Now!"
+msgstr "Да, выбрать победителя сейчас!"
+
+#: lib/gateways/alert_ipn.php:145
+msgid "Deposit through Payza."
+msgstr "Депозит через Payza."
+
+#: lib/gateways/credits_listing.php:23
+msgid "Pay by Virtual Currency"
+msgstr "Оплатить с Баланса"
+
+#: lib/gateways/credits_listing.php:194
+#, php-format
+msgid "Pay item with eWallet - %s"
+msgstr "Оплатить товар с помощью электронного кошелька - %s"
+
+#: lib/gateways/credits_listing.php:236
+msgid "You do not have enough credits to pay for listing this project."
+msgstr "Недостаточно средств для оплаты листинга заказа.???"
+
+#: lib/gateways/credits_listing.php:245 lib/gateways/credits_listing.php:423
+#: lib/my_account/pay_with_credits.php:72
+#: lib/my_account/pay_with_credits.php:96
+msgid "Add More Credits"
+msgstr "Внести средства"
+
+#: lib/gateways/credits_listing.php:263
+#, php-format
+msgid "Listing payment for project <a href=\"%s\">%s</a>"
+msgstr "Оплата за размещение??? <a href=\\\"%s\\\">%s</a>"
+
+#: lib/gateways/credits_listing.php:353
+#, php-format
+msgid "Your payment has been sent. Return to <a href=\"%s\">your account</a>."
+msgstr "Ваш платеж отправлен. Вернитесь к <a href=\"%s\">своему счету</a>."
+
+#: lib/gateways/credits_listing.php:401 lib/my_account/relist_this_done.php:260
+#: lib/post_new.php:2235
+msgid "Total to Pay"
+msgstr "Всего к оплате"
+
+#: lib/gateways/credits_listing.php:411 lib/my_account/pay_with_credits.php:93
+msgid "Your credits amount"
+msgstr "Ваши средства??? кредиты???"
+
+#: lib/gateways/credits_listing.php:412 lib/my_account/finances.php:249
+#: lib/my_account/finances.php:313 lib/my_account/pay_with_credits.php:94
+msgid "Pay Now"
+msgstr "Оплатить сейчас"
+
+#: lib/gateways/escrow_direct_paypal.php:71
+msgid "Escrow for project #"
+msgstr "Эскроу для проекта #"
+
+#: lib/gateways/escrow_direct_paypal.php:122
+msgid "PayPal"
+msgstr "PayPal"
+
+#: lib/gateways/mb_deposit_pay.php:31 lib/gateways/moneybookers_listing.php:179
+msgid "Please wait, your order is being processed..."
+msgstr "Подождите, Ваш заказ обрабатывается ..."
+
+#: lib/gateways/mb_deposit_response.php:27
+msgid "Deposit through Moneybookers."
+msgstr "Депозит через Moneybookers."
+
+#: lib/gateways/moneybookers_listing.php:35 lib/gateways/paypal_listing.php:64
+msgid "Cost for base fee"
+msgstr "Стоимость базового взноса"
+
+#: lib/gateways/moneybookers_listing.php:70 lib/gateways/paypal_listing.php:99
+msgid "Cost to make project featured"
+msgstr "Цена за 'Сделать объект Избранным'"
+
+#: lib/gateways/moneybookers_listing.php:100
+#: lib/gateways/paypal_listing.php:130
+msgid "Cost to add sealed bidding"
+msgstr "Плата за закрытые торги"
+
+#: lib/gateways/moneybookers_listing.php:131
+#: lib/gateways/paypal_listing.php:161
+msgid "Cost to hide project from search engines"
+msgstr "Плата за скрытие запроса от поисковых машин"
+
+#: lib/gateways/pay_bidding_fee_paypal.php:59
+msgid "Payment Fee"
+msgstr "Платежный сбор"
+
+#: lib/gateways/pay_bidding_fee_paypal.php:135
+#: lib/gateways/paypal_deposit_pay.php:140
+msgid "Deposit through PayPal."
+msgstr "Оплатить через PayPal."
+
+#: lib/gateways/pay_contact_details_fee_paypal.php:53
+msgid "Payment for Reveal Contact Details"
+msgstr "Оплата за Reveal Контактная информация"
+
+#: lib/gateways/paypal_deposit_pay.php:64
+msgid "Payment Deposit"
+msgstr "Payment Deposit???"
+
+#: lib/get_files_panel-deprecated.php:16
+#, php-format
+msgid "Files Uploaded: %s"
+msgstr "Файлы загружены:%s"
+
+#: lib/get_files_panel-deprecated.php:53 single-project.php:621
+msgid "There are no files attached."
+msgstr "Нет прикрепленных файлов."
+
+#: lib/hire_freelancer.php:50
+#, php-format
+msgid "Hire this freelancer - %s"
+msgstr "Нанять этого фрилансера - %s"
+
+#: lib/hire_freelancer.php:82
+#, php-format
+msgid ""
+"Your request has been sent. <a href=\"%s\"><b>Click here</b></a> to get back "
+"to account area, or <a href=\"%s\"><b>click here</b></a> to get back to "
+"search freelancers page."
+msgstr ""
+"Ваш запрос отправлен <a href=\"%s\"><b>Нажмите здесь</b></a> чтобы вернуться "
+"в раздел аккаунта, или <a href=\"%s\"><b>нажмите здесь</b></a> чтобы "
+"вернуться на страницу поиска фрилансеров."
+
+#: lib/hire_freelancer.php:87
+#, php-format
+msgid "You have a hire request from: %s"
+msgstr "У вас есть запрос на наем от: %s"
+
+#: lib/hire_freelancer.php:147
+msgid "Write something about your custom project:"
+msgstr "Напишите что-нибудь о своем индивидуальном проекте:"
+
+#: lib/hire_freelancer.php:149
+msgid ""
+"Here you can write your project description for the freelancer to see..."
+msgstr ""
+"Здесь вы можете написать описание вашего проекта, чтобы фрилансер мог "
+"увидеть..."
+
+#: lib/hire_freelancer.php:155
+msgid "Your project budget:"
+msgstr "Бюджет вашего проекта:"
+
+#: lib/login_register/login.php:93 lib/login_register/login.php:272
+#: lib/login_register/login.php:285
+msgid "Sorry, that key does not appear to be valid."
+msgstr "К сожалению, этот ключ недействителен"
+
+#: lib/login_register/login.php:122 lib/login_register/login.php:142
+msgid "Retrieve Password"
+msgstr "Восстановить пароль"
+
+#: lib/login_register/login.php:128
+msgid "Please enter your information here. We will send you a new password."
+msgstr ""
+"Введите Ваше имя пользователя или E-mail. Новый пароль будет отправлен на "
+"Ваш E-mail."
+
+#: lib/login_register/login.php:135
+msgid "Username or Email:"
+msgstr "Имя пользователя или адрес электронной почты:"
+
+#: lib/login_register/login.php:154
+#, php-format
+msgid ""
+"Already have an account ? <a href='%s' class='link-man-1'>Login here</a> "
+msgstr ""
+"У вас уже есть аккаунт? <a href='%s' class='link-man-1'>Войдите здесь</a> "
+
+#: lib/login_register/login.php:197
+msgid "Retrieve Error"
+msgstr "Исправить ошибку"
+
+#: lib/login_register/login.php:202
+#, php-format
+msgid ""
+"Sorry, that user does not seem to exist in our database. Perhaps you have "
+"the wrong username or e-mail address? <a href=\"%s\">Try again</a>."
+msgstr ""
+"Такого пользователя нет в нашей базе данных. Возможно, Вы ввели неверные "
+"логин или email. <a href=\"%s\">Попробуйте еще раз</a>."
+
+#: lib/login_register/login.php:223
+msgid ""
+"Someone has asked to reset the password for the following site and username."
+msgstr ""
+"Кто-то попросил сбросить пароль для следующего сайта и имени пользователя"
+
+#: lib/login_register/login.php:225 lib/login_register/login.php:301
+#: lib/login_register/register.php:86 lib/login_register/sett.php:110
+#, php-format
+msgid "Username: %s"
+msgstr "Имя пользователя: %s"
+
+#: lib/login_register/login.php:226
+msgid ""
+"To reset your password visit the following address, otherwise just ignore "
+"this email and nothing will happen."
+msgstr ""
+"Для сброса пароля посетите следующую ссылку ниже. Если передумали, просто "
+"проигнорируйте данное сообщение и ничего не произойдет"
+
+#: lib/login_register/login.php:230
+#, php-format
+msgid "[%s] Password Reset"
+msgstr "[%s] Сброс пароля"
+
+#: lib/login_register/login.php:236
+msgid "There Was a Problem"
+msgstr "Возникла проблема"
+
+#: lib/login_register/login.php:237 lib/login_register/login.php:313
+#: lib/login_register/sett.php:128
+msgid "The e-mail could not be sent."
+msgstr "Не удалось отправить электронное письмо."
+
+#: lib/login_register/login.php:238 lib/login_register/login.php:314
+msgid "Possible reason: your host may have disabled the mail() function..."
+msgstr "Возможная причина: на Вашем хостинге не работает функция mail()…"
+
+#: lib/login_register/login.php:243
+#, php-format
+msgid "The e-mail was sent successfully to %s's e-mail address."
+msgstr "E-mail успешно отправлен на адрес электронной почты %s."
+
+#: lib/login_register/login.php:244 lib/login_register/login.php:320
+msgid "Check your e-mail first, of course"
+msgstr "Прежде всего, проверьте свой e-mail"
+
+#: lib/login_register/login.php:245 lib/login_register/login.php:321
+msgid "Click here to login!"
+msgstr "Нажмите сюда, чтобы войти!"
+
+#: lib/login_register/login.php:271 lib/login_register/login.php:284
+#: lib/login_register/login.php:312
+msgid "<h1>Problem</h1>"
+msgstr "<h1>Проблема</h1>"
+
+#: lib/login_register/login.php:302 lib/login_register/register.php:87
+#, php-format
+msgid "Password: %s"
+msgstr "Пароль: %s"
+
+#: lib/login_register/login.php:307
+msgid "Your new password"
+msgstr "Ваш новый пароль"
+
+#: lib/login_register/login.php:318
+msgid "<h1>Success!</h1>"
+msgstr "<h1>Ура!</h1>"
+
+#: lib/login_register/login.php:319
+msgid "Your new password is in the mail."
+msgstr "Ваш новый пароль отправлен на Ваш e-mail."
+
+#: lib/login_register/login.php:323
+#, php-format
+msgid "Password Lost and Changed for user: %s"
+msgstr "Пароль утерян и изменен для пользователя: %s"
+
+#: lib/login_register/login.php:324
+#, php-format
+msgid "[%s] Password Lost/Change"
+msgstr "[%s] Пароль утерян/изменить"
+
+#: lib/login_register/login.php:370
+msgid "Your account is not active yet. Check the activation email."
+msgstr ""
+"Ваша учетная запись еще не активирована. Проверьте письмо с активацией."
+
+#: lib/login_register/login.php:405
+#, php-format
+msgid ""
+"Cookies are blocked due to unexpected output. For help, please see <a href="
+"\"%1$s\">this documentation</a> or try the <a href=\"%2$s\">support forums</"
+"a>."
+msgstr ""
+"Cookies заблокированы из-за неожиданного вывода. Для получения помощи "
+"обратитесь к <a href=\"%1$s\">этой документации</a> или попробуйте "
+"обратиться на <a href=\"%2$s\">форумы поддержки</a>."
+
+#: lib/login_register/login.php:409
+#, php-format
+msgid ""
+"Cookies are blocked or not supported by your browser. You must <a href=\"%s"
+"\">enable cookies</a> to use WordPress."
+msgstr ""
+"Cookies заблокированы или не поддерживаются вашим браузером. Для "
+"использования WordPress необходимо <a href=\"%s\">включить cookies</a>."
+
+#: lib/login_register/login.php:451 lib/login_register/register.php:92
+msgid "Login"
+msgstr "Войти"
+
+#: lib/login_register/login.php:460
+msgid ""
+"We have sent a confirmation message to your email address.\n"
+"\t\t\t\t\tPlease follow the instructions in the email. Check the spam folder "
+"too."
+msgstr ""
+"Мы отправили подтверждающее сообщение на ваш адрес электронной почты.\n"
+"\t\t\t\t\tПожалуйста, следуйте инструкциям в письме. Проверьте также папку "
+"\"Спам\"."
+
+#: lib/login_register/login.php:530
+msgid "Type your username"
+msgstr "Введите свое имя пользователя"
+
+#: lib/login_register/login.php:535
+msgid "Type your password"
+msgstr "Введите пароль"
+
+#: lib/login_register/login.php:540
+msgid "Keep me logged in"
+msgstr "Не выходить из системы"
+
+#: lib/login_register/login.php:552
+msgid "Sign in"
+msgstr "Войти"
+
+#: lib/login_register/login.php:561
+#, php-format
+msgid ""
+"Do not have an account ? <a href='%s' class='link-man-1'>Register here</a> "
+"or <a href='%s' class='link-man-1'>Recover your password</a>."
+msgstr ""
+"Еще не регистрировались ? <a href='%s' class='link-man-1'> Зарегистрируйтесь "
+"здесь </a> или <a href='%s' class='link-man-1'> Восстановите свой пароль </"
+"a> ,"
+
+#: lib/login_register/register.php:57
+#, php-format
+msgid "Registration Complete - %s"
+msgstr "Регистрация завершена - %s"
+
+#: lib/login_register/register.php:81
+msgid ""
+"Your account is not active yet. You need to confirm the activation link sent "
+"to your account."
+msgstr ""
+"Ваш аккаунт еще не активирован. Вам необходимо подтвердить ссылку активации, "
+"отправленную на ваш аккаунт."
+
+#: lib/login_register/register.php:87
+msgid "emailed to you"
+msgstr "отправлено Вам по E-mail"
+
+#: lib/login_register/register.php:88
+#, php-format
+msgid "E-mail: %s"
+msgstr "E-mail: %s"
+
+#: lib/login_register/register.php:89
+msgid ""
+"Please check your <strong>Spam Folder</strong> if your account information "
+"does not appear within 5 minutes."
+msgstr ""
+"Пожалуйста, проверьте <strong>папку \"Спам\"</strong>, если информация о "
+"вашем аккаунте не появится в течение 5 минут."
+
+#: lib/login_register/register.php:127
+msgid "Register"
+msgstr "Регистрация"
+
+#: lib/login_register/register.php:163
+msgid "Your email address"
+msgstr "Ваш адрес электронной почты"
+
+#: lib/login_register/register.php:169
+msgid "Your password"
+msgstr "Ваш пароль"
+
+#: lib/login_register/register.php:175
+msgid "Your password confirmation"
+msgstr "Подтверждение вашего пароля"
+
+#: lib/login_register/register.php:190
+msgid "User Type:"
+msgstr "Тип пользователя"
+
+#: lib/login_register/register.php:191
+msgid "Freelancer/Service Provider"
+msgstr "Фрилансер/провайдер услуг"
+
+#: lib/login_register/register.php:192
+msgid "Buyer/Customer"
+msgstr "Покупатель/клиент"
+
+#: lib/login_register/register.php:209
+msgid "Register now"
+msgstr "Зарегистрируйтесь сейчас"
+
+#: lib/login_register/register.php:216
+#, php-format
+msgid ""
+"Already have an account ? <a href='%s' class='link-man-1'>Login here</a> or "
+"<a href='%s' class='link-man-1'>Recover your password</a>."
+msgstr ""
+"Уже есть аккаунт? <a href='%s' class='link-man-1'> Войдите в систему здесь </"
+"a> или <a href='%s' class='link-man-1'> Восстановите свой пароль </a> ,"
+
+#: lib/login_register/register.php:252
+msgid "Registration Disabled"
+msgstr "Регистрация отключена"
+
+#: lib/login_register/register.php:256
+msgid "User registration is currently not allowed."
+msgstr "Регистрация пользователей в настоящее время закрыта."
+
+#: lib/login_register/register.php:257
+msgid "Go back to the blog"
+msgstr "Вернуться в блог"
+
+#: lib/login_register/register.php:257
+msgid "Home"
+msgstr "Главная"
+
+#: lib/login_register/register.php:290
+msgid "Please enter a username."
+msgstr "Пожалуйста, введите имя пользователя."
+
+#: lib/login_register/register.php:292
+msgid ""
+"This username is invalid because it uses illegal characters. Please enter a "
+"valid username."
+msgstr ""
+"Это имя пользователя недопустимо, поскольку оно использует недопустимые "
+"символы. Пожалуйста введите действительное имя пользователя."
+
+#: lib/login_register/register.php:295
+msgid "This username is already registered, please choose another one."
+msgstr ""
+"Это имя пользователя уже зарегистрировано, пожалуйста, выберите другое."
+
+#: lib/login_register/register.php:300
+msgid "Please type your e-mail address."
+msgstr "Пожалуйста, введите свой адрес электронной почты."
+
+#: lib/login_register/register.php:302
+msgid "The email address isn&#8217;t correct."
+msgstr "Адрес электронной почты isn&#8217;t верный."
+
+#: lib/login_register/register.php:305
+msgid "This email is already registered, please choose another one."
+msgstr ""
+"Учётная запись для этой электронной почты уже существует. Используйте другой "
+"email."
+
+#: lib/login_register/register.php:310
+msgid "Please type a password with at least 5 characters."
+msgstr "Пожалуйста, введите пароль, состоящий не менее чем из 5 символов."
+
+#: lib/login_register/register.php:314
+msgid "Your password doesnt match the confirmation."
+msgstr "Ваш пароль не соответствует подтверждению."
+
+#: lib/login_register/register.php:340
+#, php-format
+msgid ""
+"<strong>ERROR</strong>: Couldn&#8217;t register you... please contact the <a "
+"href=\"mailto:%s\">webmaster</a> !"
+msgstr ""
+"<strong>ОШИБКА</strong>: Невозможно зарегистрировать, пожалуйста, свяжитесь "
+"с <a href=\"mailto:%s\">администратором</a> !"
+
+#: lib/login_register/sett.php:65
+msgid "<strong>ERROR</strong>: Enter a username or e-mail address."
+msgstr "<strong>ОШИБКА</strong>: Введите имя пользователя или email адрес."
+
+#: lib/login_register/sett.php:69
+msgid ""
+"<strong>ERROR</strong>: There is no user registered with that email address."
+msgstr ""
+"<strong>ОШИБКА</strong>: Пользователей с таким адресом email не "
+"зарегистрировано."
+
+#: lib/login_register/sett.php:82
+msgid "<strong>ERROR</strong>: Invalid username or e-mail."
+msgstr "<strong>ОШИБКА</strong>: Неверное имя пользователя или email."
+
+#: lib/login_register/sett.php:96
+msgid "Password reset is not allowed for this user"
+msgstr "Сброс пароля для этого пользователя запрещен"
+
+#: lib/login_register/sett.php:108
+msgid "Someone requested that the password be reset for the following account:"
+msgstr "Кто-то попросил сбросить пароль для следующей учетной записи:"
+
+#: lib/login_register/sett.php:111
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+"Если это была ошибка, просто игнорируйте это письмо, и ничего не произойдет."
+
+#: lib/login_register/sett.php:112
+msgid "To reset your password, visit the following address:"
+msgstr "Чтобы сбросить пароль, посетите следующий адрес:"
+
+#: lib/login_register/sett.php:122
+msgid "Password Reset"
+msgstr "Сброс пароля"
+
+#: lib/login_register/sett.php:128
+msgid ""
+"Possible reason: your host may have disabled the\n"
+"\t\tmail() function..."
+msgstr ""
+"Возможная причина: на Вашем хостинге может быть отключена\n"
+"\t\tmail() функция..."
+
+#: lib/my_account/aside-menu.php:117
+msgid "Service Providers"
+msgstr "Поставщики услуг"
+
+#: lib/my_account/aside-menu.php:135
+#, php-format
+msgid "Finances %s"
+msgstr "Финансы %s"
+
+#: lib/my_account/aside-menu.php:190
+#, php-format
+msgid "Customer Area %s"
+msgstr "Клиентская зона %s"
+
+#: lib/my_account/aside-menu.php:218
+#, php-format
+msgid "Freelancer %s"
+msgstr "Фрилансер %s"
+
+#: lib/my_account/buyer-area.php:18
+msgid "Deadline has been delayed."
+msgstr "Крайний срок был отложен."
+
+#: lib/my_account/buyer-area.php:43
+#, php-format
+msgid ""
+"The escrow has not been deposited yet. <a href=\"%s\">Click here</a> to "
+"deposit escrow."
+msgstr ""
+"Эскроу еще не депонирован. <a href=\"%s\">Нажмите здесь</a> для "
+"депонирования условного депонирования."
+
+#: lib/my_account/buyer-area.php:48 lib/my_account/freelancer-area.php:46
+#, php-format
+msgid "Escrow was deposited on %s."
+msgstr "Эскроу был депонирован на %s."
+
+#: lib/my_account/buyer-area.php:61 lib/my_account/freelancer-area.php:56
+msgid "The payment for this project is done outside of the website."
+msgstr "Оплата за этот проект производится вне сайта."
+
+#: lib/my_account/buyer-area.php:73
+#, php-format
+msgid ""
+"This project has not been paid. <a href=\"%s\">Click here</a> to make "
+"payment."
+msgstr ""
+"Этот проект еще не оплачен. <a href=\"%s\">Нажмите здесь</a>, чтобы "
+"произвести оплату."
+
+#: lib/my_account/buyer-area.php:78 lib/my_account/freelancer-area.php:71
+#, php-format
+msgid "Payment was sent on %s."
+msgstr "Платеж был отправлен на %s."
+
+#: lib/my_account/buyer-area.php:135
+msgid "Customer Area"
+msgstr "Клиентская зона"
+
+#: lib/my_account/buyer-area.php:210 lib/my_account/freelancer-area.php:172
+#, php-format
+msgid "Active Quotes %s"
+msgstr "Активные котировки %s"
+
+#: lib/my_account/buyer-area.php:213 lib/my_account/freelancer-area.php:175
+#, php-format
+msgid "Pending Projects %s"
+msgstr "Незавершенные проекты %s"
+
+#: lib/my_account/buyer-area.php:216
+#, php-format
+msgid "Delivered %s"
+msgstr "Вы собираетесь пометить этот заказ как выполненный: %s"
+
+#: lib/my_account/buyer-area.php:225 lib/my_account/freelancer-area.php:187
+#: lib/my_account/freelancer-area.php:584
+msgid "Cancelled"
+msgstr "Отменен"
+
+#: lib/my_account/buyer-area.php:230
+#, php-format
+msgid "Unpublished %s"
+msgstr "Неопубликованные %s"
+
+#: lib/my_account/buyer-area.php:274 lib/my_account/buyer-area.php:785
+#: lib/my_account/finances.php:2004
+msgid "Quotes"
+msgstr "Цитаты"
+
+#: lib/my_account/buyer-area.php:290
+#, php-format
+msgid "You have %s active proposals."
+msgstr "У вас есть %s активных предложений."
+
+#: lib/my_account/buyer-area.php:321
+#, php-format
+msgid ""
+"You do not have any active projects. <a href=\"%s\">Click here</a> to post "
+"more."
+msgstr ""
+"У вас нет активных проектов. <a href=\"%s\">Нажмите здесь</a>, чтобы "
+"разместить больше."
+
+#: lib/my_account/buyer-area.php:353 lib/my_account/buyer-area.php:429
+#: lib/my_account/buyer-area.php:516 lib/my_account/buyer-area.php:611
+#: lib/my_account/buyer-area.php:688 lib/my_account/finances.php:1759
+#: lib/my_account/finances.php:1846 lib/my_account/finances.php:1924
+#: lib/my_account/my_account.php:326
+msgid "Provider"
+msgstr "Провайдер"
+
+#: lib/my_account/buyer-area.php:354 lib/my_account/my_account.php:327
+msgid "Quote"
+msgstr "Цитата"
+
+#: lib/my_account/buyer-area.php:356 lib/my_account/freelancer-area.php:230
+#: lib/my_account/my_account.php:329 lib/my_account/my_account.php:550
+msgid "Timeframe"
+msgstr "Временные рамки"
+
+#: lib/my_account/buyer-area.php:375 lib/my_account/freelancer-area.php:248
+#: lib/my_account/my_account.php:348 lib/my_account/my_account.php:568
+#, php-format
+msgid "%s day(s)"
+msgstr "%s день"
+
+#: lib/my_account/buyer-area.php:377 lib/my_account/my_account.php:350
+#: lib/post_new.php:1462
+msgid "Choose Winner"
+msgstr "Выбрать победителя"
+
+#: lib/my_account/buyer-area.php:396 lib/my_account/my_account.php:369
+msgid "You do not have any active quotes."
+msgstr "У вас нет активных котировок."
+
+#: lib/my_account/buyer-area.php:432 lib/my_account/freelancer-area.php:309
+#: lib/my_account/freelancer-area.php:401
+#: lib/my_account/freelancer-area.php:497 lib/my_account/my_account.php:434
+msgid "Completion"
+msgstr "Завершение"
+
+#: lib/my_account/buyer-area.php:455
+msgid "Waiting for the freelancer to deliver work."
+msgstr "Ожидание выполнения работы фрилансером."
+
+#: lib/my_account/buyer-area.php:484 lib/my_account/buyer-area.php:580
+#: lib/my_account/buyer-area.php:750 lib/my_account/finances.php:1565
+#: lib/my_account/finances.php:1651 lib/my_account/finances.php:1814
+#: lib/my_account/finances.php:1969
+msgid "You do not have any active projects."
+msgstr "У вас нет ни одного активного проекта."
+
+#: lib/my_account/buyer-area.php:519 lib/my_account/finances.php:1762
+msgid "Completed On"
+msgstr "Завершено"
+
+#: lib/my_account/buyer-area.php:613 lib/my_account/buyer-area.php:690
+#: lib/my_account/finances.php:1848 lib/my_account/finances.php:1926
+msgid "Date Started"
+msgstr "Дата начала"
+
+#: lib/my_account/buyer-area.php:614 lib/my_account/finances.php:1849
+msgid "Cancelled On"
+msgstr "Отменен"
+
+#: lib/my_account/buyer-area.php:656 lib/my_account/finances.php:1891
+msgid "You do not have any cancelled projects."
+msgstr "У вас нет ни одного отмененного проекта."
+
+#: lib/my_account/buyer-area.php:691 lib/my_account/finances.php:1927
+msgid "Accepted On"
+msgstr ""
+"Нажмите на серое окно внизу, чтобы добавить фотографии запроса. Другие файлы "
+"можно добавить ниже. "
+
+#: lib/my_account/buyer-area.php:724
+msgid "Release Escrow"
+msgstr "Освобождение эскроу"
+
+#: lib/my_account/buyer-area.php:827 lib/my_account/finances.php:2045
+msgid "You do not have any unpublished projects."
+msgstr "У вас нет неопубликованных проектов."
+
+#: lib/my_account/delete_project.php:18
+msgid "Delete Project"
+msgstr "Удалить проект"
+
+#: lib/my_account/delete_project.php:71
+#, php-format
+msgid "Delete Project - %s"
+msgstr "Удалить заказ - %s"
+
+#: lib/my_account/delete_project.php:89
+#, php-format
+msgid ""
+"The project has been deleted. <a href='%s' class='btn btn-primary'>Return to "
+"your account</a> "
+msgstr ""
+"Проект был удален. <a href='%s' class='btn btn-primary'>Вернуться в свой "
+"аккаунт</a> "
+
+#: lib/my_account/delete_project.php:98
+msgid "Are you sure you want to delete this project?"
+msgstr "Вы уверены что хотите удалить этот проект?"
+
+#: lib/my_account/delete_project.php:99 lib/my_account/private_messages.php:543
+#: lib/my_account/private_messages.php:555
+msgid "Confirm Deletion"
+msgstr "Подтвердить удаление"
+
+#: lib/my_account/feedbacks.php:37 lib/my_account/my_account.php:169
+#: lib/user-profile.php:192
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: lib/my_account/feedbacks.php:63
+#, php-format
+msgid "Reviews To Do %s"
+msgstr "Отзывы Сделать %s"
+
+#: lib/my_account/feedbacks.php:66
+msgid "Pending Reviews"
+msgstr "Ожидающие проверки"
+
+#: lib/my_account/feedbacks.php:69
+msgid "My Reviews"
+msgstr "Мои отзывы"
+
+#: lib/my_account/feedbacks.php:97 lib/my_account/finances.php:1601
+#: lib/my_account/private_messages.php:408
+msgid "To User"
+msgstr "<b>Пользователю </b>"
+
+#: lib/my_account/feedbacks.php:98 lib/my_account/feedbacks.php:160
+#: lib/my_account/feedbacks.php:222 lib/user-feedback.php:197
+#: lib/user-profile.php:500
+msgid "Aquired on"
+msgstr "Приобретено???"
+
+#: lib/my_account/feedbacks.php:124
+msgid "Rate User"
+msgstr "Оценить пользователя"
+
+#: lib/my_account/feedbacks.php:134 lib/my_account/feedbacks.php:196
+#: lib/my_account/feedbacks.php:265
+msgid "There are no reviews to be awarded."
+msgstr "Нет отзывов для оценки."
+
+#: lib/my_account/feedbacks.php:159 lib/my_account/feedbacks.php:221
+#: lib/my_account/finances.php:1524 lib/my_account/private_messages.php:282
+#: lib/user-feedback.php:196
+msgid "From User"
+msgstr "<b>От пользователя </b>"
+
+#: lib/my_account/feedbacks.php:254 lib/user-feedback.php:229
+#: lib/user-profile.php:527
+msgid "Comment"
+msgstr "Комментарий"
+
+#: lib/my_account/finances.php:33 lib/my_account/my_account.php:117
+msgid "Your Balance"
+msgstr "Ваш баланс"
+
+#: lib/my_account/finances.php:43
+msgid "Deposit More"
+msgstr "Депозит Подробнее"
+
+#: lib/my_account/finances.php:58
+msgid "Pending Outgoing"
+msgstr "Ожидающие Исходящие"
+
+#: lib/my_account/finances.php:70
+msgid "Pending Incoming"
+msgstr "Ожидание Входящие"
+
+#: lib/my_account/finances.php:82
+msgid "Available for withdrawal"
+msgstr "Доступно для снятия"
+
+#: lib/my_account/finances.php:83
+msgid "Request Withdrawal"
+msgstr "Запрос на вывод средств"
+
+#: lib/my_account/finances.php:96
+#, php-format
+msgid ""
+"You have %s pending withdrawal requests. <a href=\"%s\">Click here</a> to "
+"view status."
+msgstr ""
+"У вас есть %s заявок на вывод средств. <a href=\"%s\">Нажмите здесь</a>, "
+"чтобы просмотреть статус."
+
+#: lib/my_account/finances.php:139
+msgid "Pending Payments"
+msgstr "Ожидаемые платежи"
+
+#: lib/my_account/finances.php:160
+msgid "Use the options below to pay for this bill:"
+msgstr "Используйте приведенные ниже варианты для оплаты этого счета:"
+
+#: lib/my_account/finances.php:179
+msgid "Pay by Skrill"
+msgstr "Оплата через Skrill"
+
+#: lib/my_account/finances.php:219 lib/my_account/finances.php:285
+msgid "You do not have any pending bills."
+msgstr "У вас нет незавершенных счетов."
+
+#: lib/my_account/finances.php:230 lib/my_account/finances.php:296
+msgid "Payment"
+msgstr "Оплата"
+
+#: lib/my_account/finances.php:268
+msgid "Paid Bills"
+msgstr "Оплаченные счета"
+
+#: lib/my_account/finances.php:397
+msgid "Release Escrow Payment"
+msgstr "Освобождение платежа по эскроу"
+
+#: lib/my_account/finances.php:445
+#, php-format
+msgid "Escrow payment received from %s for the project <b>%s</b>"
+msgstr "Депозитный платеж получен от %s для запроса <b>%s</b>"
+
+#: lib/my_account/finances.php:468
+#, php-format
+msgid "Escrow Payment completed, sent to %s for project <b>%s</b>"
+msgstr "Депозитный платеж завершен, отправлен в %s для заказа <b>%s</b>"
+
+#: lib/my_account/finances.php:482
+msgid "Your escrow payment was released successfully."
+msgstr "Ваш условный платеж был успешно разблокирован."
+
+#: lib/my_account/finances.php:486
+msgid "Go back to finances"
+msgstr "Вернуться к финансам"
+
+#: lib/my_account/finances.php:507
+#, php-format
+msgid ""
+"Are you sure you want to release the escrow of: <span class=\"text-success\">"
+"%s</span>"
+msgstr ""
+"Вы уверены, что хотите освободить эскроу <span class=\"text-success\">%s</"
+"span>"
+
+#: lib/my_account/finances.php:522 lib/my_account/finances.php:712
+msgid "No, go back"
+msgstr "Нет, вернуться"
+
+#: lib/my_account/finances.php:560
+msgid "Choose payment method"
+msgstr "Выберите способ оплаты"
+
+#: lib/my_account/finances.php:571 lib/my_account/finances.php:637
+msgid "Project Name:"
+msgstr "Название проэкта:"
+
+#: lib/my_account/finances.php:577 lib/my_account/finances.php:643
+msgid "Winning Amount:"
+msgstr "Сумма выигрыша:"
+
+#: lib/my_account/finances.php:583 lib/my_account/finances.php:649
+msgid "Service Provider:"
+msgstr "Поставщик услуг"
+
+#: lib/my_account/finances.php:626
+msgid "Deposit Escrow"
+msgstr "Внести депозит"
+
+#: lib/my_account/finances.php:665
+msgid "eWallet"
+msgstr "Электронный кошелек"
+
+#: lib/my_account/finances.php:683
+#, php-format
+msgid ""
+"You have successfuly initiated the escrow. <a href=\"%s\">Go back</a> to "
+"pending projects."
+msgstr ""
+"Вы успешно инициировали депонирование. <a href=\"%s\">Вернитесь</a> к "
+"незавершенным проектам."
+
+#: lib/my_account/finances.php:697
+msgid "You are about to escrow money for this project: "
+msgstr "Вы собираетесь депонировать деньги на этот проект"
+
+#: lib/my_account/finances.php:698
+#, php-format
+msgid "Your current balance is: %s "
+msgstr "Ваш текущий баланс составляет: %s"
+
+#: lib/my_account/finances.php:704
+msgid "You do not have enough balance in your wallet."
+msgstr "У вас недостаточно средств в кошельке."
+
+#: lib/my_account/finances.php:711
+msgid "Yes Confirm"
+msgstr "Да Подтвердить"
+
+#: lib/my_account/finances.php:723
+msgid ""
+"You are about to deposit escrow payment for this project. Use the options "
+"below: "
+msgstr ""
+"Вы собираетесь внести условный платеж по этому проекту. Используйте "
+"приведенные ниже опции"
+
+#: lib/my_account/finances.php:740
+#, php-format
+msgid "Make escrow of %s through PayPal"
+msgstr "Произвести депонирование %s через PayPal"
+
+#: lib/my_account/finances.php:747
+#, php-format
+msgid "Make escrow of %s through eWallet Balance"
+msgstr "Произведите депонирование %s через баланс электронного кошелька"
+
+#: lib/my_account/finances.php:772 lib/my_account/finances.php:1081
+msgid "Pending Withdrawals"
+msgstr "Снятие средств в ожидании"
+
+#: lib/my_account/finances.php:777 lib/my_account/finances.php:1079
+#: lib/my_account/finances.php:1248
+msgid "Go to Finances home"
+msgstr "Перейти в раздел \"Финансы"
+
+#: lib/my_account/finances.php:778
+msgid "Go to Withdraw"
+msgstr "Перейти к выводу средств"
+
+#: lib/my_account/finances.php:815
+msgid "Your request has been deleted"
+msgstr "Ваш запрос был удален"
+
+#: lib/my_account/finances.php:820
+#, php-format
+msgid "There was an unknown error: %s"
+msgstr "Произошла неизвестная ошибка: %s"
+
+#: lib/my_account/finances.php:830
+msgid "Are you want to cancel this request?"
+msgstr "Вы хотите отменить этот запрос?"
+
+#: lib/my_account/finances.php:832
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: lib/my_account/finances.php:848
+msgid "No withdrawals pending yet."
+msgstr "На данный момент нет ожидающих выводов средств."
+
+#: lib/my_account/finances.php:876
+msgid "Close Request"
+msgstr "Закрыть запрос"
+
+#: lib/my_account/finances.php:917 lib/my_account/finances.php:973
+#: lib/my_account/finances.php:1027
+msgid "Your balance is lower than the amount you requested."
+msgstr "Ваш баланс меньше запрашиваемой вами суммы."
+
+#: lib/my_account/finances.php:921 lib/my_account/finances.php:977
+#: lib/my_account/finances.php:1031
+#, php-format
+msgid "The withdraw limit is %s, please request the same amount or higher."
+msgstr ""
+"Лимит снятия составляет %s, пожалуйста, запросите ту же сумму или выше."
+
+#: lib/my_account/finances.php:951 lib/my_account/finances.php:1007
+#: lib/my_account/finances.php:1061
+msgid "Your withdrawal request has been submitted."
+msgstr "Ваш запрос на вывод средств был отправлен."
+
+#: lib/my_account/finances.php:1075
+msgid "Withdraw Money"
+msgstr "Вывести деньги"
+
+#: lib/my_account/finances.php:1097
+msgid "Use the below payment options to request withdrawal of your earnings."
+msgstr ""
+"Используйте приведенные ниже варианты оплаты, чтобы запросить вывод "
+"заработанных средств."
+
+#: lib/my_account/finances.php:1109
+msgid "Widthdraw by PayPal"
+msgstr "Широкополосная печать через PayPal"
+
+#: lib/my_account/finances.php:1122 lib/my_account/finances.php:1161
+#: lib/my_account/finances.php:1197
+msgid "Amount to withdraw"
+msgstr "Сумма для вывода"
+
+#: lib/my_account/finances.php:1128
+msgid "Your PayPal email address"
+msgstr "Ваш адрес электронной почты PayPal"
+
+#: lib/my_account/finances.php:1133 lib/my_account/finances.php:1172
+#: lib/my_account/finances.php:1209
+msgid "Withdraw"
+msgstr "Вывести"
+
+#: lib/my_account/finances.php:1148
+msgid "Widthdraw by Skrill"
+msgstr "Вывод средств с помощью Skrill"
+
+#: lib/my_account/finances.php:1167
+msgid "Your Skrill email address"
+msgstr "Ваш адрес электронной почты Skrill"
+
+#: lib/my_account/finances.php:1184
+msgid "Widthdraw by Bank"
+msgstr "Вывод по банкам"
+
+#: lib/my_account/finances.php:1203
+msgid "Your Bank Details"
+msgstr "Ваши банковские реквизиты"
+
+#: lib/my_account/finances.php:1242
+msgid "Deposit Money"
+msgstr "Внести денежные средства"
+
+#: lib/my_account/finances.php:1252
+msgid "Use the below payment options to deposit more money into your e-wallet"
+msgstr ""
+"Используйте приведенные ниже варианты оплаты, чтобы внести больше денег на "
+"свой электронный кошелек"
+
+#: lib/my_account/finances.php:1265
+msgid "Deposit money by Bank"
+msgstr "Депозитные деньги банка"
+
+#: lib/my_account/finances.php:1269
+msgid ""
+"Please use the bank details below to deposit money, and after please notify "
+"us to manually add balance to your account."
+msgstr ""
+"Пожалуйста, используйте указанные ниже банковские реквизиты для внесения "
+"денег, а после сообщите нам, чтобы мы вручную добавили баланс на ваш счет."
+
+#: lib/my_account/finances.php:1274
+msgid "Bank details:"
+msgstr "Банковские реквизиты:"
+
+#: lib/my_account/finances.php:1298
+msgid "Deposit money by PayPal"
+msgstr "Внести деньги с помощью PayPal"
+
+#: lib/my_account/finances.php:1309
+#, php-format
+msgid "You will have to pay a fee of %s on top of this amount."
+msgstr "Сверх этой суммы вам придется заплатить сбор в размере %s."
+
+#: lib/my_account/finances.php:1316 lib/my_account/finances.php:1350
+msgid "Amount to deposit"
+msgstr "Сумма к внесению"
+
+#: lib/my_account/finances.php:1319 lib/my_account/finances.php:1353
+msgid "Deposit"
+msgstr "Депозит"
+
+#: lib/my_account/finances.php:1340
+msgid "Deposit money by Skrill"
+msgstr "Внести деньги с помощью Skrill"
+
+#: lib/my_account/finances.php:1406
+msgid "You have activated the free membership!"
+msgstr "Вы активировали бесплатное членство!"
+
+#: lib/my_account/finances.php:1445 lib/my_account/finances.php:1461
+msgid "Incoming Payments"
+msgstr "Входящие платежи"
+
+#: lib/my_account/finances.php:1449 lib/my_account/finances.php:1471
+#, php-format
+msgid "Outgoing Payments %s"
+msgstr "Исходящие платежи %s"
+
+#: lib/my_account/finances.php:1480
+msgid "Transactions"
+msgstr "Транзакции"
+
+#: lib/my_account/finances.php:1543
+msgid "View Workspace"
+msgstr "Посмотреть Рабочее пространство"
+
+#: lib/my_account/finances.php:1630
+msgid "Release"
+msgstr "Релиз"
+
+#: lib/my_account/finances.php:1682
+msgid "Event"
+msgstr "Событие"
+
+#: lib/my_account/finances.php:1726
+#, fuzzy
+#| msgid "You do not have any active quotes."
+msgid "You do not have any transactions."
+msgstr "У вас нет активных котировок."
+
+#: lib/my_account/freelancer-area.php:18
+msgid "You have gone past the deadline with this project."
+msgstr "Вы просрочили срок сдачи этого проекта."
+
+#: lib/my_account/freelancer-area.php:42 lib/my_account/freelancer-area.php:609
+msgid "Waiting the customer to deposit escrow."
+msgstr "Ожидание клиента для внесения условного депонирования."
+
+#: lib/my_account/freelancer-area.php:66
+msgid "This project has not been paid by the customer."
+msgstr "Этот проект не был оплачен заказчиком."
+
+#: lib/my_account/freelancer-area.php:120
+msgid "Freelancer Area"
+msgstr "Территория фрилансера"
+
+#: lib/my_account/freelancer-area.php:178
+msgid "Delivered"
+msgstr "Доставлено"
+
+#: lib/my_account/freelancer-area.php:228 lib/my_account/my_account.php:548
+msgid "My Bid"
+msgstr "Моя ставка"
+
+#: lib/my_account/freelancer-area.php:269 lib/my_account/my_account.php:588
+#, php-format
+msgid ""
+"You do not have any active quotes. <a href=\"%s\">Search</a> for projects."
+msgstr "У вас нет активных котировок. <a href=\"%s\">Поиск</a> проектов."
+
+#: lib/my_account/freelancer-area.php:364
+msgid "You do not have any pending projects."
+msgstr "У вас нет незавершенных проектов."
+
+#: lib/my_account/freelancer-area.php:429
+msgid "Waiting for customer to accept the project."
+msgstr "Ждем, когда заказчик примет проект."
+
+#: lib/my_account/freelancer-area.php:460
+msgid "You do not have any delivered projects."
+msgstr "У вас нет ни одного реализованного проекта."
+
+#: lib/my_account/freelancer-area.php:550
+msgid "You do not have any completed projects."
+msgstr "У вас нет ни одного завершенного проекта."
+
+#: lib/my_account/freelancer-area.php:646
+msgid "You do not have any cancelled orders."
+msgstr "У вас нет отмененных заказов."
+
+#: lib/my_account/mark_completed.php:99
+#, php-format
+msgid "Mark the project as completed: %s"
+msgstr "Отметить заказ как завершенный: %s"
+
+#: lib/my_account/mark_completed.php:123
+#, php-format
+msgid "You are about to mark this project as completed: %s"
+msgstr "Вы собираетесь пометить этот заказ как завершенный: %s"
+
+#: lib/my_account/mark_completed.php:124
+msgid ""
+"The service provider will be notified about this action. After this you can "
+"pay the project from your Outstanding Payments section."
+msgstr ""
+"Заказчик будет уведомлен об этом действии. После этого вы можете оплатить "
+"проект из раздела платежей.???"
+
+#: lib/my_account/mark_completed.php:132
+msgid "Yes, Mark Completed!"
+msgstr "Да, отметить завершенным!"
+
+#: lib/my_account/mark_delivered.php:82
+#, php-format
+msgid "Mark the project delivered: %s"
+msgstr "Отметить заказ как выполненный: %s"
+
+#: lib/my_account/mark_delivered.php:95
+#, php-format
+msgid "You are about to mark this project as delivered: %s"
+msgstr "Вы собираетесь пометить этот заказ как выполненный: %s"
+
+#: lib/my_account/mark_delivered.php:96
+msgid ""
+"The project owner will be notified to accept the delivery and get you paid."
+msgstr ""
+"Владелец заказа будет уведомлен, чтобы принять работу и провести оплату."
+
+#: lib/my_account/mark_delivered.php:104
+msgid "Yes, Mark Delivered!"
+msgstr "Да, доставлено!"
+
+#: lib/my_account/my_account.php:62
+msgid "Your payment was successful. You will receive an email shortly."
+msgstr ""
+"Ваш платеж прошел успешно. В ближайшее время вы получите электронное письмо."
+
+#: lib/my_account/my_account.php:73
+msgid "There was an unknown error."
+msgstr "Произошла неизвестная ошибка."
+
+#: lib/my_account/my_account.php:84
+#, php-format
+msgid "Welcome, %s"
+msgstr "Добро пожаловать, %s"
+
+#: lib/my_account/my_account.php:130
+msgid "All Open Projects"
+msgstr "Все открытые проекты"
+
+#: lib/my_account/my_account.php:134
+msgid "My Projects"
+msgstr "Мои проекты"
+
+#: lib/my_account/my_account.php:156
+msgid "Unread Messages"
+msgstr "Непрочитанные сообщения"
+
+#: lib/my_account/my_account.php:157
+msgid "Messages"
+msgstr "Сообщения"
+
+#: lib/my_account/my_account.php:168
+msgid "Reviews to award"
+msgstr "Отзывы для награждения"
+
+#: lib/my_account/my_account.php:202
+msgid "Latest Posted Projects"
+msgstr "Показать последние размещенные заказы"
+
+#: lib/my_account/my_account.php:267 lib/my_account/my_account.php:483
+msgid "There are no projects yet."
+msgstr "Заказов еще нет."
+
+#: lib/my_account/my_account.php:286
+msgid "See all posted projects"
+msgstr "Посмотреть все размещенные проекты"
+
+#: lib/my_account/my_account.php:297
+msgid "Active Quotes"
+msgstr "Активные цитаты"
+
+#: lib/my_account/my_account.php:386 lib/my_account/my_account.php:600
+msgid "See all active quotes"
+msgstr "Посмотреть все активные цитаты"
+
+#: lib/my_account/my_account.php:410
+msgid "Outstanding Projects"
+msgstr "Незавершенные заказы"
+
+#: lib/my_account/my_account.php:503
+msgid "See all pending projects"
+msgstr "Посмотреть все незавершенные проекты"
+
+#: lib/my_account/my_account.php:518
+msgid "My Active Quotes"
+msgstr "Мои активные цитаты"
+
+#: lib/my_account/my_account.php:630
+msgid "Your payment was received."
+msgstr "Ваш платеж был получен."
+
+#: lib/my_account/my_account.php:644
+#, php-format
+msgid ""
+"Your payment was received for the item: <b>%s</b> but your project needs to "
+"be approved.\n"
+"\t\tYou will be notified when your project will be approved and live on our "
+"website"
+msgstr ""
+"Ваш платеж был получен за товар <b>%s</b> но ваш проект должен быть "
+"одобрен.\n"
+"\t\tВы получите уведомление, когда ваш проект будет одобрен и размещен на "
+"нашем сайте"
+
+#: lib/my_account/pay_for_project.php:33
+#, php-format
+msgid "Pay for project - %s"
+msgstr "Оплатить - %s"
+
+#: lib/my_account/pay_for_project.php:58
+msgid ""
+"You are about to pay for this project. Use the accepted methods below to pay "
+"for it."
+msgstr "Вы собираетесь провести оплату. Используйте способ ниже."
+
+#: lib/my_account/pay_for_project.php:59
+#, php-format
+msgid "The price for the project is: %s"
+msgstr "Стоимость заказа: %s"
+
+#: lib/my_account/pay_for_project.php:75
+msgid "Pay by credits"
+msgstr "Купить на кредиты"
+
+#: lib/my_account/pay_with_credits.php:35
+msgid "Pay with virtual currency"
+msgstr "Оплатить с Баланса"
+
+#: lib/my_account/pay_with_credits.php:66
+msgid "You do not have enough credits to pay for this project."
+msgstr "Недостаточно средств для оплаты заказа.???"
+
+#: lib/my_account/pay_with_credits.php:80
+msgid "Your payment has been sent."
+msgstr "Ваша оплата завершена."
+
+#: lib/my_account/pay_with_credits.php:90
+msgid "The price for the project is"
+msgstr "Стоимость заказа"
+
+#: lib/my_account/personal_information.php:289
+#: lib/my_account/personal_information.php:294
+msgid "Password was not updated. Passwords do not match!"
+msgstr "Пароль не был обновлен. Пароли не совпадают!"
+
+#: lib/my_account/personal_information.php:326
+msgid "Info saved!"
+msgstr "Настройки??? сохранены!"
+
+#: lib/my_account/personal_information.php:331
+msgid "Your password was changed. Redirecting to login page..."
+msgstr "Ваш пароль был изменен. Перенаправление на страницу входа в систему..."
+
+#: lib/my_account/personal_information.php:389
+msgid "First name"
+msgstr "Имя"
+
+#: lib/my_account/personal_information.php:397
+msgid "Last name"
+msgstr "Фамилия"
+
+#: lib/my_account/personal_information.php:426
+msgid "Your Role/Position"
+msgstr "Ваша роль/должность"
+
+#: lib/my_account/personal_information.php:453
+msgid "PayPal Email"
+msgstr "PayPal Email"
+
+#: lib/my_account/personal_information.php:468
+msgid "Skrill email"
+msgstr "Электронная почта Skrill"
+
+#: lib/my_account/personal_information.php:483
+msgid "New Password"
+msgstr "Новый пароль"
+
+#: lib/my_account/personal_information.php:491
+msgid "Confirm Password"
+msgstr "Подтвердите пароль"
+
+#: lib/my_account/personal_information.php:510 lib/post_new.php:1251
+#: single-project.php:969
+msgid "Hourly Rate"
+msgstr "Почасовая ставка"
+
+#: lib/my_account/personal_information.php:515
+msgid "Your hourly rate"
+msgstr "Ваша почасовая ставка"
+
+#: lib/my_account/personal_information.php:530
+msgid "Profile Avatar"
+msgstr "Аватар профиля"
+
+#: lib/my_account/personal_information.php:542
+msgid "Profile Cover Image"
+msgstr "Обложка профиля"
+
+#: lib/my_account/personal_information.php:569
+msgid "Your Skills"
+msgstr "Ваши навыки"
+
+#: lib/my_account/personal_information.php:654 lib/user-profile.php:348
+msgid "Portfolio Pictures"
+msgstr "Изображения потрфолио"
+
+#: lib/my_account/personal_information.php:758
+msgid "Email Alerts"
+msgstr "Оповещения по электронной почте"
+
+#: lib/my_account/personal_information.php:798
+msgid ""
+"you will get an email notification when a project is posted in the selected "
+"categories"
+msgstr ""
+"Вы получите уведомление по email, когда заказ будет размещен в выбранных "
+"категориях"
+
+#: lib/my_account/personal_information.php:849
+msgid ""
+"You need to select both categories and locations. If you want to receive a "
+"notification for a category, but the locations doesnt matter for you, then "
+"you need to select all locations."
+msgstr ""
+"Вам нужно выбрать и категории, и местоположения. Если вы хотите получать "
+"уведомления для категории, но местоположение для вас не имеет значения, "
+"выберите все местоположения."
+
+#: lib/my_account/personal_information.php:908
+msgid "Save Settings"
+msgstr "Сохранить настройки"
+
+#: lib/my_account/private_messages.php:158
+msgid "Unread"
+msgstr "Не прочитано"
+
+#: lib/my_account/private_messages.php:197
+#: lib/my_account/private_messages.php:328
+#: lib/my_account/private_messages.php:449
+msgid "No messages here."
+msgstr "Нет сообщений."
+
+#: lib/my_account/private_messages.php:226
+msgid "Private Messages: Inbox"
+msgstr "Личные сообщения: Входящие"
+
+#: lib/my_account/private_messages.php:281
+#: lib/my_account/private_messages.php:407
+msgid "Select All"
+msgstr "Выбрать все"
+
+#: lib/my_account/private_messages.php:311
+#: lib/my_account/private_messages.php:432
+msgid "Reply"
+msgstr "Ответить"
+
+#: lib/my_account/private_messages.php:317
+#: lib/my_account/private_messages.php:438
+msgid "Delete Selected"
+msgstr "Удалить выбранное"
+
+#: lib/my_account/private_messages.php:376
+msgid "Private Messages: Sent Items"
+msgstr "Личные сообщения: отправленные"
+
+#: lib/my_account/private_messages.php:492
+msgid "Delete Multiple Messages: "
+msgstr "Удалить сообщения: "
+
+#: lib/my_account/private_messages.php:497
+#, php-format
+msgid "Are you sure you want to delete this message: %s"
+msgstr "Вы уверены, что хотите удалить это сообщение: %s"
+
+#: lib/my_account/private_messages.php:528
+msgid "No messsages selected."
+msgstr "Сообщения не выбраны."
+
+#: lib/my_account/private_messages.php:540
+#: lib/my_account/private_messages.php:552
+msgid "Cancel"
+msgstr "Отмена"
+
+#: lib/my_account/private_messages.php:614
+#, php-format
+msgid "Read Message: %s"
+msgstr "Прочитать сообщение: %s"
+
+#: lib/my_account/private_messages.php:617
+msgid "Return to inbox"
+msgstr "Вернуться в папку входящих сообщений"
+
+#: lib/my_account/private_messages.php:770
+msgid "Your message has been sent."
+msgstr "Ваше сообщение отправлено."
+
+#: lib/my_account/private_messages.php:772
+#: lib/my_account/private_messages.php:1185
+msgid ""
+"Your message has been sent but the receiver will receive it only after "
+"moderation."
+msgstr ""
+"Ваше сообщение было отправлено, но получатель получит его только после "
+"модерации."
+
+#: lib/my_account/private_messages.php:784
+msgid "You need to type in a message."
+msgstr "Вам нужно набрать сообщение."
+
+#: lib/my_account/private_messages.php:785
+#, php-format
+msgid "Wrong File format: %s"
+msgstr "Неверный формат файла: %s"
+
+#: lib/my_account/private_messages.php:846
+#: lib/my_account/private_messages.php:905
+#, php-format
+msgid "Written on: %s"
+msgstr "Написано на: %s"
+
+#: lib/my_account/private_messages.php:941
+msgid "Message"
+msgstr "Сообщение"
+
+#: lib/my_account/private_messages.php:947
+msgid "Attach File"
+msgstr "Прикрепить файл"
+
+#: lib/my_account/private_messages.php:949 lib/workspaces_chat.php:343
+msgid "Only PDF, ZIP, Office files and Images."
+msgstr "Только PDF, ZIP, файлы Microsoft Office и изображения."
+
+#: lib/my_account/private_messages.php:957
+#: lib/my_account/private_messages.php:1265 lib/post_new.php:1519
+#: lib/project-message-board.php:119 single-project.php:654
+#: single-project.php:1292
+msgid "Send Message"
+msgstr "Отправить сообщение"
+
+#: lib/my_account/private_messages.php:986
+msgid "You cannot contact yourself. Your message wont be sent."
+msgstr "Вы не можете связаться с собой. Ваше сообщение не будет отправлено."
+
+#: lib/my_account/private_messages.php:1063
+msgid "User is empty or not valid."
+msgstr "Пользователь пуст или недействителен."
+
+#: lib/my_account/private_messages.php:1070
+msgid "Please type in a few words at least."
+msgstr "Пожалуйста, введите хотя бы несколько слов."
+
+#: lib/my_account/private_messages.php:1183
+#, php-format
+msgid "Your message has been sent. <a href=\"%s\">Go to inbox</a>."
+msgstr ""
+"Ваше сообщение отправлено. <a href=\"%s\">Перейти в папку входящих</a> "
+"сообщений."
+
+#: lib/my_account/private_messages.php:1225
+msgid "Send Private Message to: "
+msgstr "Отправить личное сообщение: "
+
+#: lib/my_account/private_messages.php:1245
+msgid "Subject:"
+msgstr "Тема:"
+
+#: lib/my_account/private_messages.php:1251
+msgid "Message:"
+msgstr "Сообщение:"
+
+#: lib/my_account/private_messages.php:1258
+msgid "Attach File:"
+msgstr "Прикрепить файл"
+
+#: lib/my_account/rate_user.php:99
+#, php-format
+msgid "Review User %s for project %s"
+msgstr "Отзыв пользователя??? %s по заказу % s"
+
+#: lib/my_account/rate_user.php:143
+msgid "Please leave a comment with your review."
+msgstr "Пожалуйста, оставьте комментарий вместе с отзывом.???"
+
+#: lib/my_account/rate_user.php:158
+#, php-format
+msgid ""
+"Your rating has been posted.<br/><br/><a href='%s' class='btn btn-sm btn-"
+"primary'>Return to your account area</a>"
+msgstr ""
+"Ваш рейтинг был опубликован.<br/><br/><a href='%s' class='btn btn-sm btn-"
+"primary'>Вернуться в личный кабинет</a>"
+
+#: lib/my_account/rate_user.php:207
+msgid "Your Rating:"
+msgstr "Ваша оценка:"
+
+#: lib/my_account/rate_user.php:219
+msgid "Your Comment:"
+msgstr "Ваш комментарий:"
+
+#: lib/my_account/rate_user.php:227
+msgid "Submit Rating"
+msgstr "Поставить оценку"
+
+#: lib/my_account/relist_this_done.php:18
+msgid "Relist Project Project"
+msgstr "Релист Проект Проект"
+
+#: lib/my_account/relist_this_done.php:51
+msgid "Finalise Relist Project"
+msgstr "Завершение повторного размещения???"
+
+#: lib/my_account/relist_this_done.php:145 lib/post_new.php:2144
+msgid "Thank you for posting your project with us."
+msgstr "Спасибо за размещение заказа у нас."
+
+#: lib/my_account/relist_this_done.php:163 lib/post_new.php:2162
+msgid "Your project isn`t live yet, the admin needs to approve it."
+msgstr "Ваш заказ пока не размещен, требуется одобрение администратора."
+
+#: lib/my_account/relist_this_done.php:195 lib/post_new.php:2194
+msgid ""
+"Thank you for posting your project with us. Below is the total price that "
+"you need to pay in order to put your project live.<br/>\n"
+"\t\t\tClick the pay button and you will be redirected..."
+msgstr ""
+"Спасибо за размещения заказа у нас. Ниже приведена сумма к оплате, чтобы "
+"запрос был опубликован.<br>\n"
+"\t\t\tНажмите кнопку оплаты, и вы будете перенаправлены..."
+
+#: lib/my_account/relist_this_done.php:200
+#, php-format
+msgid ""
+"A new project was posted on your website. <br/>\n"
+"\t\t\tSee it here: <a href=\"%s\">%s</a>"
+msgstr ""
+"Новый заказ был размещен на вашем сайте. <br>\n"
+"\t\t\tСмотреть здесь: <a href=\"%s\">%s</a>"
+
+#: lib/my_account/relist_this_done.php:245
+msgid "Hide Project from search engines Fee"
+msgstr "Ставка скрытия заказа от поисковых машин"
+
+#: lib/my_account/relist_this_done.php:268 lib/post_new.php:2243
+msgid "Your Total Credits"
+msgstr "Всего кредитов"
+
+#: lib/my_account/relist_this_done.php:286 lib/post_new.php:2262
+msgid "See your project"
+msgstr "Посмотреть Ваш заказ"
+
+#: lib/my_account/relist_this_done.php:292 lib/post_new.php:2269
+msgid "Go to your account"
+msgstr "Перейти в Ваш профиль"
+
+#: lib/my_account/relist_this_done.php:310 lib/post_new.php:2287
+msgid "Pay by Credits"
+msgstr "Купить на кредиты"
+
+#: lib/my_account/relist_this_done.php:323 lib/post_new.php:2304
+msgid "Pay by MoneyBookers/Skrill"
+msgstr "Платить через MoneyBookers/Skrill"
+
+#: lib/my_account/relist_this_done.php:326 lib/post_new.php:2307
+msgid "Pay by Payza"
+msgstr "Оплатить Payza"
+
+#: lib/my_account/repost_project.php:125 lib/post_new_post.php:62
+msgid "You cannot leave the project title blank!"
+msgstr "Вы не можете оставить название заказа пустым!"
+
+#: lib/my_account/repost_project.php:126 lib/post_new_post.php:89
+msgid "You cannot leave the project description blank!"
+msgstr "Вы не можете оставить описание задания пустым!"
+
+#: lib/my_account/repost_project.php:274 lib/post_new.php:122
+msgid "Your project title"
+msgstr "Название вашего заказа"
+
+#: lib/my_account/repost_project.php:301 lib/post_new.php:650
+msgid "Attach Images"
+msgstr "Прикрепить изображение"
+
+#: lib/my_account/repost_project.php:552
+msgid "Project Ending On"
+msgstr "Дата окончания запроса"
+
+#: lib/my_account/repost_project.php:580
+msgid "Address:"
+msgstr "Адрес:"
+
+#: lib/my_account/repost_project.php:594 lib/post_new.php:273
+msgid "Tags"
+msgstr "Теги"
+
+#: lib/my_account/repost_project.php:607 lib/post_new.php:972
+msgid "Feature project?"
+msgstr "Избранный запрос?"
+
+#: lib/my_account/repost_project.php:616
+msgid ""
+"By clicking this checkbox you mark your project as featured. Extra fee is "
+"applied."
+msgstr ""
+"Нажав эту опцию, вы выделяете свой запрос 'избранным'. За это взымается "
+"дополнительная плата."
+
+#: lib/my_account/repost_project.php:628
+msgid "Sealed bidding?"
+msgstr "Закрытые ставки?"
+
+#: lib/my_account/repost_project.php:637
+msgid ""
+"By clicking this checkbox you mark your seal the bidding. Extra fee is "
+"applied."
+msgstr ""
+"Нажав эту опцию, вы скрываете предложения по запросу. За это взымается "
+"дополнительная плата."
+
+#: lib/my_account/repost_project.php:651
+msgid "Hide project from search engines?"
+msgstr "Скрыть заказ от поисковых машин?"
+
+#: lib/my_account/repost_project.php:660
+msgid ""
+"By clicking this checkbox you hide the project from search engines. Extra "
+"fee is applied."
+msgstr ""
+"Нажав эту опцию, вы скрываете ваш запрос от поисковых машин. За это "
+"взымается дополнительная плата."
+
+#: lib/my_account/repost_project.php:670
+msgid "Coupon"
+msgstr "Купон"
+
+#: lib/my_account/repost_project.php:672
+msgid "The coupon code you used is wrong."
+msgstr "Код купона, который вы использовали, неверный."
+
+#: lib/my_account/repost_project.php:699
+msgid "Publish Project"
+msgstr "Опубликовать заказ"
+
+#: lib/my_account/workspaces.php:110
+#, php-format
+msgid "Workspace: %s"
+msgstr "Рабочее пространство: %s"
+
+#: lib/my_account/workspaces.php:125
+#, php-format
+msgid "Unread Messages:  %s"
+msgstr "Непрочитанные сообщения:  %s"
+
+#: lib/my_account/workspaces.php:131 lib/workspaces_chat.php:107
+#, php-format
+msgid "Project owner: <a href=\"%s\">%s</a>"
+msgstr "Владелец проекта <a href=\"%s\">%s</a>"
+
+#: lib/my_account/workspaces.php:132 lib/workspaces_chat.php:108
+#, php-format
+msgid "Project bidder: <a href=\"%s\">%s</a>"
+msgstr "Участник торгов по проекту <a href=\"%s\">%s</a>"
+
+#: lib/my_account/workspaces.php:133 lib/workspaces_chat.php:109
+#, php-format
+msgid "Winning Bid Amount: %s"
+msgstr "Сумма выигрышной ставки: %s"
+
+#: lib/my_account/workspaces.php:134 lib/workspaces_chat.php:110
+#, php-format
+msgid "Date work started: %s"
+msgstr "Дата начала работы: %s"
+
+#: lib/my_account/workspaces.php:141
+msgid "To the project page"
+msgstr "На страницу проекта"
+
+#: lib/my_account/workspaces.php:142
+msgid "Read More or Send a Message"
+msgstr "Подробнее или отправить сообщение"
+
+#: lib/my_account/workspaces.php:155
+msgid "There are no workspaces yet."
+msgstr "Рабочих мест пока нет."
+
+#: lib/pay-for-contact-details.php:20
+#, php-format
+msgid "To reveal the customer details, you need to pay a fee of: %s"
+msgstr "Чтобы раскрыть данные клиента, необходимо внести плату в размере: %s"
+
+#: lib/pay-for-contact-details.php:47
+#, php-format
+msgid ""
+"To reveal the customer details, you need to <a href=\"%s\">login</a> first."
+msgstr ""
+"Чтобы открыть данные клиента, необходимо сначала <a href=\"%s\">войти в</a> "
+"систему."
+
+#: lib/post_new.php:51
+msgid "Project Info"
+msgstr "Информация о проекте"
+
+#: lib/post_new.php:65
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: lib/post_new.php:72
+msgid "Finish"
+msgstr "Завершить"
+
+#: lib/post_new.php:105 lib/post_new.php:908
+msgid ""
+"Your form has errors. Please check below, correct the errors, then submit "
+"again."
+msgstr ""
+"В вашей форме есть ошибки. Пожалуйста, проверьте ниже, исправьте ошибки, а "
+"затем отправьте снова."
+
+#: lib/post_new.php:123
+msgid "eg: I need a website created very soon."
+msgstr "Например: Мне нужно уточнить границы участка."
+
+#: lib/post_new.php:139
+msgid "Describe here your project scope."
+msgstr "Опишите здесь ваш заказ."
+
+#: lib/post_new.php:145
+msgid "Categories"
+msgstr "Категории"
+
+#: lib/post_new.php:274
+msgid "eg: something, comma, separated."
+msgstr "например: что-то, запятой, отделенный.???"
+
+#: lib/post_new.php:372 lib/post_new.php:1264
+msgid "Project Budget"
+msgstr "Бюджет заказа"
+
+#: lib/post_new.php:445 lib/post_new.php:1318 single-project.php:1067
+msgid "Project Deadline"
+msgstr "Срок сдачи проекта"
+
+#: lib/post_new.php:584
+msgid "eg: New York, 13221"
+msgstr "Например: Владивсток, 690090"
+
+#: lib/post_new.php:865
+msgid "Click the grey area below to add project files."
+msgstr ""
+"Нажмите на серое окно внизу, чтобы добавить файлы запроса. Изображения "
+"использовать нельзя"
+
+#: lib/post_new.php:875 lib/post_new.php:1050 lib/post_new.php:1081
+msgid "Next Step"
+msgstr "Следующий шаг"
+
+#: lib/post_new.php:979 lib/post_new.php:1005 lib/post_new.php:1029
+#, php-format
+msgid "This option costs %s extra"
+msgstr "Эта опция стоит %s дополнительно"
+
+#: lib/post_new.php:983
+#, php-format
+msgid "By clicking this checkbox you mark your project as featured. %s"
+msgstr "Нажав эту опцию, вы выделяете свой запрос 'особым'. %s"
+
+#: lib/post_new.php:999
+msgid "Sealed Bidding?"
+msgstr "Закрытые ставки?"
+
+#: lib/post_new.php:1009
+#, php-format
+msgid "By clicking this checkbox you hide your project's bids. %s"
+msgstr ""
+"Установив этот флажок, вы скрываете предложенные ставки по вашему запросу. %s"
+
+#: lib/post_new.php:1023
+msgid "Hide Project from search engines"
+msgstr "Скрыть запрос от поисковых машин"
+
+#: lib/post_new.php:1032
+#, php-format
+msgid "By clicking this checkbox you hide your project from search engines. %s"
+msgstr "Отметив эту опцию, вы скрываете ваш запрос от поисковых машин. %s"
+
+#: lib/post_new.php:1049 lib/post_new.php:1080 lib/post_new.php:2319
+msgid "Go Back"
+msgstr "Назад"
+
+#: lib/post_new.php:1202 single-project.php:904 single-service.php:620
+msgid "Your bid has not been posted. Please correct the errors and try again."
+msgstr ""
+"Ваше предложение цены не было размещено. Пожалуйста, исправьте ошибки и "
+"повторите попытку."
+
+#: lib/post_new.php:1217 single-project.php:919 single-service.php:635
+msgid "Your bid has been posted."
+msgstr "Ваше предложение цены размещено."
+
+#: lib/post_new.php:1304 lib/user-profile.php:75 lib/user-profile.php:95
+#: single-project.php:1037 single-project.php:1048
+msgid "n/a"
+msgstr "н/д"
+
+#: lib/post_new.php:1325 single-project.php:1075
+msgid "Bidding is open for"
+msgstr "Торги открыты для"
+
+#: lib/post_new.php:1333 lib/post_new.php:1416 single-project.php:1083
+#: single-project.php:1181
+msgid "Proposals"
+msgstr "Предложения"
+
+#: lib/post_new.php:1369
+msgid "Project closed for price: "
+msgstr "Запрос закрыт с ценой???: "
+
+#: lib/post_new.php:1391 single-project.php:1883
+msgid "Project Description"
+msgstr "Описание проекта"
+
+#: lib/post_new.php:1418 single-project.php:1183
+msgid "[project has private proposals]"
+msgstr "[запрос имеет частные предложения]"
+
+#: lib/post_new.php:1457
+msgid "Bid"
+msgstr "Ставка"
+
+#: lib/post_new.php:1465 lib/post_new.php:1512 single-project.php:575
+msgid "Bid Files"
+msgstr "Посмотреть предложения???"
+
+#: lib/post_new.php:1514
+msgid "None"
+msgstr "Нет"
+
+#: lib/post_new.php:1535 single-project.php:672 single-project.php:1310
+msgid "No proposals placed yet."
+msgstr "Пока нет предложений."
+
+#: lib/post_new.php:1553 single-service.php:756
+msgid "Image Gallery"
+msgstr "Галерея изображений"
+
+#: lib/post_new.php:1579 single-project.php:1939 single-service.php:784
+msgid "No images."
+msgstr "Нет изображений."
+
+#: lib/post_new.php:1621 single-project.php:433 single-project.php:2052
+#: single-service.php:805
+msgid "Map Location"
+msgstr "Местоположение на карте"
+
+#: lib/post_new.php:1767 single-project.php:1722
+msgid "Project Posted By"
+msgstr "Опубликовано пользователем:"
+
+#: lib/post_new.php:1795 single-project.php:1750 single-service.php:1077
+msgid "Has created:"
+msgstr "Создал:"
+
+#: lib/post_new.php:1796 lib/post_new.php:1802 single-project.php:1751
+#: single-project.php:1757 single-service.php:1078 single-service.php:1084
+#, php-format
+msgid "%s project(s)"
+msgstr "%s заказ(ы)"
+
+#: lib/post_new.php:1801 single-project.php:1756 single-service.php:1083
+msgid "Has closed:"
+msgstr "Закрыл:"
+
+#: lib/post_new.php:1807 single-project.php:1762 single-service.php:1089
+msgid "Has rated:"
+msgstr "Оценил:"
+
+#: lib/post_new.php:1808 single-project.php:1763 single-service.php:1090
+#, php-format
+msgid "%s provider(s)"
+msgstr "%s заказчик(и)"
+
+#: lib/post_new.php:1816 single-project.php:1771
+msgid "See More Projects by this user"
+msgstr "Посмотреть заказы этого пользователя"
+
+#: lib/post_new.php:1833 single-project.php:1950 single-service.php:1113
+msgid "Project Files"
+msgstr "Файлы проекта"
+
+#: lib/post_new.php:1839 single-project.php:2018 single-service.php:1119
+msgid "No project files."
+msgstr "Нет файлов заказа."
+
+#: lib/post_new.php:1858 single-service.php:1138
+msgid "Other Options"
+msgstr "Другие настройки"
+
+#: lib/post_new.php:1880 single-project.php:1783 single-service.php:1160
+msgid "Other Details"
+msgstr "Другие детали"
+
+#: lib/post_new.php:1910 single-project.php:1800 single-service.php:1190
+msgid "Viewed"
+msgstr "Просмотрено"
+
+#: lib/post_new.php:1911 single-project.php:1801 single-service.php:1191
+msgid "times"
+msgstr "раз"
+
+#: lib/post_new.php:2323
+msgid "Finalize Project Posting"
+msgstr "Завершить размещение заказа"
+
+#: lib/post_new_post.php:53
+#, fuzzy
+#| msgid "Please type your e-mail address."
+msgid "Please type in your desired hourly rate."
+msgstr "Пожалуйста, введите свой адрес электронной почты."
+
+#: lib/post_new_post.php:72
+msgid "You cannot leave the project category blank!"
+msgstr "Нужно обязательно выбрать категорию заказа"
+
+#: lib/post_new_post.php:81
+msgid "You cannot leave the project location blank!"
+msgstr "Нужно обязательно выбрать регион"
+
+#: lib/post_new_post.php:227
+msgid "You cannot have the project price negative"
+msgstr "Вы не можете иметь отрицательную цену проекта"
+
+#: lib/post_new_post.php:325
+#, php-format
+msgid "You cannot leave the field: \"<b>%s</b>\" blank!"
+msgstr "Вы не можете оставить поле: \"<b>%s</b>\" пустым!"
+
+#: lib/project-message-board.php:21
+#, php-format
+msgid "Message Board: %s"
+msgstr "Обсуждение???: %s"
+
+#: lib/project-message-board.php:94
+msgid "Message posted successfuly."
+msgstr "Сообщение успешно опубликовано."
+
+#: lib/project-message-board.php:116
+msgid "Your Message"
+msgstr "Ваше сообщение"
+
+#: lib/project-message-board.php:119
+msgid "Return to project"
+msgstr "Вернуться к проекту"
+
+#: lib/project-message-board.php:149
+#, php-format
+msgid "Posted by <b>%s</b> on <b>%s</b>"
+msgstr "Опубликовано <b>%s</b> <b>%s</b>"
+
+#: lib/project-message-board.php:164
+msgid "No messages posted yet."
+msgstr "Сообщений еще нет."
+
+#: lib/provider_search.php:46
+msgid "Username like:"
+msgstr "Имя пользователя как:"
+
+#: lib/provider_search.php:52
+msgid "Hourly rate:"
+msgstr "Почасовая ставка"
+
+#: lib/provider_search.php:56
+msgid "Select option"
+msgstr "Выберите опцию"
+
+#: lib/provider_search.php:90
+msgid "Categories:"
+msgstr "Категории:"
+
+#: lib/provider_search.php:109
+msgid "Locations:"
+msgstr "Местонахождения:"
+
+#: lib/provider_search.php:128
+msgid "YES"
+msgstr "ДА"
+
+#: lib/provider_search.php:128
+msgid "NO"
+msgstr "НЕТ"
+
+#: lib/provider_search.php:135
+msgid "Online status?"
+msgstr "Статус онлайн?"
+
+#: lib/provider_search.php:142 taxonomy.php:239
+msgid "Apply Filters"
+msgstr "Применить фильтры"
+
+#: lib/retract_bid.php:80
+#, php-format
+msgid "Retract your bid of %s to project %s"
+msgstr "Отмените свою ставку %s на проект %s"
+
+#: lib/retract_bid.php:96
+msgid "Are you sure you want to retract your bid ?"
+msgstr "Вы уверены, что хотите отказаться от своей ставки?"
+
+#: lib/retract_bid.php:105
+msgid "No, get back"
+msgstr "Нет, вернись"
+
+#: lib/retract_bid.php:109
+msgid "Submit your answer"
+msgstr "Отправьте свой ответ"
+
+#: lib/user-feedback.php:20
+#, php-format
+msgid "User Feedback - %s"
+msgstr "Отзывы пользователя - %s"
+
+#: lib/user-feedback.php:111
+msgid "<i class=\"fas fa-money\"></i> Hourly Rate:"
+msgstr "<i class=\"fas fa-money\"></i> Почасовая оплата:"
+
+#: lib/user-feedback.php:140 lib/user-profile.php:142
+msgid "Chat with User"
+msgstr "Чат с пользователем"
+
+#: lib/user-feedback.php:243
+msgid "This user has no reviews yet."
+msgstr "У этого пользователя еще нет отзывов. "
+
+#: lib/user-profile.php:24
+msgid "User Profile"
+msgstr "Профиль пользователя"
+
+#: lib/user-profile.php:114
+#, php-format
+msgid "%s/hr"
+msgstr "%s/час"
+
+#: lib/user-profile.php:282
+msgid "<i class=\"fas fa-money-bill-alt\"></i> Hourly Rate:"
+msgstr "<i class=\"fas fa-money-bill-alt\"></i> Почасовая оплата:"
+
+#: lib/user-profile.php:318
+msgid "No personal info defined."
+msgstr "Личной информации нет."
+
+#: lib/user-profile.php:406
+msgid "There are no pictures yet."
+msgstr "Фотографий пока нет."
+
+#: lib/user-profile.php:538
+msgid "There are no reviews yet."
+msgstr "Отзывов пока нет."
+
+#: lib/widgets/best-rated-users.php:52
+msgid "No rated users yet."
+msgstr "Нет рейтингов пользователей."
+
+#: lib/widgets/best-rated-users.php:66
+#, php-format
+msgid "Joined on: %s"
+msgstr "Присоединился: %s"
+
+#: lib/widgets/best-rated-users.php:87 lib/widgets/browse-by-category.php:144
+#: lib/widgets/browse-by-location.php:176
+#: lib/widgets/category-with-images.php:129 lib/widgets/ending-soonest.php:69
+#: lib/widgets/featured-projects.php:72 lib/widgets/freelancers-widget.php:122
+#: lib/widgets/how-it-works.php:113 lib/widgets/latest-posted-projects.php:70
+#: lib/widgets/latest-projects-big.php:130
+#: lib/widgets/latest-projects-small.php:97
+#: lib/widgets/most-visited-projects.php:69
+msgid "Title"
+msgstr "Заголовок"
+
+#: lib/widgets/best-rated-users.php:99
+msgid "User Type"
+msgstr "Тип пользователя"
+
+#: lib/widgets/best-rated-users.php:114
+msgid "Users Limit"
+msgstr "Лимит пользователей"
+
+#: lib/widgets/browse-by-category.php:129
+msgid "See More Categories"
+msgstr "Смотреть ещё категории"
+
+#: lib/widgets/browse-by-category.php:150
+#: lib/widgets/browse-by-location.php:182
+msgid "Only show parent categories"
+msgstr "Показывать только родительские категории"
+
+#: lib/widgets/browse-by-category.php:157
+#: lib/widgets/browse-by-location.php:188
+msgid "Number of Columns"
+msgstr "Количество столбцов"
+
+#: lib/widgets/browse-by-category.php:163
+#: lib/widgets/browse-by-location.php:194
+msgid "Number of Rows"
+msgstr "Количество строк"
+
+#: lib/widgets/browse-by-category.php:174
+#: lib/widgets/category-with-images.php:153
+msgid "Categories to show"
+msgstr "Категории для показа"
+
+#: lib/widgets/browse-by-location.php:161
+msgid "See More Locations"
+msgstr "Смотреть ещё места"
+
+#: lib/widgets/browse-by-location.php:205
+msgid "Locations to show"
+msgstr "Регионы для показа"
+
+#: lib/widgets/category-with-images.php:137
+#: lib/widgets/front-page-sections.php:157 lib/widgets/how-it-works.php:119
+#: lib/widgets/latest-projects-big.php:167
+msgid "Title orientation"
+msgstr "Ориентация по названию"
+
+#: lib/widgets/ending-soonest.php:11
+msgid "Show the ending soonest projects"
+msgstr "Показать заказы, которые скоро истекают"
+
+#: lib/widgets/ending-soonest.php:13
+msgid "ProjectTheme - Ending Soonest Projects"
+msgstr "Запросы, которые скоро закроются"
+
+#: lib/widgets/ending-soonest.php:76 lib/widgets/featured-projects.php:79
+#: lib/widgets/freelancers-widget.php:129
+#: lib/widgets/latest-posted-projects.php:77
+#: lib/widgets/latest-projects-big.php:160
+#: lib/widgets/latest-projects-small.php:104
+#: lib/widgets/most-visited-projects.php:76
+msgid "Show projects limit"
+msgstr "Показать лимит запросов"
+
+#: lib/widgets/freelancers-widget.php:19
+msgid "ProjectTheme - Latest Freelancers"
+msgstr "ProjectTheme - Последние фрилансеры"
+
+#: lib/widgets/freelancers-widget.php:22
+msgid "Shows a list of freelancers for homepage."
+msgstr "Показывает список фрилансеров для домашней страницы."
+
+#: lib/widgets/freelancers-widget.php:30
+msgid "Search For More Freelancers"
+msgstr "Искать больше фрилансеров"
+
+#: lib/widgets/freelancers-widget.php:117
+#: lib/widgets/front-page-main-slider.php:152 lib/widgets/how-it-works.php:108
+#: lib/widgets/latest-projects-big.php:125
+#: lib/widgets/latest-projects-small.php:92
+msgid "New title"
+msgstr "Новый заголовок"
+
+#: lib/widgets/freelancers-widget.php:137
+msgid "Show skills for users"
+msgstr "Показать навыки для пользователей"
+
+#: lib/widgets/freelancers-widget.php:145
+msgid "Search Page Button Caption"
+msgstr "Надпись на кнопке страницы поиска"
+
+#: lib/widgets/front-page-main-slider.php:19
+msgid "ProjectTheme - Main Slider Home"
+msgstr "ProjectTheme - Главный слайдер Главная"
+
+#: lib/widgets/front-page-main-slider.php:22
+msgid "Shows the big slider for project theme homepage."
+msgstr "Показывает большой слайдер для главной страницы темы проекта."
+
+#: lib/widgets/front-page-main-slider.php:89
+msgid "What service do you need? (e.g. website design)"
+msgstr "Какая услуга вам нужна? (например, разработка веб-сайта)"
+
+#: lib/widgets/front-page-main-slider.php:120
+msgid "Start search..."
+msgstr "Начать поиск"
+
+#: lib/widgets/front-page-main-slider.php:122
+msgid "Search Now"
+msgstr "Искать сейчас"
+
+#: lib/widgets/front-page-main-slider.php:157
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: lib/widgets/front-page-sections.php:97
+msgid "Widget Title"
+msgstr "Заголовок виджета"
+
+#: lib/widgets/front-page-sections.php:104
+msgid "Title margin bottom"
+msgstr "Нижнее поле заголовка"
+
+#: lib/widgets/front-page-sections.php:111
+msgid "Section margin top/bottom"
+msgstr "Верхнее/нижнее поле секции"
+
+#: lib/widgets/front-page-sections.php:118
+msgid "Font size title"
+msgstr "Размер шрифта Заголовок"
+
+#: lib/widgets/front-page-sections.php:132
+#, php-format
+msgid "Column %s icon"
+msgstr "Значок колонки %s"
+
+#: lib/widgets/front-page-sections.php:140
+#, php-format
+msgid "Column %s title"
+msgstr "Заголовок колонки %s"
+
+#: lib/widgets/front-page-sections.php:147
+#, php-format
+msgid "Column %s content"
+msgstr "Содержание колонки %s"
+
+#: lib/widgets/how-it-works.php:19
+msgid "ProjectTheme - How It Works"
+msgstr "ProjectTheme - Как это работает"
+
+#: lib/widgets/how-it-works.php:22
+msgid "Shows the how it works widget."
+msgstr "Показывает виджет \"Как это работает\"."
+
+#: lib/widgets/how-it-works.php:81 lib/widgets/latest-projects-big.php:95
+#: lib/widgets/latest-projects-small.php:69
+msgid "Search For More Projects"
+msgstr "Поиск других проектов"
+
+#: lib/widgets/how-it-works.php:135 lib/widgets/how-it-works.php:149
+msgid "Title #1"
+msgstr "Название #1"
+
+#: lib/widgets/how-it-works.php:142
+msgid "Icon Link #1"
+msgstr "Иконка Ссылка #1"
+
+#: lib/widgets/how-it-works.php:157
+msgid "Title #2"
+msgstr "Название #2"
+
+#: lib/widgets/how-it-works.php:164
+msgid "Icon Link #2"
+msgstr "Иконка Ссылка #2"
+
+#: lib/widgets/how-it-works.php:171
+msgid "Content #2"
+msgstr "Содержание #2"
+
+#: lib/widgets/how-it-works.php:179
+msgid "Title #3"
+msgstr "Название #3"
+
+#: lib/widgets/how-it-works.php:186
+msgid "Icon Link #3"
+msgstr "Иконка Ссылка #3"
+
+#: lib/widgets/how-it-works.php:193
+msgid "Content #3"
+msgstr "Содержание #3"
+
+#: lib/widgets/how-it-works.php:202
+msgid "Title #4"
+msgstr "Название #4"
+
+#: lib/widgets/how-it-works.php:209
+msgid "Icon Link #4"
+msgstr "Иконка Ссылка #4"
+
+#: lib/widgets/how-it-works.php:216
+msgid "Content #4"
+msgstr "Содержание #4"
+
+#: lib/widgets/latest-posted-projects.php:11
+msgid "Show latest posted projects"
+msgstr "Показать последние размещенные заказы"
+
+#: lib/widgets/latest-posted-projects.php:13
+msgid "ProjectTheme - Latest projects"
+msgstr "Последние запросы"
+
+#: lib/widgets/latest-projects-big.php:19
+msgid "ProjectTheme - Latest posts big"
+msgstr "ProjectTheme - Последние сообщения big"
+
+#: lib/widgets/latest-projects-big.php:22
+msgid "Shows the latest posted projects big."
+msgstr "Показывает последние размещенные большие проекты."
+
+#: lib/widgets/latest-projects-big.php:138
+msgid "Margin Bottom"
+msgstr "Нижний отступ"
+
+#: lib/widgets/latest-projects-big.php:145
+msgid "Margin Top"
+msgstr "Верхний отступ"
+
+#: lib/widgets/latest-projects-big.php:153
+msgid "Search More Button Caption"
+msgstr "Надпись на кнопке Search More"
+
+#: lib/widgets/latest-projects-small.php:19
+msgid "ProjectTheme - Latest posts Small"
+msgstr "ProjectTheme - Последние сообщения Маленький"
+
+#: lib/widgets/latest-projects-small.php:22
+msgid "Shows the latest posted projects small."
+msgstr "Показывает последние размещенные проекты небольшого размера."
+
+#: lib/widgets/most-visited-projects.php:11
+msgid "Show most viewed projects"
+msgstr "Показать самые просматриваемые заказы"
+
+#: lib/widgets/most-visited-projects.php:13
+msgid "ProjectTheme - Most viewed projects"
+msgstr "Самые популярные запросы"
+
+#: lib/widgets/new-frontpage-slider.php:145
+msgid "Type Your Keyword"
+msgstr "Введите ключевое слово"
+
+#: lib/widgets/new-frontpage-slider.php:196
+msgid "Hero Image"
+msgstr "Hero Изображение"
+
+#: lib/widgets/new-frontpage-slider.php:203
+msgid "Show tint"
+msgstr "Показать оттенок"
+
+#: lib/widgets/new-frontpage-slider.php:216
+msgid "Background tint"
+msgstr "Оттенок фона"
+
+#: lib/widgets/new-frontpage-slider.php:235
+msgid "Main Tagline"
+msgstr "Основной теглайн"
+
+#: lib/widgets/new-frontpage-slider.php:242
+msgid "Sub Tagline"
+msgstr "Подтеглайн"
+
+#: lib/widgets/new-frontpage-slider.php:249
+msgid "Button #1 Caption"
+msgstr "Надпись на кнопке №1"
+
+#: lib/widgets/new-frontpage-slider.php:256
+msgid "Button #1 Link"
+msgstr "Кнопка №1 Ссылка"
+
+#: lib/widgets/new-frontpage-slider.php:264
+msgid "Button #2 Caption"
+msgstr "Кнопка №2 Надпись"
+
+#: lib/widgets/new-frontpage-slider.php:271
+msgid "Button #2 Link"
+msgstr "Кнопка №2 Ссылка"
+
+#: lib/widgets/new-frontpage-slider.php:279
+msgid "Show search bar"
+msgstr "Показать панель поиска"
+
+#: lib/widgets/new-frontpage-slider.php:295
+msgid "Search bar background"
+msgstr "Фон строки поиска"
+
+#: lib/widgets/new-frontpage-slider.php:304
+msgid "Top Padding"
+msgstr "Верхний отступ"
+
+#: lib/widgets/new-frontpage-slider.php:311
+msgid "Bottom Padding"
+msgstr "Нижний отступ"
+
+#: lib/workspaces_chat.php:18
+msgid "Workspaces Chat"
+msgstr "Чат по рабочим местам"
+
+#: lib/workspaces_chat.php:77
+#, php-format
+msgid "Project Workspace - #%s"
+msgstr "Рабочая область проекта - #%s"
+
+#: lib/workspaces_chat.php:106
+#, php-format
+msgid "Project: <a href=\"%s\"><b>%s</b></a>"
+msgstr "Проект <a href=\"%s\"><b>%s</b></a>"
+
+#: lib/workspaces_chat.php:216
+msgid "Your chat message has been sent."
+msgstr "Ваше сообщение в чате отправлено."
+
+#: lib/workspaces_chat.php:306
+msgid ""
+"Project has been completed by the freelancer. Waiting on the project owner "
+"to confirm the work."
+msgstr ""
+"Проект завершен фрилансером. Ждем подтверждения работы от владельца проекта."
+
+#: lib/workspaces_chat.php:324
+msgid "Project is now ended. The work has been approved by the project owner."
+msgstr "Проект завершен. Работа одобрена владельцем проекта."
+
+#: lib/workspaces_chat.php:347
+msgid "Send message"
+msgstr "Отправить сообщение"
+
+#: post-new-page-template.php:41
+msgid "Describe what you need done"
+msgstr "Опишите, что вам нужно сделать"
+
+#: search.php:41
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты поиска для: %s"
+
+#: single-project.php:157 single-service.php:168
+msgid "Your bid must be numeric type. Eg: 9.99"
+msgstr "Предложение должно быть числовым, например: 9,99"
+
+#: single-project.php:162 single-service.php:173
+msgid "Your cannot bid your own projects."
+msgstr "Вы не можете делать предложения по своему заказу."
+
+#: single-project.php:197 single-service.php:204
+#, php-format
+msgid "Payment for bidding on project: <a href=\"%s\">%s</a>"
+msgstr "Оплата за предложения по заказу: <a href=\"%s\">%s</a>"
+
+#: single-project.php:272
+#, php-format
+msgid ""
+"You need to upgrade membership before you see the details of this project. "
+"<a href=\"%s\">Click here</a> to upgrade."
+msgstr ""
+"Чтобы увидеть подробности этого проекта, необходимо повысить уровень "
+"членства. <a href=\"%s\">Нажмите здесь</a>, чтобы повысить статус."
+
+#: single-project.php:318 single-service.php:291
+#, php-format
+msgid "Project \"%s\" is marked hidden."
+msgstr "Заказ \"%s\" помечен, как скрытый."
+
+#: single-project.php:320 single-service.php:293
+#, php-format
+msgid ""
+"The project \"%s\" was marked as hidden. <a href=\"%s\">Please login</a> to "
+"see project details."
+msgstr ""
+"Заказ \"%s\" был помечен как скрытый. <a href=\"%s\">Пожалуйста войдите</"
+"a> , чтобы просмотреть сведения о заказе."
+
+#: single-project.php:440
+msgid "Pictures and Files"
+msgstr "Изображения и файлы"
+
+#: single-project.php:474
+msgid "Received Project Proposals"
+msgstr "Полученные проектные предложения"
+
+#: single-project.php:503
+msgid "Proposal"
+msgstr "Предложение"
+
+#: single-project.php:505
+msgid "Time"
+msgstr "Время"
+
+#: single-project.php:553 single-project.php:1249
+#, php-format
+msgid "%s days"
+msgstr "%s дней"
+
+#: single-project.php:558 single-project.php:1254
+msgid "Select as Winner"
+msgstr "Выберите в качестве победителя"
+
+#: single-project.php:565 single-project.php:1264
+#, php-format
+msgid "%s See Bid Files"
+msgstr "%s См. файлы предложений"
+
+#: single-project.php:627
+msgid "Close This"
+msgstr "Закрыть"
+
+#: single-project.php:651
+msgid "Chat User"
+msgstr "Пользователь чата"
+
+#: single-project.php:658 single-project.php:1296
+msgid "Project Winner"
+msgstr "Завершенный запрос (победитель)"
+
+#: single-project.php:728 single-service.php:430
+msgid "Report offensive project"
+msgstr "Подать жалобу на заказ"
+
+#: single-project.php:730 single-service.php:432
+msgid "This project has been reported as offensive"
+msgstr "На данный заказ поступила жалоба"
+
+#: single-project.php:744 single-service.php:446
+msgid "Thank you! Your report has been submitted."
+msgstr "Спасибо! Ваш отчет был отправлен."
+
+#: single-project.php:763 single-service.php:465
+msgid "Slow down buddy! You reported this before."
+msgstr "Стоп! Вы сообщали об этом ранее."
+
+#: single-project.php:781 single-service.php:483
+msgid "Report this project"
+msgstr "Пожаловаться на проект"
+
+#: single-project.php:789 single-service.php:491
+#, php-format
+msgid "You need to be <a href=\"%s\">logged</a> in to use this feature."
+msgstr ""
+"Вам необходимо <a href=\"%s\">войти</a> чтобы воспользоваться данной "
+"функцией."
+
+#: single-project.php:798 single-service.php:500
+msgid "Reason for reporting"
+msgstr "Причина жалобы"
+
+#: single-project.php:807 single-service.php:509
+msgid "Submit Report"
+msgstr "Отправить жалобу"
+
+#: single-project.php:864 single-service.php:566
+msgid "Thank you! Your message has been sent."
+msgstr "Спасибо! Ваше сообщение было отправлено."
+
+#: single-project.php:882 single-service.php:584
+msgid "Slow down buddy!."
+msgstr "Притормози дружище!."
+
+#: single-project.php:936
+msgid "Project Main Details"
+msgstr "Основные детали проекта"
+
+#: single-project.php:1146
+#, php-format
+msgid "Project closed for price: %s"
+msgstr "Проект закрыт по цене: %s"
+
+#: single-project.php:1289
+#, php-format
+msgid "%s Chat User"
+msgstr "%s Пользователь чата"
+
+#: single-project.php:1320 single-service.php:879
+msgid "Related Projects"
+msgstr "Похожие проекты"
+
+#: single-project.php:1401
+msgid "You are the owner of this project."
+msgstr "Вы являетесь владельцем этого проекта."
+
+#: single-project.php:1404 single-project.php:1819 single-service.php:987
+#: single-service.php:1231
+msgid "Edit"
+msgstr "Редактировать"
+
+#: single-project.php:1405 single-project.php:1820 single-service.php:988
+msgid "Repost"
+msgstr "Повторно отправить запись"
+
+#: single-project.php:1498
+msgid "Apply for this Project"
+msgstr "Принять для заказа???"
+
+#: single-project.php:1530
+#, php-format
+msgid "The user contact details: %s"
+msgstr "Контактная информация пользователя: %s"
+
+#: single-project.php:1555
+msgid ""
+"You can use the button below to apply and submit a proposal for this project."
+msgstr "Используйте кнопку внизу, чтобы отправить предложение по заказу."
+
+#: single-project.php:1576 single-project.php:1627
+msgid "Submit a Proposal"
+msgstr "Подать предложение"
+
+#: single-project.php:1602
+msgid "Your bid has files added. Edit them with the button below"
+msgstr "В вашу заявку добавлены файлы. Отредактируйте их с помощью кнопки ниже"
+
+#: single-project.php:1608
+#, php-format
+msgid "EDIT BID %s"
+msgstr "EDIT BID %s"
+
+#: single-project.php:1612
+msgid "Retract your bid"
+msgstr "Отозвать свою ставку"
+
+#: single-project.php:1632
+msgid "Project is closed, or you cannot bid due to restrictions."
+msgstr ""
+"Проект закрыт, или вы не можете участвовать в торгах из-за ограничений."
+
+#: single-project.php:1659 single-service.php:1034
+msgid "Chat With User"
+msgstr "Чат с пользователем"
+
+#: single-project.php:1689
+msgid "Contact Project Owner"
+msgstr "Связаться с заказчикос"
+
+#: single-project.php:1708
+msgid "Project Message Board"
+msgstr "Обсуждение заказа"
+
+#: single-project.php:1830 single-service.php:1242
+msgid "Report"
+msgstr "Отчет"
+
+#: single-project.php:1843 single-service.php:1249
+msgid "Contact Seller"
+msgstr "Связаться с продавцом"
+
+#: single-service.php:653
+msgid "Service Budget"
+msgstr "Бюджет услуг"
+
+#: single-service.php:693
+msgid "Time Left"
+msgstr "Осталось времени"
+
+#: single-service.php:724
+msgid "Service Description"
+msgstr "Описание услуги"
+
+#: single-service.php:984
+msgid "You are the owner of this service."
+msgstr "Вы являетесь владельцем этой услуги."
+
+#: single-service.php:999
+msgid "Get in Contact"
+msgstr "Свяжитесь с нами"
+
+#: single-service.php:1001
+msgid "You can use the button below to get in contact with the service owner."
+msgstr ""
+"Вы можете воспользоваться кнопкой ниже, чтобы связаться с владельцем сервиса."
+
+#: single-service.php:1049
+msgid "Service Posted By"
+msgstr "Сервис Опубликовано"
+
+#: single-service.php:1098
+msgid "See more about this user"
+msgstr "Подробнее об этом пользователе"
+
+#: taxonomy.php:187
+msgid "Keyword:"
+msgstr "Ключевое слово:"
+
+#: taxonomy.php:188
+msgid "Type here..."
+msgstr "Введите здесь ..."
+
+#: taxonomy.php:200
+msgid "Minimum Budget:"
+msgstr "Минимальный бюджет:"
+
+#: taxonomy.php:206
+msgid "Maximum Budget:"
+msgstr "Максимальный бюджет:"
+
+#: taxonomy.php:224
+msgid "Ending In:"
+msgstr "Торги заканчиваются:"
+
+#: taxonomy.php:226
+msgid "Select Period"
+msgstr "Выберите период"
+
+#: taxonomy.php:227
+msgid "1 day"
+msgstr "1 день"
+
+#: taxonomy.php:228
+msgid "7 days"
+msgstr "7 дней"
+
+#: taxonomy.php:229
+msgid "20 days"
+msgstr "20 дней"
+
+#: taxonomy.php:230
+msgid "30 days"
+msgstr "30 дней"
+
+#: taxonomy.php:231
+msgid "6 Months"
+msgstr "6 месяцев"
+
+#. Theme Name of the plugin/theme
+msgid "ProjectTheme"
+msgstr "ProjectTheme"
+
+#. Theme URI of the plugin/theme
+msgid "http://sitemile.com/products/wordpress-project-freelancer-theme/"
+msgstr "http://sitemile.com/products/wordpress-project-freelancer-theme/"
+
+#. Description of the plugin/theme
+msgid ""
+"The only wordpress theme that allows you to build a project bidding, "
+"freelancer, or chores website from your wordpress blog. A turn-key solution "
+"for your business. Create a full featured outsourcing website in minutes"
+msgstr ""
+"Единственная тема wordpress, которая позволяет вам создать сайт для торгов, "
+"фрилансеров или работы по дому из вашего блога wordpress. Готовое решение "
+"для вашего бизнеса. Создайте полнофункциональный аутсорсинговый сайт за "
+"несколько минут"
+
+#. Author of the plugin/theme
+msgid "SiteMile"
+msgstr "Siti"
+
+#. Author URI of the plugin/theme
+msgid "http://sitemile.com"
+msgstr "http://sitemile.com"
+
+#. Template Name of the plugin/theme
+msgid "PT Page Template 1"
+msgstr "Шаблон страницы PT 1"
+
+#. Template Name of the plugin/theme
+msgid "PT Empty Template"
+msgstr "PT Пустой шаблон"
+
+#. Template Name of the plugin/theme
+msgid "PT Account Pages"
+msgstr "Страницы учетной записи PT"
+
+#. Template Name of the plugin/theme
+msgid "PT Post New"
+msgstr "PT Post New"
+
+#. Template Name of the plugin/theme
+msgid "Project_HOME_SPECIAL"
+msgstr "Project_HOME_SPECIAL"
+
+#. Template Name of the plugin/theme
+msgid "PT Page Template 2"
+msgstr "Шаблон страницы PT 2"
