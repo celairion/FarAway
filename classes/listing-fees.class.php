@@ -14,16 +14,6 @@ class project_listng_fees
   {
     $pid = $this->pid;
 
-    $projectTheme_sealed_bidding_fee = get_option('projectTheme_sealed_bidding_fee');
-  	if(!empty($projectTheme_sealed_bidding_fee))
-  	{
-  		$opt = get_post_meta($pid,'private_bids',true);
-  		if($opt == "0") { $projectTheme_sealed_bidding_fee = 0; }
-
-
-  	} else $projectTheme_sealed_bidding_fee = 0;
-
-
   	//-------
 
   	$featured	 = get_post_meta($pid, 'featured', true);
@@ -45,13 +35,12 @@ class project_listng_fees
   		$posting_fee = get_option('projectTheme_base_fee');
   	}
 
-  	$projectTheme_sealed_bidding_fee = empty($feat_charge) ? 0 : $projectTheme_sealed_bidding_fee;
   	$projectTheme_hide_project_fee = empty($projectTheme_hide_project_fee) ? 0 : $projectTheme_hide_project_fee;
   	$posting_fee = empty($posting_fee) ? 0 : $posting_fee;
   	$feat_charge = empty($feat_charge) ? 0 : $feat_charge;
   	$ProjectTheme_get_images_cost_extra = empty($ProjectTheme_get_images_cost_extra) ? 0 : $ProjectTheme_get_images_cost_extra;
 
-  	$total = $feat_charge + $posting_fee + $projectTheme_sealed_bidding_fee + $projectTheme_hide_project_fee + $ProjectTheme_get_images_cost_extra;
+  	$total = $feat_charge + $posting_fee  + $projectTheme_hide_project_fee + $ProjectTheme_get_images_cost_extra;
 
   	//-----------------------------------------------
 
@@ -92,37 +81,6 @@ class project_listng_fees
   			$my_small_arr['description'] 	= __('Featured Fee','ProjectTheme');
   			array_push($payment_arr, $my_small_arr);
   			//------------------------
-  		}
-
-  		$private_bids_paid  = get_post_meta($pid,'private_bids_paid',true);
-  		$opt 				= get_post_meta($pid,'private_bids',true);
-
-
-  		if($projectTheme_sealed_bidding_fee > 0 and $private_bids_paid != 1  and ($opt == 1 or $opt == "yes"))
-  		{
-
-  			$my_small_arr = array();
-  			$my_small_arr['fee_code'] 		= 'sealed_project';
-  			$my_small_arr['show_me'] 		= true;
-  			$my_small_arr['amount'] 		= $projectTheme_sealed_bidding_fee;
-  			$my_small_arr['description'] 	= __('Sealed Bidding Fee','ProjectTheme');
-  			array_push($payment_arr, $my_small_arr);
-  		//------------------------
-  		}
-
-  		$hide_project_paid 	= get_post_meta($pid,'hide_project_paid',true);
-  		$opt 				= get_post_meta($pid,'hide_project',true);
-
-  		if($projectTheme_hide_project_fee > 0 and $hide_project_paid != "1" and ($opt == "1" or $opt == "yes"))
-  		{
-
-  			$my_small_arr = array();
-  			$my_small_arr['fee_code'] 		= 'hide_project';
-  			$my_small_arr['show_me'] 		= true;
-  			$my_small_arr['amount'] 		= $projectTheme_hide_project_fee;
-  			$my_small_arr['description'] 	= __('Hide Project From Search Engines Fee','ProjectTheme');
-  			array_push($payment_arr, $my_small_arr);
-
   		}
 
   		$payment_arr 	= apply_filters('ProjectTheme_filter_payment_array', $payment_arr, $pid);

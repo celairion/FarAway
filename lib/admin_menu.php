@@ -8603,7 +8603,6 @@ function projectTheme_pricing_options()
 	{
 		$projectTheme_base_fee 						= trim($_POST['projectTheme_base_fee']);
 		$projectTheme_featured_fee 					= trim($_POST['projectTheme_featured_fee']);
-		$projectTheme_sealed_bidding_fee 			= trim($_POST['projectTheme_sealed_bidding_fee']);
 		$projectTheme_hide_project_fee 				= trim($_POST['projectTheme_hide_project_fee']);
 		$projectTheme_fee_after_paid 				= trim($_POST['projectTheme_fee_after_paid']);
 		$project_theme_min_withdraw					= trim($_POST['project_theme_min_withdraw']);
@@ -8620,7 +8619,6 @@ function projectTheme_pricing_options()
 		update_option('projectTheme_paying_fee_1', 					$projectTheme_paying_fee_1);
 		update_option('projectTheme_base_fee', 					$projectTheme_base_fee);
 		update_option('projectTheme_featured_fee', 				$projectTheme_featured_fee);
-		update_option('projectTheme_sealed_bidding_fee', 		$projectTheme_sealed_bidding_fee);
 		update_option('projectTheme_hide_project_fee', 			$projectTheme_hide_project_fee);
 		update_option('projectTheme_fee_after_paid', 			$projectTheme_fee_after_paid);
 
@@ -8864,14 +8862,6 @@ function projectTheme_pricing_options()
                     <td ><?php _e('Featured Listing Fee:','ProjectTheme'); ?></td>
                     <td><input type="text" name="projectTheme_featured_fee" size="10" value="<?php echo  get_option('projectTheme_featured_fee'); ?>"  /> <?php echo projectTheme_currency(); ?></td>
                     </tr>
-
-
-         			<tr>
-                    <td valign=top width="22"><?php ProjectTheme_theme_bullet(); ?></td>
-                    <td ><?php _e('Sealed Bidding Fee:','ProjectTheme'); ?></td>
-                    <td><input type="text" name="projectTheme_sealed_bidding_fee" size="10" value="<?php echo  get_option('projectTheme_sealed_bidding_fee'); ?>"  /> <?php echo projectTheme_currency(); ?></td>
-                    </tr>
-
 
                     <tr>
                     <td valign=top width="22"><?php ProjectTheme_theme_bullet(); ?></td>

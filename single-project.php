@@ -21,9 +21,6 @@ global $dateformat;
 		/*echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>'; */
 		echo '<script src="'.get_template_directory_uri().'/js/jquery.colorbox.js"></script>';
 
-		$get_bidding_panel = 'get_bidding_panel';
-		$get_bidding_panel = apply_filters('ProjectTheme_get_bidding_panel_string', $get_bidding_panel) ;
-
 ?>
 
 		<script>
@@ -31,9 +28,6 @@ global $dateformat;
 		var $ = jQuery;
 
 			jQuery(document).ready(function(){
-
-
-
 
 
 
@@ -77,173 +71,6 @@ global $dateformat;
 *
 *
 ******************************************************/
-
-
-
-
-	if(isset($_POST['bid_now_reverse']))
-	{
-		if(is_user_logged_in()):
-		if(isset($_POST['control_id']))
-		{
-			$cryptor = new ProjectTheme_cryptor($projecttheme_en_k);
-			$pid 	= $cryptor->decrypt($_POST['control_id']);
-
-			$post 		= get_post($pid);
-			$bid 		= trim($_POST['bid']);
-			$des 		= trim(strip_tags(projecttheme_sanitize_string($_POST['description2'])));
-			$post 		= get_post($pid);
-
-			$tm 		= current_time('timestamp',0);
-			$days_done	= projecttheme_sanitize_string(trim($_POST['days_done']));
-
-			//---------------------
-
-
-
-			$projectTheme_enable_custom_bidding = get_option('projectTheme_enable_custom_bidding');
-			if($projectTheme_enable_custom_bidding == "yes")
-			{
-
-				$ProjectTheme_get_project_primary_cat = ProjectTheme_get_project_primary_cat($pid);
-				$projectTheme_theme_bidding_cat_ = get_option('projectTheme_theme_bidding_cat_' . $ProjectTheme_get_project_primary_cat);
-
-				if($projectTheme_theme_bidding_cat_ > 0)
-				{
-					$ProjectTheme_get_credits = ProjectTheme_get_credits($uid);
-					$do_not_show = 0;
-					$prc = $projectTheme_theme_bidding_cat_;
-
-					if(	$ProjectTheme_get_credits < $projectTheme_theme_bidding_cat_) { $do_not_show = 1;
-						$prc = $projectTheme_theme_bidding_cat_;
-
-					}
-
-
-				}
-
-			}
-
-
-			//---------------------
-
-			$closed = get_post_meta($pid,'closed',true);
-			if($closed == "1") { echo 'DEBUG.Project Closed'; exit; }
-
-			//---------------------
-
-			if(empty($days_done) || !is_numeric($days_done))
-			{
-				$days_done = 3;
-			}
-
-			$query = "select * from ".$wpdb->prefix."project_bids where uid='$uid' AND pid='$pid'";
-			$r = $wpdb->get_results($query);
-
-			$other_error_to_pace_bid = false;
-			$other_error_to_pace_bid = apply_filters('ProjectTheme_other_error_to_pace_bid', $other_error_to_pace_bid, $pid);
-
-			if($other_error_to_pace_bid == true):
-
-				$bid_posted = "0";
-				$errors = apply_filters('ProjectTheme_post_bid_errors_array', $errors, $pid);
-
-			else:
-
-
-				if(!is_numeric($bid)):
-
-					$bid_posted = "0";
-					$errors['numeric_bid_tp'] = __("Your bid must be numeric type. Eg: 9.99",'ProjectTheme');
-
-				elseif($uid == $post->post_author):
-
-					$bid_posted = "0";
-					$errors['not_yours'] = __("Your cannot bid your own projects.",'ProjectTheme');
-
-				elseif(count($r) > 0):
-
-					$row 	= $r[0];
-					$id 	= $row->id;
-
-
-					$query 	= "update ".$wpdb->prefix."project_bids set bid='$bid', days_done='$days_done',
-					description='$des',date_made='$tm',uid='$uid' where id='$id'";
-					$wpdb->query($query);
-					$bid_posted = 1;
-
-
-
-
-				else:
-
-					$query = "insert into ".$wpdb->prefix."project_bids (days_done,bid,description, uid, pid, date_made)
-					values('$days_done','$bid','$des','$uid','$pid','$tm')";
-					$wpdb->query($query);
-					$bid_posted = 1;
-
-					do_action('projettheme_on_placing_a_bid', $pid, $bid, $uid);
-
-					//**********
-
-					if($do_not_show == 0)
-					{
-						if($prc > 0)
-						{
-							$pst = get_post($pid);
-							$cr = projectTheme_get_credits($uid);
-							projectTheme_update_credits($uid, $cr - $prc);
-
-							$reason = sprintf(__('Payment for bidding on project: <a href="%s">%s</a>','ProjectTheme'), get_permalink($pid), $pst->post_title);
-							projectTheme_add_history_log('0', $reason, $prc, $uid);
-						}
-					}
-
-
-					//**********
-
-					do_action('ProjectTheme_post_bid_ok_action');
-
-					add_post_meta($pid,'bid',$uid);
-
-				endif; // endif has bid already
-
-			endif;
-		}
-
-
-
-
-		if($bid_posted == 1):
-
-			ProjectTheme_send_email_when_bid_project_owner($pid, $uid, $bid);
-			ProjectTheme_send_email_when_bid_project_bidder($pid, $uid, $bid);
-
-			//---------------------
-
-			$prm = ProjectTheme_using_permalinks();
-			if($prm == true)
-			wp_redirect(get_permalink(get_the_ID()) . "/?bid_posted=1");
-			else
-			{
-				wp_redirect(get_permalink(get_the_ID()) . "&bid_posted=1");
-			}
-
-			exit;
-
-
-		endif; //endif bid posted
-
-	else:
-
-		wp_redirect(home_url()."/wp-login.php");
-		$_SESSION['redirect_me_back'] = get_permalink($pid);
-
-		exit;
-
-	endif;
-	}
-
 
 	//=============================
 	//function Project_change_main_class() { echo "<style> #main { background:url('".get_template_directory_uri."/images/bg1.png')  } </style>"; }
@@ -341,116 +168,21 @@ global $dateformat;
 
 
 
-
-
-
-
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
   <?php
 
-
-
-	$hourly_paid = get_post_meta(get_the_ID(), 'hourly_paid', true);
-
-
 	$location   		= get_post_meta(get_the_ID(), "Location", true);
 	$ending     		= get_post_meta(get_the_ID(), "ending", true);
 	$featured     		= get_post_meta(get_the_ID(), "featured", true);
-	$private_bids     	= get_post_meta(get_the_ID(), "private_bids", true);
 
 	//---- increase views
 
 	$views    	= get_post_meta(get_the_ID(), "views", true);
 	$views 		= $views + 1;
 	update_post_meta(get_the_ID(), "views", $views);
-
-
-
 ?>
-                <div class="page_heading_me_project pt_template_page_1 " id="pt_template_page_1">
-                        <div class="page_heading_me_inner page_heading_me_inner_project container" > <div class="row">
-                        <div class="main-pg-title col-xs-12 col-sm-12 col-md-12 col-lg-12" id="x_templ_1_pt">
-                            <div class="mm_inn mm_inn21"><h1><?php the_title() ?></h1>
 
-
-															<?php
-
-					if(function_exists('bcn_display'))
-					{
-							echo '<p>';
-							bcn_display();
-						echo '</p>';
-					}
-
-			?>
-
-
-
-                </div>
-
-
-
-
-
-                        </div>
-
-
-
-    </div>
-</div></div>
-
-<?php
-
-		$pg = $_GET['pg'];
-		if(empty($pg)) $pg = 'home';
-
-		$winner = get_post_meta(get_the_ID(),'winner',true);
-		if(empty($winner)) update_post_meta(get_the_ID(),'winner',"0");
-
- ?>
-<div class="w-100 container-with-menu">
-		<div class="container">
-			<ul class="nav nav-tabs m-auto" id='tabs-for-project' >
-					<li class="nav-item">
-					<a class="nav-link <?php echo $pg == "home" ? "active" : "" ?> " id="home-tab"  href="<?php echo ProjectTheme_get_project_link_with_page(get_the_ID(),'home') ?>"  ><?php _e('Main Details','ProjectTheme') ?></a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link <?php echo $pg == "description" ? "active" : "" ?>" id="description-tab"   href="<?php echo ProjectTheme_get_project_link_with_page(get_the_ID(),'description') ?>"  ><?php _e('Description','ProjectTheme') ?></a>
-					</li>
-
-					<?php
-
-							$ProjectTheme_enable_project_location = get_option('ProjectTheme_enable_project_location');
-							if($ProjectTheme_enable_project_location == "yes")
-							{
-
-								$x = get_option('ProjectTheme_enable_map_proj_page');
-								if($x == "yes")
-								{
-
-
-
-					 ?>
-					<li class="nav-item">
-					<a class="nav-link <?php echo $pg == "map" ? "active" : "" ?>" id="map-tab"  href="<?php echo ProjectTheme_get_project_link_with_page(get_the_ID(),'map') ?>" ><?php _e('Map Location','ProjectTheme') ?></a>
-					</li>
-
-				<?php }} ?>
-
-
-					<li class="nav-item">
-					<a class="nav-link <?php echo $pg == "pics" ? "active" : "" ?>" id="pics-tab"  href="<?php echo ProjectTheme_get_project_link_with_page(get_the_ID(),'pics') ?>" ><?php _e('Pictures and Files','ProjectTheme') ?></a>
-					</li>
-
-
-				<!--	<li class="nav-item">
-					<a class="nav-link <?php echo $pg == "reviews" ? "active" : "" ?>" id="reviews-tab"  href="<?php echo ProjectTheme_get_project_link_with_page(get_the_ID(),'reviews') ?>" ><?php _e('User Reviews','ProjectTheme') ?></a>
-				</li> -->
-
-					</ul>
-		</div>
-</div>
 
 
 <div class="container pt-4">
@@ -468,87 +200,14 @@ if($pg == "home") {
 
 						 $show_stuff = 1; $owner = 1; $show_this_around = 1;
 
-					 ?>
-
-
-
-							 <?php
-							 $ProjectTheme_enable_project_files = get_option('ProjectTheme_enable_project_files');
-							 $winner = get_post_meta(get_the_ID(), 'winner', true);
-
-
-							 $post = get_post(get_the_ID());
-							 global $wpdb;
-							 $pid = get_the_ID();
-
-							 $bids = "select * from ".$wpdb->prefix."project_bids where pid='$pid' order by id DESC";
-							 $res  = $wpdb->get_results($bids);
-
-							 if($post->post_author == $uid) $owner = 1; else $owner = 0;
-
-							 if(count($res) > 0)
-							 {
-								 ?>
-												 <table class="table table-hover table-outline table-vcenter   card-table">
-													 <thead><tr>
-																	 <th>&nbsp;</th>
-																	 <th><?php _e('Username','ProjectTheme'); ?></th>
-																	 <th><?php _e('Proposal','ProjectTheme'); ?></th>
-																	 <th><?php _e('Date','ProjectTheme'); ?></th>
-																	 <th><?php _e('Time','ProjectTheme'); ?></th>
-																	 <th> &nbsp;</th>
-																	 <th> &nbsp;</th>
-
-													 </tr></thead> <tbody>
-
-								 <?php
-
-							 if($private_bids == 'yes' or $private_bids == '1' or $private_bids == 1)
-							 {
-							 if ($owner == 1) $show_stuff = 1;
-							 else if(projectTheme_current_user_has_bid($uid, $res)) $show_stuff = 1;
-							 else $show_stuff = 0;
-							 }
-							 else $show_stuff = 1;
-
-							 //------------
-
-
-
-							 //-------------
-
-							 foreach($res as $row)
-							 {
-
-							 if ($owner == 1) $show_this_around = 1;
-							 else
-							 {
-							 if($private_bids == 'yes' or $private_bids == '1' or $private_bids == 1)
-							 {
-								if($uid == $row->uid) 	$show_this_around = 1;
-								else $show_this_around = 0;
-							 }
-							 else
-							 $show_this_around = 1;
-
-							 }
-
-
-
-							 if($show_this_around == 1):
 
 							 $user = get_userdata($row->uid);
 							 echo '<tr class=" ">';
 							 echo '<td> <img src="'.ProjectTheme_get_avatar($user->ID,	40, 40).'" width="40" class="avatar-from-list" /> </td>';
 							 echo '<td>  <a href="'.ProjectTheme_get_user_profile_link($user->ID).'">'.$user->user_login.'</a></td>';
-							 echo '<td><i class="bid-money"></i>  '.ProjectTheme_get_show_price($row->bid).' ' .($hourly_paid == "1" ? "/hr"  : ""). '</td>';
 							 echo '<td><i class="bid-clock"></i> '.date_i18n("d-M-Y H:i:s", $row->date_made).'</td>';
 							 echo '<td><i class="bid-days"></i> '. sprintf(__("%s days" ,"ProjectTheme"), $row->days_done) .'</td>';
-							 if ($owner == 1 ) {
-
-							 $nr = 7;
-							 if(empty($winner)) // == 0)
-								echo '<td>  <a href="'.home_url().'/?p_action=choose_winner&pid='.get_the_ID().'&bid='.$row->id.'" class="btn btn-secondary btn-sm   ">'.__('Select as Winner','ProjectTheme').'</a></td>';
+				
 
 							 if($ProjectTheme_enable_project_files != "no")
 							 {
@@ -633,36 +292,11 @@ if($pg == "home") {
 
 							 //---------- live chat -----------------------
 
-							 if(function_exists('lv_pp_myplugin_activate') and $is_author != 1)
-							 {
-								global $post;
-
-
-								if(is_user_logged_in()) $link = projecttheme_get_pm_link_from_user(get_current_user_id(), $row->uid);
-								else $link = projecttheme_get_pm_link_from_user(0, 0);
-
-								echo '<td> <a href="'.$link.'" class="btn btn-primary btn-sm   ">'.sprintf(__('Chat User','ProjectTheme')).'</a></td>';
-
-							 }
 							 else echo '<td> <a class="btn btn-primary btn-sm  "  href="'.ProjectTheme_get_priv_mess_page_url('send', '', '&uid='.$row->uid.'&pid='.get_the_ID()).'">'.__('Send Message','ProjectTheme').'</a></td>';
 							 }
 							 else $nr = 4;
 
-							 if($closed == "1") { if($row->winner == 1) echo '<td>'.__('Project Winner','ProjectTheme').'</td>';   }
-
-
-							 echo '</tr>';
-
-							 //echo '<div class="my_td_with_border">'.$row->description.'</div>';
-							 //echo '</div>';
-							 endif;
-							 }
-
-
-
-							 echo '</tbody></table>';
-							 }
-							 else {   echo '<div class="padd20">'; _e("No proposals placed yet.",'ProjectTheme'); echo '</div>';  }
+							 
 							 ?>
 
 
@@ -887,36 +521,6 @@ if($pg == "home") {
 
 	?>
 
-	<?php
-
-
-	if($bid_posted == "0"){ ?>
-
-					 <div class="bid_panel_err">
-					 <div class="padd10">
-					 <?php _e("Your bid has not been posted. Please correct the errors and try again.",'ProjectTheme');
-									 echo '<br/>';
-									 foreach($errors as $err)
-									 echo $err.'<br/>';
-						?>
-					 </div>
-					 </div>
-
-	 <?php } ?>
-
-
-	 <?php if($_GET['bid_posted'] == 1) { ?>
-
-					 <div class="alert alert-success">
-
-					 <?php _e("Your bid has been posted.",'ProjectTheme');
-
-						?>
-
-					 </div>
-
-	 <?php } ?>
-
 
 
 
@@ -950,31 +554,6 @@ if($pg == "home") {
 
 					 <div class="small_buttons_div_left  p-3">
 						 <div class="container"   id="project-details-id">
-<?php
-
-		$hourly_paid = get_post_meta(get_the_ID(),'hourly_paid', true);
-		if($hourly_paid == "1")
-		{
-
-?>
-
-<div class="row">
-	<div class="col-md-4 column-details-1"><img src="<?php echo get_template_directory_uri() ?>/images/wallet_icon2.png" width="18" height="18" alt="budget" /> <?php echo __("Hourly Rate",'ProjectTheme'); ?> </div>
-	<div class="col-md-8 column-details-2"><?php echo projecttheme_get_show_price(get_post_meta(get_the_ID(), 'hourly_rate', true)); ?></div>
-</div>
-
-<?php } else { ?>
-
-
-	<div class="row">
-			<div class="col-md-4 column-details-1"><img src="<?php echo get_template_directory_uri() ?>/images/coins_icon.png" width="18" height="18" alt="coins" />	<?php echo __("Costs",'ProjectTheme'); ?> </div>
-			<div class="col-md-8 column-details-2"><?php echo ProjectTheme_average_bid(get_the_ID()); ?></div>
-	</div>
-
-<?php } ?>
-
-
-
 
 
 
@@ -1120,24 +699,6 @@ if($pg == "home") {
 						 <?php
 
 		 $pid 	= get_the_ID();
-		 $winner = get_post_meta(get_the_ID(), 'winner', true);
-
-		 if(!empty($winner))
-		 {
-
-			 global $wpdb;
-			 $q = "select bid from ".$wpdb->prefix."project_bids where pid='$pid' and winner='1'";
-			 $r = $wpdb->get_results($q);
-			 $r = $r[0];
-
-			 echo '  <div class="p-3">';
-
-			 printf(__("Project closed for price: %s",'ProjectTheme'), ProjectTheme_get_show_price($r->bid));
-
-
-			 echo ' </div>';
-
-		 }
 
 		 ?>
 
@@ -1161,7 +722,6 @@ if($pg == "home") {
 			 <!-- ####################### -->
 	<?php
 
-	$private_bids = get_post_meta(get_the_ID(), 'private_bids', true);
 
 	?>
 
@@ -1418,92 +978,7 @@ if($pg == "home") {
 	 <?php _e('You can use the button below to apply and submit a proposal for this project.','ProjectTheme') ?>
 	 </p>
 
-	<?php } ?>
-
-
-	<p id='proposal_btn_p' style="text-align:center">
-		<?php
-
-					 global $current_user, $post;
-					 $current_user = wp_get_current_user();
-					 $uid = $current_user->ID;
-
-
-
-
-					 if($closed == "0" and !is_user_logged_in())
-					 {
-					 ?>
-
-
-					 <a href="#" class="btn btn-primary btn-lg btn-block mb-2" data-toggle="modal" data-target="#bidding-panel-modal" ><?php _e('Submit a Proposal','ProjectTheme'); ?></a>
-
-	<?php
-
-	global $myown_project_bid; $myown_project_bid = get_the_ID();
-	get_template_part('lib/bidding-panel');
-
-
-					 }
-					 else
-					 {
-
-					 if($closed == "0" && ProjectTheme_is_user_provider(get_current_user_id()) == true):
-
-
-						 $cc = projectTheme_get_bid_by_uid(get_the_ID(), get_current_user_id());
-
-
-						 if($cc != false)
-						 {
-
-							 	if(pt_see_if_bid_id_has_files(get_the_ID(), get_current_user_id()) > 0)
-								{
-
-								 ?>
-
-										<div class="alert alert-secondary mb-3 text-center"><?php _e('Your bid has files added. Edit them with the button below','ProjectTheme'); ?></div>
-
-									<?php } ?>
-
-
-										 <div class="w-100 mb-3">
-											 <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#bidding-panel-modal"  ><?php printf(__('EDIT BID %s','ProjectTheme'), projecttheme_get_show_price($cc->bid) . ($hourly_paid == "1" ? "/hr" : "")); ?></a>
-										 </div>
-
-							 			  <div class="w-100">
-										 <a class="btn btn-outline-warning btn-sm btn-block mb-3" href="<?php echo get_site_url() ?>/?p_action=retract_bid&id=<?php echo $cc->id ?>"><?php _e('Retract your bid','ProjectTheme'); ?></a>
-										  </div>
-
-								 <?php
-										 global $myown_project_bid; $myown_project_bid = get_the_ID();
-										 include 'lib/bidding-panel.php';
-
-						 }
-						 else
-						 {
-
-							 global $myown_project_bid; $myown_project_bid = get_the_ID();
-							 include 'lib/bidding-panel.php';
-				 ?>
-
-					 <a href="#" class="btn btn-primary btn-lg btn-block mb-2 mt-2" data-toggle="modal" data-target="#bidding-panel-modal" ><?php _e('Submit a Proposal','ProjectTheme'); ?></a>
-
-
-						 <?php } else: ?>
-
-					 <?php _e('Project is closed, or you cannot bid due to restrictions.','ProjectTheme'); ?>
-
-				 <?php endif; } ?>
-
-
-
-
-
-
-	</p>
-
-	<?php
+	<?php } 
 
 
 
@@ -1713,67 +1188,6 @@ if($pg == "home") {
 
 
 	//===============================================================================================
-	?>
-
-	<?php
-
-	$ProjectTheme_adv_code_project_page_below_content = get_option('ProjectTheme_adv_code_project_page_below_content');
-	if(!empty($ProjectTheme_adv_code_project_page_below_content))
-	{
-	echo '<div class="padd10 full_width" style="padding-top:0">'.$ProjectTheme_adv_code_project_page_below_content.'</div> <div class="clear10"></div>';
-
-	}
-
-
-	?>
-
-
-
-	</div></div>
-
-
-<?php
-
-/// ending home part ----------------------------------
-
-} elseif($pg == "description") { ?>
-
-	<h5 class="my-account-headline-1"><?php echo __('Project Description','ProjectTheme'); ?></h5>
-
-<div class="card project-description-box p-4">
-
-
-
-	<?php the_content();
-
-	do_action('ProjectTheme_after_description_in_single_proj_page');
-
-	 ?>
-
-</div>
-
-
-<?php } elseif($pg == "pics") { ?>
-
-<?php
-
-$ProjectTheme_enable_images_in_projects = get_option('ProjectTheme_enable_images_in_projects');
-$ProjectTheme_enable_images_in_projects = apply_filters('ProjectTheme_enable_images_in_projects_hk', $ProjectTheme_enable_images_in_projects);
-
-if($ProjectTheme_enable_images_in_projects == "yes"):
-
-?>
-
-<!-- ####################### -->
-
-
-
-<div class="card">
-
-
-						<div class="box_content3">
-														<div class="padd20">
-<?php
 
 $arr = ProjectTheme_get_post_images(get_the_ID());
 $xx_w = 600;
@@ -1891,95 +1305,6 @@ else { echo __('No images.','ProjectTheme') ;}
 
 
 </div>
-
-<?php endif; ?>
-
-
-
-<?php } elseif($pg == "map") { ?>
-
-
-	<?php
-
-	$ProjectTheme_enable_project_location = get_option('ProjectTheme_enable_project_location');
-	if($ProjectTheme_enable_project_location == "yes"):
-
-?>
-
-
-				<h3 class="my-account-headline-1"><?php echo __('Map Location','ProjectTheme'); ?></h3>
-
-
-		<div id="map" style="float:left;width: 100%; height: 300px;border:1px solid #ccc;float:left; border-radius:5px" class="mb-4"></div>
-
-						<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=<?php echo get_option('ProjectTheme_radius_maps_api_key') ?>&sensor=false"></script>
-
-				<script type="text/javascript"
-				src="<?php echo get_template_directory_uri(); ?>/js/mk.js"></script>
-																						<script type="text/javascript">
-
-
-
-
-var geocoder;
-var map;
-function initialize() {
-geocoder = new google.maps.Geocoder();
-var latlng = new google.maps.LatLng(-34.397, 150.644);
-var myOptions = {
-	zoom: 13,
-	center: latlng,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-}
-map = new google.maps.Map(document.getElementById("map"), myOptions);
-}
-
-function codeAddress(address) {
-
-geocoder.geocode( { 'address': address}, function(results, status) {
-	if (status == google.maps.GeocoderStatus.OK) {
-		map.setCenter(results[0].geometry.location);
-		var marker = new MarkerWithLabel({
-
-				position: results[0].geometry.location,
-	map: map,
-	 labelContent: address,
-	 labelAnchor: new google.maps.Point(22, 0),
-	 labelClass: "labels", // the CSS class for the label
-	 labelStyle: {opacity: 1.0}
-
-		});
-	} else {
-		//alert("Geocode was not successful for the following reason: " + status);
-	}
-});
-}
-
-initialize();
-
-codeAddress("<?php
-
-global $post;
-$pid = $post->ID;
-
-$terms = wp_get_post_terms($pid,'project_location');
-foreach($terms as $term)
-{
-echo $term->name." ";
-}
-
-$location = get_post_meta($pid, "Location", true);
-echo $location;
-
-?>");
-
-</script>
-
-
- <?php endif; ?>
-
-<?php } ?>
-
 
 <?php endwhile; // end of the loop.
 wp_reset_postdata();

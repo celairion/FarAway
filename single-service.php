@@ -326,7 +326,6 @@ global $dateformat;
 	$location   		= get_post_meta(get_the_ID(), "Location", true);
 	$ending     		= get_post_meta(get_the_ID(), "ending", true);
 	$featured     		= get_post_meta(get_the_ID(), "featured", true);
-	$private_bids     	= get_post_meta(get_the_ID(), "private_bids", true);
 
 	//---- increase views
 
@@ -346,8 +345,6 @@ global $dateformat;
 			//	if($featured == "1")
 			//	echo '<span class="featured_thing_project">'.__('Featured Project','ProjectTheme').'</span>';
 
-			//	if($private_bids == "1" or $private_bids == "yes")
-			//	echo '<span class="private_thing_project">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 				?>
 

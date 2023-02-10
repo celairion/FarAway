@@ -91,16 +91,6 @@
 	//-------------------------------------------------------------------------------
 	// sealed bidding fee calculation
 
-	$projectTheme_sealed_bidding_fee = get_option('projectTheme_sealed_bidding_fee');
-	if(!empty($projectTheme_sealed_bidding_fee))
-	{
-		$opt = get_post_meta($pid,'private_bids',true);
-		if($opt == "0" or $opt == "no" or empty($opt)) { $projectTheme_sealed_bidding_fee = 0; }
-
-
-	} else $projectTheme_sealed_bidding_fee = 0;
-
-
 	//-------
 
 	$featured	 = get_post_meta($pid, 'featured', true);
@@ -109,8 +99,6 @@
 	if($featured != "1" or empty($featured) ) $feat_charge = 0;
 
 	//update_post_meta($pid, 'featured_paid', '0');
-	//update_post_meta($pid, 'private_bids_paid', '0');
-	//update_post_meta($pid, 'hide_project_paid', '0');
 
 	//--------------------------------------------
 
@@ -129,7 +117,7 @@
 
 	//-----------------------------------------------
 
-	$total = $ProjectTheme_get_images_cost_extra + $feat_charge + $posting_fee + $projectTheme_sealed_bidding_fee + $projectTheme_hide_project_fee;
+	$total = $ProjectTheme_get_images_cost_extra + $feat_charge + $posting_fee  + $projectTheme_hide_project_fee;
 
 	$post 			= get_post($pid);
 	$admin_email 	= get_bloginfo('admin_email');
@@ -228,15 +216,6 @@
 	echo '<td>'.__('Featured Fee', 'ProjectTheme').'</td>';
 	echo '<td>'.ProjectTheme_get_show_price($feat_charge,2).'</td>';
 	echo '<tr>';
-
-	//if(get_post_meta($pid,'private_bids',true) == "1"):
-
-		echo '<tr>';
-		echo '<td>'.__('Sealed Bidding Fee', 'ProjectTheme').'</td>';
-		echo '<td>'.ProjectTheme_get_show_price($projectTheme_sealed_bidding_fee,2).'</td>';
-		echo '<tr>';
-
-	//endif;
 
 
 	//if(get_post_meta($pid,'hide_project',true) == "1"):

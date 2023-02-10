@@ -885,19 +885,6 @@ if($new_Project_step == "2")
 
 						   ?>
 
-        <li>
-        <h2><?php _e("Sealed Bidding?",'ProjectTheme'); ?></h2>
-        <p><input type="checkbox" class="do_input_new1" name="private_bids" value="1"
-        <?php $private_bids = get_post_meta($pid, 'private_bids', true); echo ($private_bids == "1" ? "checked='checked'" : ""); ?> />
-        <?php
-
-		$projectTheme_sealed_bidding_fee = get_option('projectTheme_sealed_bidding_fee');
-		$sl = sprintf(__('This option costs %s extra','ProjectTheme'), '<span class="text-success font-weight-bold">'.ProjectTheme_get_show_price($projectTheme_sealed_bidding_fee) .'</span>');
-		if(empty($projectTheme_sealed_bidding_fee) or $projectTheme_sealed_bidding_fee <= 0) $sl = '';
-
-
-		printf(__("By clicking this checkbox you hide your project's bids. %s", 'ProjectTheme'), $sl); ?></p>
-        </li>
         <?php endif; ?>
 
         <?php do_action('ProjectTheme_step2_before_sealed_bidding'); ?>
@@ -1050,7 +1037,6 @@ if($new_Project_step == "3")
 	$location   		= get_post_meta($PID_PID, "Location", true);
 	$ending     		= get_post_meta($PID_PID, "ending", true);
 	$featured     		= get_post_meta($PID_PID, "featured", true);
-	$private_bids     	= get_post_meta($PID_PID, "private_bids", true);
 
 	//---- increase views
 
@@ -1296,18 +1282,6 @@ if($new_Project_step == "3")
 
 
             <!-- ####################### -->
-			<?php
-
-			$private_bids = get_post_meta($PID_PID, 'private_bids', true);
-
-			?>
-
-
-			<h3 class="my-account-headline-1"><?php echo __('Proposals','ProjectTheme'); ?> <?php
-
-			if($private_bids == 'yes' or $private_bids == '1' or $private_bids == 1) _e('[project has private proposals]','ProjectTheme');
-
-			 ?></h3>
 
 			<div class="card">
 
@@ -1328,14 +1302,6 @@ if($new_Project_step == "3")
 
 				if(count($res) > 0)
 				{
-
-					if($private_bids == 'yes' or $private_bids == '1' or $private_bids == 1)
-					{
-						if ($owner == 1) $show_stuff = 1;
-						else if(projectTheme_current_user_has_bid($uid, $res)) $show_stuff = 1;
-						else $show_stuff = 0;
-					}
-					else $show_stuff = 1;
 
 					//------------
 
@@ -1366,19 +1332,6 @@ if($new_Project_step == "3")
 
 					foreach($res as $row)
 					{
-
-						if ($owner == 1) $show_this_around = 1;
-						else
-						{
-							if($private_bids == 'yes' or $private_bids == '1' or $private_bids == 1)
-							{
-								if($uid == $row->uid) 	$show_this_around = 1;
-								else $show_this_around = 0;
-							}
-							else
-							$show_this_around = 1;
-
-						}
 
 						if($show_this_around == 1):
 
@@ -1890,17 +1843,7 @@ if($new_Project_step == "4")
 	//-------------------------------------------------------------------------------
 	// sealed bidding fee calculation
 
-	$projectTheme_sealed_bidding_fee = get_option('projectTheme_sealed_bidding_fee');
-	if(!empty($projectTheme_sealed_bidding_fee))
-	{
-		$opt = get_post_meta($pid,'private_bids',true);
-		if($opt == "0") { $projectTheme_sealed_bidding_fee = 0; }
 
-
-	} else $projectTheme_sealed_bidding_fee = 0;
-
-
-	//-------
 
 	$featured	 = get_post_meta($pid, 'featured', true);
 	$feat_charge = get_option('projectTheme_featured_fee');
@@ -1921,13 +1864,12 @@ if($new_Project_step == "4")
 		$posting_fee = get_option('projectTheme_base_fee');
 	}
 
-	$projectTheme_sealed_bidding_fee = empty($projectTheme_sealed_bidding_fee) ? 0 : $projectTheme_sealed_bidding_fee;
 	$projectTheme_hide_project_fee = empty($projectTheme_hide_project_fee) ? 0 : $projectTheme_hide_project_fee;
 	$posting_fee = empty($posting_fee) ? 0 : $posting_fee;
 	$feat_charge = empty($feat_charge) ? 0 : $feat_charge;
 	$ProjectTheme_get_images_cost_extra = empty($ProjectTheme_get_images_cost_extra) ? 0 : $ProjectTheme_get_images_cost_extra;
 
-	$total = $feat_charge + $posting_fee + $projectTheme_sealed_bidding_fee + $projectTheme_hide_project_fee + $ProjectTheme_get_images_cost_extra;
+	$total = $feat_charge + $posting_fee  + $projectTheme_hide_project_fee + $ProjectTheme_get_images_cost_extra;
 
 	//-----------------------------------------------
 
@@ -1968,39 +1910,6 @@ if($new_Project_step == "4")
 			$my_small_arr['description'] 	= __('Featured Fee','ProjectTheme');
 			array_push($payment_arr, $my_small_arr);
 			//------------------------
-		}
-
-		$private_bids_paid  = get_post_meta($pid,'private_bids_paid',true);
-		$opt 				= get_post_meta($pid,'private_bids',true);
-
-
-		if($projectTheme_sealed_bidding_fee > 0 and $private_bids_paid != 1  and ($opt == "1" or $opt == "yes"))
-		{
-
-
-
-			$my_small_arr = array();
-			$my_small_arr['fee_code'] 		= 'sealed_project';
-			$my_small_arr['show_me'] 		= true;
-			$my_small_arr['amount'] 		= $projectTheme_sealed_bidding_fee;
-			$my_small_arr['description'] 	= __('Sealed Bidding Fee','ProjectTheme');
-			array_push($payment_arr, $my_small_arr);
-		//------------------------
-		}
-
-		$hide_project_paid 	= get_post_meta($pid,'hide_project_paid',true);
-		$opt 				= get_post_meta($pid,'hide_project',true);
-
-		if($projectTheme_hide_project_fee > 0 and $hide_project_paid != "1" and ($opt == "1" or $opt == "yes"))
-		{
-
-			$my_small_arr = array();
-			$my_small_arr['fee_code'] 		= 'hide_project';
-			$my_small_arr['show_me'] 		= true;
-			$my_small_arr['amount'] 		= $projectTheme_hide_project_fee;
-			$my_small_arr['description'] 	= __('Hide Project From Search Engines Fee','ProjectTheme');
-			array_push($payment_arr, $my_small_arr);
-
 		}
 
 		$payment_arr 	= apply_filters('ProjectTheme_filter_payment_array', $payment_arr, $pid);

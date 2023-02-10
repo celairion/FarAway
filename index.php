@@ -21,7 +21,7 @@
 
 
 
-$hero_image = get_template_directory_uri(  ) . "/images/home_image2.jpg";
+$hero_image = get_template_directory_uri(  ) . "/images/home_image21.jpg";
 $main_tagline = "Welcome to Far Away";
 $sub_tagline = "The best Travel Company in the World";
 

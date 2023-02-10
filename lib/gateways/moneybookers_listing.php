@@ -77,43 +77,11 @@
 				$my_small_arr['amount'] 		= $feat_charge;
 				$my_small_arr['description'] 	= __('Featured Fee','ProjectTheme');
 				array_push($payment_arr, $my_small_arr);
-			}
-			
-			//---------- Private Bids Check -----------------------------
-			
-			$private_bids 		= get_post_meta($pid, 'private_bids', true);
-			$private_bids_paid 	= get_post_meta($pid, 'private_bids_paid', true);
-			
-			$projectTheme_sealed_bidding_fee = get_option('projectTheme_sealed_bidding_fee');
-			if(!empty($projectTheme_sealed_bidding_fee))
-			{
-				$opt = get_post_meta($pid,'private_bids',true);
-				if($opt == "0") $projectTheme_sealed_bidding_fee = 0;
-			}
-			
-			
-			if($private_bids == "1" && $private_bids_paid != "1" && $projectTheme_sealed_bidding_fee > 0)
-			{
-				$not_OK_to_just_publish = 1;	
-				
-				$new_feature_arr = array();
-				$new_feature_arr[0] = __('Cost to add sealed bidding','ProjectTheme');
-				$new_feature_arr[1] = $projectTheme_sealed_bidding_fee;	
-				array_push($features_not_paid, $new_feature_arr);
-				
-				$my_small_arr = array();
-				$my_small_arr['fee_code'] 		= 'sealed_project';
-				$my_small_arr['show_me'] 		= true;
-				$my_small_arr['amount'] 		= $projectTheme_sealed_bidding_fee;
-				$my_small_arr['description'] 	= __('Sealed Bidding Fee','ProjectTheme');
-				array_push($payment_arr, $my_small_arr);
-			}
-			
+			}		
 			
 			//---------- Hide Project Check -----------------------------
 			
 			$hide_project 		= get_post_meta($pid, 'hide_project', true);
-			$hide_project_paid 	= get_post_meta($pid, 'hide_project_paid', true);
 			
 			$projectTheme_hide_project_fee = get_option('projectTheme_hide_project_fee');
 			if(!empty($projectTheme_hide_project_fee))
@@ -121,25 +89,7 @@
 				$opt = get_post_meta($pid,'hide_project',true);
 				if($opt == "0") $projectTheme_hide_project_fee = 0;
 			}
-			
-			
-			if($hide_project == "1" && $hide_project_paid != "1" && $projectTheme_hide_project_fee > 0)
-			{
-				$not_OK_to_just_publish = 1;
-				
-				$new_feature_arr = array();
-				$new_feature_arr[0] = __('Cost to hide project from search engines','ProjectTheme');
-				$new_feature_arr[1] = $projectTheme_hide_project_fee;	
-				array_push($features_not_paid, $new_feature_arr);
-				
-				$my_small_arr = array();
-				$my_small_arr['fee_code'] 		= 'hide_project';
-				$my_small_arr['show_me'] 		= true;
-				$my_small_arr['amount'] 		= $projectTheme_hide_project_fee;
-				$my_small_arr['description'] 	= __('Hide Project From Search Engines Fee','ProjectTheme');
-				array_push($payment_arr, $my_small_arr);	
-			}
-			
+					
 			//---------------------
 			
 			$payment_arr = apply_filters('ProjectTheme_filter_payment_array', $payment_arr, $pid);

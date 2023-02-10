@@ -3382,9 +3382,6 @@ function projectTheme_save_custom_fields($pid)
 
 		}
 
-				if(isset($_POST['private_bids']))
-				update_post_meta($pid, "private_bids", $_POST['private_bids']);
-
 
 		if(isset($_POST['price']))
 		update_post_meta($pid,"price",$_POST['price']);
@@ -3892,7 +3889,6 @@ function projectTheme_small_post()
 			$price = get_post_meta(get_the_ID(), 'price', true);
 			$closed = get_post_meta(get_the_ID(), 'closed', true);
 			$featured = get_post_meta(get_the_ID(), 'featured', true);
-			$private_bids = get_post_meta(get_the_ID(), 'at', true);
 
 ?>
 				<div class="post-small no-padds" id="post-<?php the_ID(); ?>"><div class="row">
@@ -3901,13 +3897,6 @@ function projectTheme_small_post()
                 <?php if($featured == "1"): ?>
                 <div class="featured-two"></div>
                 <?php endif; ?>
-
-
-
-                <?php if($private_bids == "yes" or $private_bids == "1"): ?>
-                <div class="sealed-two"></div>
-                <?php endif; ?>
-
 
 
                 <div class="col-12 col-sm-12 col-md-8" >
@@ -4398,12 +4387,6 @@ function projectTheme_theme_project_dts()
 
     	<li>
         	<h2><?php echo __('Sealed Bids','ProjectTheme'); ?>:</h2>
-        <p><select name="private_bids">
-        <option value="0" <?php if(get_post_meta($pid,'private_bids',true) == "0") echo 'selected="selected"'; ?>><?php _e("No",'ProjectTheme'); ?></option>
-        <option value="1" <?php if(get_post_meta($pid,'private_bids',true) == "1") echo 'selected="selected"'; ?>><?php _e("Yes",'ProjectTheme'); ?></option>
-
-        </select>
-        </p>
         </li>
 
      	<li>
@@ -7959,7 +7942,6 @@ function projectTheme_get_post_active()
 			$location 			= get_post_meta(get_the_ID(), 'Location', true);
 			$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 			$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-			$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 			$post				= get_post(get_the_ID());
 
 
@@ -7972,11 +7954,6 @@ function projectTheme_get_post_active()
 
                 <?php if($featured == "1"): ?>
                 <div class="featured-one"></div>
-                <?php endif; ?>
-
-
-                <?php if($private_bids == "yes" or $private_bids == "1"): ?>
-                <div class="sealed-one"></div>
                 <?php endif; ?>
 
 
@@ -8144,7 +8121,6 @@ function projectTheme_get_post_smm ( $arr = '')
 	$location 			= get_post_meta(get_the_ID(), 'Location', true);
 	$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 	$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-	$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 	$paid		 		= get_post_meta(get_the_ID(), 'paid', true);
 
 	$budget = ProjectTheme_get_budget_name_string_fromID(get_post_meta($pid,'budgets',true));
@@ -8153,7 +8129,6 @@ function projectTheme_get_post_smm ( $arr = '')
 	$days_left = ($closed == "0" ?  ($ending - current_time('timestamp',0)) : __("Expired/Closed",'ProjectTheme'));
 	$posted = get_the_time("jS F Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
 
 	if($days_left < 0) $days_left = __('Expired/Closed','ProjectTheme');
 
@@ -8166,9 +8141,6 @@ function projectTheme_get_post_smm ( $arr = '')
 
 						 if($featured == "1")
 						 echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-						 if($hide_project_p == "1" or $hide_project_p == "yes")
-						 echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 				?>
 
@@ -8260,7 +8232,6 @@ function projectTheme_get_post_received_proposal ( $arr = '')
 
 	$posted = get_the_time("jS F Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
 
 	if($days_left < 0) $days_left = __('Expired/Closed','ProjectTheme');
 
@@ -8275,9 +8246,6 @@ function projectTheme_get_post_received_proposal ( $arr = '')
 
 	       if($featured == "1")
 	       echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-	       if($hide_project_p == "1" or $hide_project_p == "yes")
-	       echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 	       ?>
 
@@ -8372,7 +8340,6 @@ function projectTheme_get_post_my_proposal ( $arr = '')
 	$location 				= get_post_meta(get_the_ID(), 'Location', true);
 	$closed 					= get_post_meta(get_the_ID(), 'closed', true);
 	$featured 				= get_post_meta(get_the_ID(), 'featured', true);
-	$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 	$paid		 					= get_post_meta(get_the_ID(), 'paid', true);
 
 	$budget = ProjectTheme_get_budget_name_string_fromID(get_post_meta($pid,'budgets',true));
@@ -8381,7 +8348,6 @@ function projectTheme_get_post_my_proposal ( $arr = '')
 	$days_left = ($closed == "0" ?  ($ending - current_time('timestamp',0)) : __("Expired/Closed",'ProjectTheme'));
 	$posted = get_the_time("jS F Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
 
 	if($days_left < 0) $days_left = __('Expired/Closed','ProjectTheme');
 
@@ -8396,9 +8362,6 @@ function projectTheme_get_post_my_proposal ( $arr = '')
 
 	       if($featured == "1")
 	       echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-	       if($hide_project_p == "1" or $hide_project_p == "yes")
-	       echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 	       ?>
 
@@ -8534,7 +8497,6 @@ function projectTheme_get_post_my_winning_bid ( $arr = '')
 	$location 			= get_post_meta(get_the_ID(), 'Location', true);
 	$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 	$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-	$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 	$paid		 		= get_post_meta(get_the_ID(), 'paid', true);
 
 	$budget = ProjectTheme_get_budget_name_string_fromID(get_post_meta($pid,'budgets',true));
@@ -8543,7 +8505,6 @@ function projectTheme_get_post_my_winning_bid ( $arr = '')
 	$days_left = ($closed == "0" ?  ($ending - current_time('timestamp',0)) : __("Expired/Closed",'ProjectTheme'));
 	$posted = get_the_time("jS F Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
 
 	if($days_left < 0) $days_left = __('Expired/Closed','ProjectTheme');
 
@@ -8558,9 +8519,6 @@ function projectTheme_get_post_my_winning_bid ( $arr = '')
 
 	       if($featured == "1")
 	       echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-	       if($hide_project_p == "1" or $hide_project_p == "yes")
-	       echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 	       ?>
 
@@ -8656,7 +8614,6 @@ function projectTheme_get_post_main_function2( $arr = '')
 			$location 			= get_post_meta(get_the_ID(), 'Location', true);
 			$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 			$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-			$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 			$paid		 		= get_post_meta(get_the_ID(), 'paid', true);
 			$post				= get_post(get_the_ID());
 
@@ -8674,11 +8631,6 @@ function projectTheme_get_post_main_function2( $arr = '')
 
                 <?php if($featured == "1"): ?>
                 <div class="featured-one"></div>
-                <?php endif; ?>
-
-
-                <?php if($private_bids == "yes" or $private_bids == "1"): ?>
-                <div class="sealed-one"></div>
                 <?php endif; ?>
 
 
@@ -8940,7 +8892,6 @@ function projectTheme_get_post_awaiting_payment_function()
 	$location 			= get_post_meta(get_the_ID(), 'Location', true);
 	$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 	$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-	$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 	$paid		 		= get_post_meta(get_the_ID(), 'paid', true);
 
 	$budget = ProjectTheme_get_budget_name_string_fromID(get_post_meta($pid,'budgets',true));
@@ -8948,8 +8899,6 @@ function projectTheme_get_post_awaiting_payment_function()
 
 	$posted = get_the_time("jS M Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
-
 
 
 	$tm_d = get_post_meta(get_the_ID(), 'expected_delivery', true);
@@ -8970,9 +8919,6 @@ function projectTheme_get_post_awaiting_payment_function()
 
 						 if($featured == "1")
 						 echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-						 if($hide_project_p == "1" or $hide_project_p == "yes")
-						 echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 				?>
 
@@ -9056,11 +9002,6 @@ function projectTheme_get_post_awaiting_payment_function2()
 
                 <?php if($featured == "1"): ?>
                 <div class="featured-one"></div>
-                <?php endif; ?>
-
-
-                <?php if($private_bids == "yes" or $private_bids == "1"): ?>
-                <div class="sealed-one"></div>
                 <?php endif; ?>
 
 
@@ -9205,7 +9146,6 @@ function projectTheme_get_post_awaiting_compl_function()
 			$location 			= get_post_meta(get_the_ID(), 'Location', true);
 			$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 			$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-			$hide_project_p 			= get_post_meta(get_the_ID(), 'private_bids', true);
 
 			$mark_coder_delivered 			= get_post_meta(get_the_ID(), 'mark_coder_delivered', true);
 			$posted 						= get_the_time("jS M Y");
@@ -9241,9 +9181,6 @@ function projectTheme_get_post_awaiting_compl_function()
 
 			 if($featured == "1")
 			 echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-			 if($hide_project_p == "1" or $hide_project_p == "yes")
-			 echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 			 ?>
 
@@ -9415,12 +9352,6 @@ function projectTheme_get_post_awaiting_compl_function_old()
                 <?php if($featured == "1"): ?>
                 <div class="featured-one"></div>
                 <?php endif; ?>
-
-
-                <?php if($private_bids == "yes" or $private_bids == "1"): ?>
-                <div class="sealed-one"></div>
-                <?php endif; ?>
-
 
                 <div class="padd10_only_top">
                 <div class="image_holder">
@@ -9604,7 +9535,6 @@ function projectTheme_get_post_main_function_active_project ( $arr = '')
 	$location 			= get_post_meta(get_the_ID(), 'Location', true);
 	$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 	$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-	$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 	$paid		 		= get_post_meta(get_the_ID(), 'paid', true);
 
 	$budget = ProjectTheme_get_budget_name_string_fromID(get_post_meta($pid,'budgets',true));
@@ -9613,7 +9543,6 @@ function projectTheme_get_post_main_function_active_project ( $arr = '')
 	$days_left = ($closed == "0" ?  ($ending - current_time('timestamp',0)) : __("Expired/Closed",'ProjectTheme'));
 	$posted = get_the_time("jS M Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
 
 	if($days_left < 0) $days_left = __('Expired/Closed','ProjectTheme');
 
@@ -9632,9 +9561,6 @@ function projectTheme_get_post_main_function_active_project ( $arr = '')
 
 							 if($featured == "1")
 							 echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-							 if($hide_project_p == "1" or $hide_project_p == "yes")
-							 echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 							 ?>
 
@@ -9723,7 +9649,6 @@ function projectTheme_get_service_front_end ( $arr = '')
 	$location 			= get_post_meta(get_the_ID(), 'Location', true);
 	$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 	$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-	$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 	$paid		 		= get_post_meta(get_the_ID(), 'paid', true);
 
 	$budget = projecttheme_get_show_price(get_post_meta($pid,'price',true));
@@ -9734,7 +9659,6 @@ function projectTheme_get_service_front_end ( $arr = '')
 	$days_left =  $ending - current_time('timestamp',0);
 	$posted = get_the_time("jS M Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
 
 
 
@@ -9753,9 +9677,6 @@ function projectTheme_get_service_front_end ( $arr = '')
 
 							 if($featured == "1")
 							 echo '<span class="badge badge-danger badge-1">'.__('Featured Service','ProjectTheme').'</span>';
-
-							 if($hide_project_p == "1" or $hide_project_p == "yes")
-							 echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 							 ?>
 
@@ -9805,19 +9726,21 @@ function projectTheme_get_project_front_end ( $arr = '')
 	
 
 	
-	$ending 			= get_post_meta(get_the_ID(), 'ending', true); if(empty($ending)) $ending = 0;
-	$sec 				= $ending - current_time('timestamp',0);
+	$ending 			= get_post_meta(get_the_ID(), 'ending', true); if(empty($ending)) $ending = 0;  //delete?
+	$sec 				= $ending - current_time('timestamp',0); 	//delete?
+	$closed 			= get_post_meta(get_the_ID(), 'closed', true); //delete?
+	$hourly_paid		 		= get_post_meta(get_the_ID(), 'hourly_paid', true); //delete?
+
+
 	$location 			= get_post_meta(get_the_ID(), 'Location', true);
-	$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 	$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-	$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 	$paid		 		= get_post_meta(get_the_ID(), 'paid', true);
-	$hourly_paid		 		= get_post_meta(get_the_ID(), 'hourly_paid', true);
+	
 
 
 
 	$ProjectTheme_budget_option = get_option('ProjectTheme_budget_option');
-	if($ProjectTheme_budget_option == "input_box")
+	if($ProjectTheme_budget_option == "input_box") //delete?
 	{
 		$budget_num = get_post_meta($pid,'price',true);
 		$budget = projecttheme_get_show_price($budget_num);
@@ -9832,15 +9755,14 @@ function projectTheme_get_project_front_end ( $arr = '')
 
 	$proposals = projectTheme_number_of_bid($pid);
 
-	if(empty($ending)) $ending = 0;
+	if(empty($ending)) $ending = 0; 
 
 	$days_left =  $ending - current_time('timestamp',0);
 	$posted = get_the_time("jS M Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
 
 
-	if($hourly_paid == '1')
+	if($hourly_paid == '1')  //delete?
 	{
 			$hourly_rate 	= get_post_meta($post->ID,'hourly_rate',true);
 			$budget 			= projecttheme_get_show_price($hourly_rate) . "/hr";
@@ -9897,8 +9819,7 @@ function projectTheme_get_project_front_end ( $arr = '')
 
 
 							<span class="  pl-2 pr-2"><?php echo  sprintf(__('<i class="fa fa-calendar"></i> Posted on: %s','ProjectTheme'), $posted)  ?> </span>
-							<span class="verified-user pl-2 pr-2"><?php echo  sprintf(__('<i class="fas fa-certificate"></i> Verified User','ProjectTheme'))  ?> </span>
-								
+							<span class="verified-user pl-2 pr-2"><?php echo  sprintf(__('<i class="fas fa-certificate"></i> Verified User','ProjectTheme'))  ?> </span>	
 							
 							
 							
@@ -9943,7 +9864,6 @@ function projectTheme_number_of_likes($pid)
 	$location 			= get_post_meta(get_the_ID(), 'Location', true);
 	$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 	$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-	$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 	$paid		 		= get_post_meta(get_the_ID(), 'paid', true);
 
 	$budget = ProjectTheme_get_budget_name_string_fromID(get_post_meta($pid,'budgets',true));
@@ -9952,7 +9872,6 @@ function projectTheme_number_of_likes($pid)
 	$days_left = ($closed == "0" ?  ($ending - current_time('timestamp',0)) : __("Expired/Closed",'ProjectTheme'));
 	$posted = get_the_time("jS M Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
 
 	if($days_left < 0) $days_left = __('Expired/Closed','ProjectTheme');
 
@@ -9969,9 +9888,6 @@ function projectTheme_number_of_likes($pid)
 
 							 if($featured == "1")
 							 echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-							 if($hide_project_p == "1" or $hide_project_p == "yes")
-							 echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 							 ?>
 
@@ -10101,7 +10017,6 @@ function projectTheme_get_post_acc($arr = '')
 	$location 				= get_post_meta(get_the_ID(), 'Location', true);
 	$closed 					= get_post_meta(get_the_ID(), 'closed', true);
 	$featured 				= get_post_meta(get_the_ID(), 'featured', true);
-	$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 	$paid		 					= get_post_meta(get_the_ID(), 'paid', true);
 	$hourly_paid 			= get_post_meta(get_the_ID(), 'hourly_paid', true);
 
@@ -10110,7 +10025,6 @@ function projectTheme_get_post_acc($arr = '')
 
 	$posted = get_the_time("jS F Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
 
 
 	$days_left = ($closed == "0" ?  ($ending - current_time('timestamp',0)) : __("Expired/Closed",'ProjectTheme'));
@@ -10142,9 +10056,6 @@ if($days_left < 0) $days_left = __('Expired/Closed','ProjectTheme');
 
 				 if($featured == "1")
 				 echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-				 if($hide_project_p == "1" or $hide_project_p == "yes")
-				 echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 				 if($hourly_paid == "1")
 				 echo '<span class="badge badge-danger badge-1">'.__('Hourly Paid','ProjectTheme').'</span>';
@@ -10279,7 +10190,6 @@ function projectTheme_get_post_outstanding_project_function()
 	$location 			= get_post_meta(get_the_ID(), 'Location', true);
 	$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 	$featured 			= get_post_meta(get_the_ID(), 'featured', true);
-	$private_bids 		= get_post_meta(get_the_ID(), 'private_bids', true);
 	$paid		 		= get_post_meta(get_the_ID(), 'paid', true);
 
 	$budget = ProjectTheme_get_budget_name_string_fromID(get_post_meta($pid,'budgets',true));
@@ -10288,7 +10198,6 @@ function projectTheme_get_post_outstanding_project_function()
 
 	$posted = get_the_time("jS F Y");
 	$auth = get_userdata($post->post_author);
-	$hide_project_p = get_post_meta($post->ID, 'private_bids', true);
 
 
 
@@ -10314,9 +10223,6 @@ function projectTheme_get_post_outstanding_project_function()
 
 				if($featured == "1")
 			 echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-			 if($hide_project_p == "1" or $hide_project_p == "yes")
-			 echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 				 ?>
 
@@ -10476,11 +10382,6 @@ function projectTheme_get_post_outstanding_project_function2()
 
                 <?php if($featured == "1"): ?>
                 <div class="featured-one"></div>
-                <?php endif; ?>
-
-
-                <?php if($private_bids == "yes" or $private_bids == "1"): ?>
-                <div class="sealed-one"></div>
                 <?php endif; ?>
 
 
@@ -10661,7 +10562,6 @@ function projectTheme_get_post_pay_function( $arr = '')
 			$closed 			= get_post_meta(get_the_ID(), 'closed', true);
 			$featured 			= get_post_meta(get_the_ID(), 'featured', true);
 			$post				= get_post(get_the_ID());
-			$hide_project_p 			= get_post_meta(get_the_ID(), 'private_bids', true);
 
 
 			global $current_user;
@@ -10693,9 +10593,6 @@ function projectTheme_get_post_pay_function( $arr = '')
 
 	 				 if($featured == "1")
 	 				 echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-	 				 if($hide_project_p == "1" or $hide_project_p == "yes")
-	 				 echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
 
 	 		?>
 								</h4> </div></div>
@@ -10816,7 +10713,6 @@ function projectTheme_get_post_paid_function( $arr = '')
 			$closed 					= get_post_meta(get_the_ID(), 'closed', true);
 			$featured 				= get_post_meta(get_the_ID(), 'featured', true);
 			$post							= get_post(get_the_ID());
-			$hide_project_p 	= get_post_meta($post->ID, 'private_bids', true);
 			$posted 					= get_the_time("jS F Y");
 
 			//----------------------------------------
@@ -10844,10 +10740,6 @@ function projectTheme_get_post_paid_function( $arr = '')
 
 					 if($featured == "1")
 					 echo '<span class="badge badge-danger badge-1">'.__('Featured Project','ProjectTheme').'</span>';
-
-					 if($private_bids == "1" or $private_bids == "yes")
-					 echo ' <span class="badge badge-success badge-1">'.__('Sealed Bidding','ProjectTheme').'</span>';
-
 
 					 ?>
 
@@ -11018,8 +10910,6 @@ function ProjectTheme_create_auto_draft($uid)
 		$pid = wp_insert_post( $my_post, true );
 
 		update_post_meta($pid, 'featured_paid', 			'0');
-		update_post_meta($pid, 'private_bids_paid', 	'0');
-		update_post_meta($pid, 'hide_project_paid', 	'0');
 		update_post_meta($pid, 'base_fee_paid', 			'0');
 		update_post_meta($pid, 'outstanding', 				'0');
 		update_post_meta($pid, 'is_new_project', 			'new');
@@ -11053,15 +10943,11 @@ function projectTheme_slider_post()
 {
 
 		$featured 		= get_post_meta(get_the_ID(), 'featured', true);
-		$private_bids 	= get_post_meta(get_the_ID(), 'private_bids', true);
 
 	?>
 
 	<div class="slider-post">
 
-                <?php if($private_bids == "yes" or $private_bids == "1"): ?>
-                <div class="sealed-three"></div>
-                <?php endif; ?>
 
     <?php
 

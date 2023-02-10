@@ -345,11 +345,6 @@ if(isset($_POST['project_submit1'] ))
 		else update_post_meta($pid, "featured", "0");
 
 		//-----------------------------------
-		// mark the project for private bids if selected
-
-		if(isset($_POST['private_bids'])) update_post_meta($pid, "private_bids", "1");
-		else update_post_meta($pid, "private_bids", "0");
-
 
 		// mark the project hidden from search engines or people not logged in
 

@@ -44,19 +44,6 @@
 	} else $projectTheme_hide_project_fee = 0;
 
 
-	//-------------------------------------------------------------------------------
-	// sealed bidding fee calculation
-
-	$projectTheme_sealed_bidding_fee = get_option('projectTheme_sealed_bidding_fee');
-	if(!empty($projectTheme_sealed_bidding_fee))
-	{
-		$opt = get_post_meta($pid,'private_bids',true);
-		if($opt == "0") { $projectTheme_sealed_bidding_fee = 0; }
-
-
-	} else $projectTheme_sealed_bidding_fee = 0;
-
-
 	//-------
 
 	$featured	 = get_post_meta($pid, 'featured', true);
@@ -65,8 +52,7 @@
 	if($featured != "1" ) $feat_charge = 0;
 
 	//update_post_meta($pid, 'featured_paid', 	'0');
-	//update_post_meta($pid, 'private_bids_paid', '0');
-	//update_post_meta($pid, 'hide_project_paid', '0');
+
 
 
 	$custom_set = get_option('projectTheme_enable_custom_posting');
@@ -80,7 +66,7 @@
 				}
 
 	$ProjectTheme_get_images_cost_extra = ProjectTheme_get_images_cost_extra($pid);
-	$total = $ProjectTheme_get_images_cost_extra + $feat_charge + $post_pring_fee + $projectTheme_sealed_bidding_fee + $projectTheme_hide_project_fee;
+	$total = $ProjectTheme_get_images_cost_extra + $feat_charge + $post_pring_fee  + $projectTheme_hide_project_fee;
 
 	//----------------------------------------------
 
@@ -125,39 +111,6 @@
 		}
 
 		//------------------------
-
-		$private_bids_paid  = get_post_meta($pid,'private_bids_paid',true);
-		$opt 				= get_post_meta($pid,'private_bids',true);
-
-
-		if($projectTheme_sealed_bidding_fee > 0 and $private_bids_paid != 1  and ($opt == 1 or $opt == "yes"))
-		{
-
-			$my_small_arr = array();
-			$my_small_arr['fee_code'] 		= 'sealed_project';
-			$my_small_arr['show_me'] 		= true;
-			$my_small_arr['amount'] 		= $projectTheme_sealed_bidding_fee;
-			$my_small_arr['description'] 	= __('Sealed Bidding Fee','ProjectTheme');
-			array_push($payment_arr, $my_small_arr);
-
-		}
-
-		//------------------------
-
-		$hide_project_paid 	= get_post_meta($pid,'hide_project_paid',true);
-		$opt 				= get_post_meta($pid,'hide_project',true);
-
-		if($projectTheme_hide_project_fee > 0 and $hide_project_paid != "1" and ($opt == "1" or $opt == "yes"))
-		{
-
-			$my_small_arr = array();
-			$my_small_arr['fee_code'] 		= 'hide_project';
-			$my_small_arr['show_me'] 		= true;
-			$my_small_arr['amount'] 		= $projectTheme_hide_project_fee;
-			$my_small_arr['description'] 	= __('Hide Project From Search Engines Fee','ProjectTheme');
-			array_push($payment_arr, $my_small_arr);
-
-		}
 
 		$payment_arr = apply_filters('ProjectTheme_filter_payment_array', $payment_arr, $pid);
 		$new_total 		= 0;
@@ -281,9 +234,6 @@
 
 										$featured = get_post_meta($pid,'featured',true);
 										if($featured == "1" or $featured == "yes") update_post_meta($pid, 'featured_paid', '1');
-
-										$private_bids = get_post_meta($pid,'private_bids',true);
-										if($private_bids == "1" or $private_bids == "yes") update_post_meta($pid, 'private_bids_paid', '1');
 
 										$hide_project = get_post_meta($pid,'hide_project',true);
 										if($hide_project == "1" or $hide_project == "yes") update_post_meta($pid, 'hide_project_paid', '1');

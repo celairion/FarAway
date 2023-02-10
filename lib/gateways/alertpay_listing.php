@@ -158,9 +158,6 @@ function projecttheme_listing_payza_resp()
 			
 			$featured = get_post_meta($pid,'featured',true);	
 			if($featured == "1" or $featured == "yes") update_post_meta($pid, 'featured_paid', '1');
-			
-			$private_bids = get_post_meta($pid,'private_bids',true);	
-			if($private_bids == "1" or $private_bids == "yes") update_post_meta($pid, 'private_bids_paid', '1');
 			 
 			$hide_project = get_post_meta($pid,'hide_project',true);	
 			if($hide_project == "1" or $hide_project == "yes" ) update_post_meta($pid, 'hide_project_paid', '1');

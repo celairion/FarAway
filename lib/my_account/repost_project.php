@@ -168,7 +168,6 @@ $cid = $uid;
 						update_post_meta($new_pid, "featured", "0");
 
 
-					update_post_meta($new_pid, "private_bids", strip_tags($_POST['private_bids']));
 					update_post_meta($new_pid, "views", '0');
 
 
@@ -624,18 +623,6 @@ $(document).ready(function() {
 					   	if($ProjectTheme_enable_sealed_option != "no"):
 
 						   ?>
-        <li>
-        <h2><?php _e("Sealed bidding?",'ProjectTheme'); ?>:</h2>
-        <p><input type="checkbox"   name="private_bids" <?php
-		$private_bids = get_post_meta($pid, 'private_bids', true);
-		if(isset($_POST['private_bids'])) echo 'checked="checked"';
-		else
-		{
-			if($private_bids == "1") echo 'checked="checked"';
-		}
-		 ?> value="1" />
-        <?php _e("By clicking this checkbox you mark your seal the bidding. Extra fee is applied.", 'ProjectTheme'); ?></p>
-        </li>
 
         <?php endif; ?>
 

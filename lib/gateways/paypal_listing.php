@@ -109,36 +109,6 @@ switch ($action) {
 
 			}
 
-			//---------- Private Bids Check -----------------------------
-
-			$private_bids 		= get_post_meta($pid, 'private_bids', true);
-			$private_bids_paid 	= get_post_meta($pid, 'private_bids_paid', true);
-
-			$projectTheme_sealed_bidding_fee = get_option('projectTheme_sealed_bidding_fee');
-			if(!empty($projectTheme_sealed_bidding_fee))
-			{
-				$opt = get_post_meta($pid,'private_bids',true);
-				if($opt == "0") $projectTheme_sealed_bidding_fee = 0;
-			}
-
-
-			if($private_bids == "1" && $private_bids_paid != "1" && $projectTheme_sealed_bidding_fee > 0)
-			{
-				$not_OK_to_just_publish = 1;
-
-				$new_feature_arr = array();
-				$new_feature_arr[0] = __('Cost to add sealed bidding','ProjectTheme');
-				$new_feature_arr[1] = $projectTheme_sealed_bidding_fee;
-				array_push($features_not_paid, $new_feature_arr);
-
-				$my_small_arr = array();
-				$my_small_arr['fee_code'] 		= 'sealed_project';
-				$my_small_arr['show_me'] 		= true;
-				$my_small_arr['amount'] 		= $projectTheme_sealed_bidding_fee;
-				$my_small_arr['description'] 	= __('Sealed Bidding Fee','ProjectTheme');
-				array_push($payment_arr, $my_small_arr);
-			}
-
 
 			//---------- Hide Project Check -----------------------------
 
@@ -238,9 +208,6 @@ switch ($action) {
 
 		$featured = get_post_meta($pid,'featured',true);
 		if($featured == "1") update_post_meta($pid, 'featured_paid', '1');
-
-		$private_bids = get_post_meta($pid,'private_bids',true);
-		if($private_bids == "1" or $private_bids == "yes" ) update_post_meta($pid, 'private_bids_paid', '1');
 
 		$hide_project = get_post_meta($pid,'hide_project',true);
 		if($hide_project == "1" or $hide_project == "yes" ) update_post_meta($pid, 'hide_project_paid', '1');
